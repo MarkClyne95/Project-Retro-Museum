@@ -1,0 +1,66 @@
+{
+    "name": "Cursor",
+    "maps": [
+        {
+            "name": "MouseCursor",
+            "id": "ae21ca2f-4748-43be-a226-01a1f89c3dbf",
+            "actions": [
+                {
+                    "name": "Explosion",
+                    "type": "Button",
+                    "id": "817a01a1-351c-431f-b49f-479fafd5f8a6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Control",
+                    "type": "Value",
+                    "id": "6eeec3cd-fc3b-4be6-b31b-8099e441c67d",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "644a0423-9eb5-4902-84e2-5816528bc029",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CursorMouse",
+                    "action": "Explosion",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df1f6700-169b-4e9e-b76e-dbc34b1e2be4",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "CursorMouse",
+                    "action": "Control",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "CursorMouse",
+            "bindingGroup": "CursorMouse",
+            "devices": [
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
