@@ -6,7 +6,10 @@ using UnityEngine.UI;
 
 public class SC_CursorControls : MonoBehaviour
 {
+    [Header("Game Objects")]
     [SerializeField] private GameObject cursor;
+    [SerializeField] private GameObject explosion;
+
     public Vector3 uh = new Vector3();
     public Vector3 eh = new Vector2();
     // Start is called before the first frame update
@@ -25,8 +28,16 @@ public class SC_CursorControls : MonoBehaviour
     
     }
 
-    private void OnControl(InputAction.CallbackContext context)
+    //THIS BIT MARK
+    //private void OnControl(InputAction.CallbackContext context)
+    //{
+    //    Debug.Log(context);
+    //}
+
+    private void OnExplosion()
     {
-        Debug.Log(context);
+        Instantiate(explosion, this.gameObject.transform.position, this.gameObject.transform.rotation);
     }
+
+
 }
