@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IS_Angel : S_Enemy
+public class IS_Worm : S_Enemy
 {
     [Header("Patrol Points")] 
     private Vector3 _target;
@@ -61,17 +61,17 @@ public class IS_Angel : S_Enemy
 
     private void AttackTrigger()
     {
-        if (!canAttack && !health.isHit)
-        {
-            anim.SetBool("Runs", false);
-            anim.SetBool("Idle", true);
-            attackTimer -= Time.deltaTime;
-            if (attackTimer <= 0)
-            {
-                canAttack = true;
-                Attack();
-            }
-        }
+        // if (!canAttack && !health.isHit)
+        // {
+        //     anim.SetBool("Move", false);
+        //     anim.SetBool("Idle", true);
+        //     attackTimer -= Time.deltaTime;
+        //     if (attackTimer <= 0)
+        //     {
+        //         canAttack = true;
+        //         Attack();
+        //     }
+        // }
     }
 
     protected override void Death()
@@ -95,7 +95,7 @@ public class IS_Angel : S_Enemy
     {
         if (Math.Abs(transform.position.x - _target.x) > 0.01)
         {
-            anim.SetBool("Runs", true);
+            anim.SetBool("Move", true);
             anim.SetBool("Idle", false);
             transform.position = Vector3.MoveTowards(transform.position, _target, movementSpeed * Time.deltaTime);
         }
@@ -128,7 +128,7 @@ public class IS_Angel : S_Enemy
         _target = player.position;
         if (Math.Abs(transform.position.x - _target.x) > 0.1f)
         {
-            anim.SetBool("Runs", true);
+            anim.SetBool("Move", true);
             anim.SetBool("Idle", false);
             transform.position = Vector3.MoveTowards(transform.position, _target, movementSpeed * Time.deltaTime);
             FaceTowards(player.position - transform.position);
@@ -157,7 +157,7 @@ public class IS_Angel : S_Enemy
 
     protected virtual IEnumerator SetWalkTarget(Vector3 pos)
     {
-        anim.SetBool("Runs", false);
+        anim.SetBool("Move", false);
         anim.SetBool("Idle", true);
         yield return new WaitForSeconds(timeBetweenPatrols);
         _target = pos;
