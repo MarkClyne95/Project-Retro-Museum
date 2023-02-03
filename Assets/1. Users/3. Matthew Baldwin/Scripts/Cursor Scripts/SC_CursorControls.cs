@@ -11,13 +11,8 @@ public class SC_CursorControls : MonoBehaviour
 {
     [Header("Game Objects")] [SerializeField]
     private Texture2D cursor;
-
-    [SerializeField] private Texture2D explosion;
-    private Vector2 _mousePosition;
-
-    public Vector3 uh = new Vector3();
-
-    public Vector3 eh = new Vector2();
+    [SerializeField] private GameObject explosion;
+    [SerializeField] private Vector2 _mousePosition;
 
     // Start is called before the first frame update
     void Start()
@@ -25,11 +20,11 @@ public class SC_CursorControls : MonoBehaviour
         Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        
+        _mousePosition = Input.mousePosition;
     }
+
 
     //THIS BIT MARK
     private void OnControl(InputValue ctx)
@@ -38,9 +33,10 @@ public class SC_CursorControls : MonoBehaviour
     }
 
     private void OnExplosion()
-    {
-        Instantiate(explosion, this.gameObject.transform.position, this.gameObject.transform.rotation);
+    {       
+        Vector3 mousePos = new Vector3(_mousePosition.x, _mousePosition.y, 11);
+
+        Instantiate(explosion, (Vector3)Camera.main.ScreenToWorldPoint(mousePos), this.gameObject.transform.rotation);
+        
     }
-
-
 }
