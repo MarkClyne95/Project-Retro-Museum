@@ -196,7 +196,7 @@ SpriteRenderer:
   m_SortingLayerID: -725294919
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 958304294, guid: 0b30c00a70eeff94bad059555778c18e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -204,7 +204,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &362227919
@@ -515,7 +515,7 @@ MonoBehaviour:
   cursor: {fileID: 2800000, guid: 9bdb247b93354964ea110b9c2ac53ad9, type: 3}
   explosion: {fileID: 7006444163587308816, guid: fa49d3088f4ba9940aefdb435f416400, type: 3}
   mousePos: {x: 0, y: 0, z: 0}
-  turret: {fileID: 88448789}
+  turret: {fileID: 88448791}
   currentTurretSprite: {fileID: 0}
   turretOrientation:
   - {fileID: 958304294, guid: 0b30c00a70eeff94bad059555778c18e, type: 3}

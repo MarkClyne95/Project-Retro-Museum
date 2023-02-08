@@ -15,7 +15,7 @@ public class SC_CursorControls : MonoBehaviour
     [SerializeField] private Vector3 mousePos;
 
     [Header("Turret Elements")]
-    [SerializeField] private GameObject turret;
+    [SerializeField] private SpriteRenderer turret;
     [SerializeField] private Sprite currentTurretSprite;
     [SerializeField] private Sprite[] turretOrientation;
 
@@ -24,16 +24,10 @@ public class SC_CursorControls : MonoBehaviour
     void Start()
     {
         Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
-        currentTurretSprite = turret.GetComponent<SpriteRenderer>().sprite;
+        currentTurretSprite = turret.sprite;
         currentTurretSprite = turretOrientation[0];
     }
 
-
-    //THIS BIT MARK
-    private void OnControl(InputValue ctx)
-    {
-        
-    }
 
     private void OnExplosion()
     {       
@@ -41,21 +35,20 @@ public class SC_CursorControls : MonoBehaviour
 
         Instantiate(explosion, (Vector3)Camera.main.ScreenToWorldPoint(mousePos), this.gameObject.transform.rotation);
 
-        //if (mousePos.x <= 300)
-        //{
-        //    turret.GetComponent<SpriteRenderer>().sprite = turretOrientation[1];
-        //}else if
 
         switch (mousePos.x)
         {
             case <= 300:
                 currentTurretSprite = turretOrientation[1];
+                turret.sprite = currentTurretSprite;
                 break;
-            case >= 600:
+            case >= 400:
                 currentTurretSprite = turretOrientation[2];
+                turret.sprite = currentTurretSprite;
                 break;
             default:
                 currentTurretSprite = turretOrientation[0];
+                turret.sprite = currentTurretSprite;
                 break;
         }
     }
