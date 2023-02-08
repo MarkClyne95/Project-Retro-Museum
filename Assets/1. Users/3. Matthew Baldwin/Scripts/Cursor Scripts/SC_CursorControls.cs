@@ -19,6 +19,9 @@ public class SC_CursorControls : MonoBehaviour
     [SerializeField] private Sprite currentTurretSprite;
     [SerializeField] private Sprite[] turretOrientation;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource explodeSFX;
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,8 @@ public class SC_CursorControls : MonoBehaviour
         Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
         currentTurretSprite = turret.sprite;
         currentTurretSprite = turretOrientation[0];
+
+        explodeSFX = GetComponent<AudioSource>();
     }
 
 
@@ -35,6 +40,7 @@ public class SC_CursorControls : MonoBehaviour
 
         Instantiate(explosion, (Vector3)Camera.main.ScreenToWorldPoint(mousePos), this.gameObject.transform.rotation);
 
+        explodeSFX.PlayOneShot(explodeSFX.clip, .1f);
 
         switch (mousePos.x)
         {
