@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
+  - AtariController
+  - AtariCart
+  - AtariExplosion
+  - AtariCartSFX
+  - BadtariCart
+  - BadtariCartSFX
   layers:
   - Default
   - TransparentFX
