@@ -44,11 +44,11 @@ public class SC_CursorControls : MonoBehaviour
 
         switch (mousePos.x)
         {
-            case <= 300:
+            case < 400:
                 currentTurretSprite = turretOrientation[1];
                 turret.sprite = currentTurretSprite;
                 break;
-            case >= 400:
+            case > 500:
                 currentTurretSprite = turretOrientation[2];
                 turret.sprite = currentTurretSprite;
                 break;
