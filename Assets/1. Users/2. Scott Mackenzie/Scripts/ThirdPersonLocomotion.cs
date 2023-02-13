@@ -7,8 +7,6 @@ public class ThirdPersonLocomotion : MonoBehaviour
 
     public CharacterController controller;
 
-    public float speed = 6f;
-
     public float turnSmoothTime = 0.1f;
 
     private float turnSmoothVelocity;
@@ -16,11 +14,46 @@ public class ThirdPersonLocomotion : MonoBehaviour
     public Transform cam;
 
     public Animator animator;
+
+    public float speed = 6f;
+    public float gravity = -9.81f;
+    public float jumpHeight = 3f;
+
+    private Vector3 velocity;
+    private bool isGrounded;
+
+    public Transform groundCheck;
+    public float groundDistance = 0.4f;
+    public LayerMask groundMask;
  
 
     // Update is called once per frame
     void Update()
     {
+        //----------------Jumping Functionality----------------//
+
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        Debug.Log("GROUNDED");
+
+        if(isGrounded && velocity.y < 0)
+        {
+            velocity.y = -7f;
+            animator.SetBool("IsJumping", false);
+        }
+
+        if(Input.GetButtonDown("Jump") && isGrounded)
+        {
+            Debug.Log("JUMPING");
+            animator.SetBool("IsJumping", true);
+            Invoke("Jump", 0.1f);
+        }
+
+        //Control Gravity
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
+
+        //----------------Walking Functionality----------------//
+
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
         float verticalMovement = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontalMovement, 0f, verticalMovement).normalized; //Stops diagonal movement from making the player go faster;
@@ -44,5 +77,18 @@ public class ThirdPersonLocomotion : MonoBehaviour
             Debug.Log(animator.GetBool("IsMoving"));
         }
 
+        if(direction.magnitude <= 0f)
+        {
+            animator.SetBool("IsMoving", false);
+
+            Debug.Log(animator.GetBool("IsMoving"));
+        }
+
+    }
+
+    private void Jump()
+    {
+        isGrounded = false;
+        velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
     }
 }
