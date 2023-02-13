@@ -13,19 +13,23 @@ public class ThirdPersonLocomotion : MonoBehaviour
 
     public Transform cam;
 
-    public Animator animator;
+    private Animator animator;
 
     public float speed = 6f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
 
-    private Vector3 velocity;
-    private bool isGrounded;
+    [SerializeField] private Vector3 velocity;
+    [SerializeField] private bool isGrounded;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
- 
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
