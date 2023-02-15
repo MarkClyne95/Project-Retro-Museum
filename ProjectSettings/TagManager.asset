@@ -11,6 +11,7 @@ TagManager:
   - AtariCartSFX
   - BadtariCart
   - BadtariCartSFX
+  - AtariScene
   layers:
   - Default
   - TransparentFX
