@@ -78,7 +78,7 @@ public class S_Enemy : MonoBehaviour
             foreach (var i in colliders)
             {
                 distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-                if (i.CompareTag("Player") && (distanceToPlayer > 0.8f) && enemyType != EnemyDefinition.STATIC)
+                if (i.CompareTag("Player") && (distanceToPlayer > 0.2f) && enemyType != EnemyDefinition.STATIC)
                 {
                     currentState = EnemyStates.CHASE;
                     seenPlayer = true;
