@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 693310978505805637}
   - component: {fileID: 693310978505805636}
   - component: {fileID: 693310978505805643}
+  - component: {fileID: 8123485617118435425}
   m_Layer: 0
-  m_Name: BadCart
+  m_Name: P_BadCart
   m_TagString: BadtariCart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,3 +134,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
+--- !u!114 &8123485617118435425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693310978505805632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7644bd6beacb84996c1429a5c4008c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVelocity: 0
+  physics: {fileID: 0}
