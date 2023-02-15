@@ -90,7 +90,7 @@ public class ThirdPersonLocomotion : MonoBehaviour
 
     }
 
-    private void Jump()
+    public void Jump()
     {
         isGrounded = false;
         velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
