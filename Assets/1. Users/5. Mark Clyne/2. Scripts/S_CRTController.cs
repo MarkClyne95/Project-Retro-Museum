@@ -1,193 +1,182 @@
+#if ENABLE_INPUT_SYSTEM && ENABLE_INPUT_SYSTEM_PACKAGE
+#define USE_INPUT_SYSTEM
+    using UnityEngine.InputSystem;
+    using UnityEngine.InputSystem.Controls;
+#endif
+
 using UnityEngine;
 
-[ExecuteInEditMode, ImageEffectAllowedInSceneView]
-public class S_CRTController : MonoBehaviour
+namespace UnityTemplateProjects
 {
-    public Material material;
-    public int whiteNoiseFrequency = 1;
-    public float whiteNoiseLength = 0.1f;
-    private float whiteNoiseTimeLeft;
-
-    public int screenJumpFrequency = 1;
-    public float screenJumpLength = 0.2f;
-    public float screenJumpMinLevel = 0.1f;
-    public float screenJumpMaxLevel = 0.9f;
-    private float screenJumpTimeLeft;
-
-    public float flickeringStrength = 0.002f;
-    public float flickeringCycle = 111f;
-
-    public bool isSlippage = true;
-    public bool isSlippageNoise = true;
-    public float slippageStrength = 0.005f;
-    public float slippageInterval = 1f;
-    public float slippageScrollSpeed = 33f;
-    public float slippageSize = 11f;
-
-    public float chromaticAberrationStrength = 0.005f;
-    public bool isChromaticAberration = true;
-
-    public bool isMultipleGhost = true;
-    public float multipleGhostStrength = 0.01f;
-
-    public bool isScanline = true;
-    public bool isMonochrome = false;
-
-    public bool isLetterBox = false;
-    public bool isLetterBoxEdgeBlur = false;
-    public LeterBoxType letterBoxType;
-    public enum LeterBoxType
+    public class S_CRTController : MonoBehaviour
     {
-        Black,
-        Blur
-    }
-
-    public bool isFilmDirt = false;
-    public Texture2D filmDirtTex;
-
-    public bool isDecalTex = false;
-    public Texture2D decalTex;
-    public Vector2 decalTexPos;
-    public Vector2 decalTexScale;
-
-    public bool isLowResolution = true;
-    public Vector2Int resolutions;
-
-    #region Properties in shader
-    private int _WhiteNoiseOnOff;
-    private int _ScanlineOnOff;
-    private int _MonochormeOnOff;
-    private int _ScreenJumpLevel;
-    private int _FlickeringStrength;
-    private int _FlickeringCycle;
-    private int _SlippageStrength;
-    private int _SlippageSize;
-    private int _SlippageInterval;
-    private int _SlippageScrollSpeed;
-    private int _SlippageNoiseOnOff;
-    private int _SlippageOnOff;
-    private int _ChromaticAberrationStrength;
-    private int _ChromaticAberrationOnOff;
-    private int _MultipleGhostOnOff;
-    private int _MultipleGhostStrength;
-    private int _LetterBoxOnOff;
-    private int _LetterBoxType;
-    private int _LetterBoxEdgeBlurOnOff;
-    private int _DecalTex;
-    private int _DecalTexOnOff;
-    private int _DecalTexPos;
-    private int _DecalTexScale;
-    private int _FilmDirtOnOff;
-    private int _FilmDirtTex;
-    #endregion
-
-    private void Start()
-    {
-        _WhiteNoiseOnOff = Shader.PropertyToID("_WhiteNoiseOnOff");
-        _ScanlineOnOff = Shader.PropertyToID("_ScanlineOnOff");
-        _MonochormeOnOff = Shader.PropertyToID("_MonochormeOnOff");
-        _ScreenJumpLevel = Shader.PropertyToID("_ScreenJumpLevel");
-        _FlickeringStrength = Shader.PropertyToID("_FlickeringStrength");
-        _FlickeringCycle = Shader.PropertyToID("_FlickeringCycle");
-        _SlippageStrength = Shader.PropertyToID("_SlippageStrength");
-        _SlippageSize = Shader.PropertyToID("_SlippageSize");
-        _SlippageInterval = Shader.PropertyToID("_SlippageInterval");
-        _SlippageScrollSpeed = Shader.PropertyToID("_SlippageScrollSpeed");
-        _SlippageNoiseOnOff = Shader.PropertyToID("_SlippageNoiseOnOff");
-        _SlippageOnOff = Shader.PropertyToID("_SlippageOnOff");
-        _ChromaticAberrationStrength = Shader.PropertyToID("_ChromaticAberrationStrength");
-        _ChromaticAberrationOnOff = Shader.PropertyToID("_ChromaticAberrationOnOff");
-        _MultipleGhostOnOff = Shader.PropertyToID("_MultipleGhostOnOff");
-        _MultipleGhostStrength = Shader.PropertyToID("_MultipleGhostStrength");
-        _LetterBoxOnOff = Shader.PropertyToID("_LetterBoxOnOff");
-        _LetterBoxType = Shader.PropertyToID("_LetterBoxType");
-        _DecalTex = Shader.PropertyToID("_DecalTex");
-        _DecalTexOnOff = Shader.PropertyToID("_DecalTexOnOff");
-        _DecalTexPos = Shader.PropertyToID("_DecalTexPos");
-        _DecalTexScale = Shader.PropertyToID("_DecalTexScale");
-        _FilmDirtOnOff = Shader.PropertyToID("_FilmDirtOnOff");
-        _FilmDirtTex = Shader.PropertyToID("_FilmDirtTex");
-    }
-
-    private void OnRenderImage(RenderTexture src, RenderTexture dest)
-    {
-        ///////White noise
-        whiteNoiseTimeLeft -= 0.01f;
-        if (whiteNoiseTimeLeft <= 0)
+        class CameraState
         {
-            if (Random.Range(0, 1000) < whiteNoiseFrequency)
+            public float yaw;
+            public float pitch;
+            public float roll;
+            public float x;
+            public float y;
+            public float z;
+
+            public void SetFromTransform(Transform t)
             {
-                material.SetInteger(_WhiteNoiseOnOff, 1);
-                whiteNoiseTimeLeft = whiteNoiseLength;
+                pitch = t.eulerAngles.x;
+                yaw = t.eulerAngles.y;
+                roll = t.eulerAngles.z;
+                x = t.position.x;
+                y = t.position.y;
+                z = t.position.z;
             }
-            else
+
+            public void Translate(Vector3 translation)
             {
-                material.SetInteger(_WhiteNoiseOnOff, 0); 
+                Vector3 rotatedTranslation = Quaternion.Euler(pitch, yaw, roll) * translation;
+
+                x += rotatedTranslation.x;
+                y += rotatedTranslation.y;
+                z += rotatedTranslation.z;
+            }
+
+            public void LerpTowards(CameraState target, float positionLerpPct, float rotationLerpPct)
+            {
+                yaw = Mathf.Lerp(yaw, target.yaw, rotationLerpPct);
+                pitch = Mathf.Lerp(pitch, target.pitch, rotationLerpPct);
+                roll = Mathf.Lerp(roll, target.roll, rotationLerpPct);
+                
+                x = Mathf.Lerp(x, target.x, positionLerpPct);
+                y = Mathf.Lerp(y, target.y, positionLerpPct);
+                z = Mathf.Lerp(z, target.z, positionLerpPct);
+            }
+
+            public void UpdateTransform(Transform t)
+            {
+                t.eulerAngles = new Vector3(pitch, yaw, roll);
+                t.position = new Vector3(x, y, z);
             }
         }
-        //////
         
-        material.SetInteger(_LetterBoxOnOff, isLetterBox ? 0 : 1); 
-        //material.SetInteger(_LetterBoxEdgeBlurOnOff, isLetterBoxEdgeBlur ? 0 : 1); 
-        material.SetInteger(_LetterBoxType, (int)letterBoxType);
+        CameraState m_TargetCameraState = new CameraState();
+        CameraState m_InterpolatingCameraState = new CameraState();
 
-        material.SetInteger(_ScanlineOnOff, isScanline ? 1 : 0); 
-        material.SetInteger(_MonochormeOnOff, isMonochrome ? 1 : 0);
-        material.SetFloat(_FlickeringStrength, flickeringStrength);
-        material.SetFloat(_FlickeringCycle, flickeringCycle);
-        material.SetFloat(_ChromaticAberrationStrength, chromaticAberrationStrength);
-        material.SetInteger(_ChromaticAberrationOnOff, isChromaticAberration ? 1 : 0);
-        material.SetInteger(_MultipleGhostOnOff, isMultipleGhost ? 1 : 0);
-        material.SetFloat(_MultipleGhostStrength, multipleGhostStrength); 
-        material.SetInteger(_FilmDirtOnOff, isFilmDirt ? 1 : 0);
-        material.SetTexture(_FilmDirtTex, filmDirtTex);
+        [Header("Movement Settings")]
+        [Tooltip("Exponential boost factor on translation, controllable by mouse wheel.")]
+        public float boost = 3.5f;
 
-        //////Slippage
-        material.SetInteger(_SlippageOnOff, isSlippage ? 1 : 0);
-        material.SetFloat(_SlippageInterval, slippageInterval);
-        material.SetFloat(_SlippageNoiseOnOff, isSlippageNoise ? Random.Range(0, 1f) : 1);
-        material.SetFloat(_SlippageScrollSpeed, slippageScrollSpeed);
-        material.SetFloat(_SlippageStrength, slippageStrength); 
-        material.SetFloat(_SlippageSize, slippageSize);
-        //////
+        [Tooltip("Time it takes to interpolate camera position 99% of the way to the target."), Range(0.001f, 1f)]
+        public float positionLerpTime = 0.2f;
+
+        [Header("Rotation Settings")]
+        [Tooltip("X = Change in mouse position.\nY = Multiplicative factor for camera rotation.")]
+        public AnimationCurve mouseSensitivityCurve = new AnimationCurve(new Keyframe(0f, 0.5f, 0f, 5f), new Keyframe(1f, 2.5f, 0f, 0f));
+
+        [Tooltip("Time it takes to interpolate camera rotation 99% of the way to the target."), Range(0.001f, 1f)]
+        public float rotationLerpTime = 0.01f;
+
+        [Tooltip("Whether or not to invert our Y axis for mouse input to rotation.")]
+        public bool invertY = false;
+
+        void OnEnable()
+        {
+            m_TargetCameraState.SetFromTransform(transform);
+            m_InterpolatingCameraState.SetFromTransform(transform);
+        }
+
+        Vector3 GetInputTranslationDirection()
+        {
+            Vector3 direction = new Vector3();
+            if (Input.GetKey(KeyCode.W))
+            {
+                direction += Vector3.forward;
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                direction += Vector3.back;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                direction += Vector3.left;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                direction += Vector3.right;
+            }
+            if (Input.GetKey(KeyCode.Q))
+            {
+                direction += Vector3.down;
+            }
+            if (Input.GetKey(KeyCode.E))
+            {
+                direction += Vector3.up;
+            }
+            return direction;
+        }
         
-        //////Screen Jump Noise
-        screenJumpTimeLeft -= 0.01f;
-        if (screenJumpTimeLeft <= 0)
+        void Update()
         {
-            if (Random.Range(0, 1000) < screenJumpFrequency)
+            Vector3 translation = Vector3.zero;
+
+#if ENABLE_LEGACY_INPUT_MANAGER
+
+            // Exit Sample  
+            if (Input.GetKey(KeyCode.Escape))
             {
-                var level = Random.Range(screenJumpMinLevel, screenJumpMaxLevel);
-                material.SetFloat(_ScreenJumpLevel, level);
-                screenJumpTimeLeft = screenJumpLength;
+                Application.Quit();
+				#if UNITY_EDITOR
+				UnityEditor.EditorApplication.isPlaying = false; 
+				#endif
             }
-            else
+            // Hide and lock cursor when right mouse button pressed
+            if (Input.GetMouseButtonDown(1))
             {
-                material.SetFloat(_ScreenJumpLevel, 0);
+                Cursor.lockState = CursorLockMode.Locked;
             }
-        }
-        //////
 
-        //////Decal Texture
-        material.SetTexture(_DecalTex, decalTex);
-        material.SetInteger(_DecalTexOnOff, isDecalTex ? 1 : 0);
-        material.SetVector(_DecalTexPos, decalTexPos);
-        material.SetVector(_DecalTexScale, decalTexScale);
-        //////
+            // Unlock and show cursor when right mouse button released
+            if (Input.GetMouseButtonUp(1))
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
 
-        //////Low resolution
-        if (isLowResolution)
-        {
-            var target = RenderTexture.GetTemporary(src.width / 2, src.height / 2);
-            Graphics.Blit(src, target);
-            Graphics.Blit(target, dest, material);
-            RenderTexture.ReleaseTemporary(target);
-        }
-        else
-        {
-            Graphics.Blit(src, dest, material);
-        }
-        //////
+            // Rotation
+            if (Input.GetMouseButton(1))
+            {
+                var mouseMovement = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y") * (invertY ? 1 : -1));
+                
+                var mouseSensitivityFactor = mouseSensitivityCurve.Evaluate(mouseMovement.magnitude);
 
+                m_TargetCameraState.yaw += mouseMovement.x * mouseSensitivityFactor;
+                m_TargetCameraState.pitch += mouseMovement.y * mouseSensitivityFactor;
+            }
+            
+            // Translation
+            translation = GetInputTranslationDirection() * Time.deltaTime;
+
+            // Speed up movement when shift key held
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                translation *= 10.0f;
+            }
+
+            // Modify movement by a boost factor (defined in Inspector and modified in play mode through the mouse scroll wheel)
+            boost += Input.mouseScrollDelta.y * 0.2f;
+            translation *= Mathf.Pow(2.0f, boost);
+
+#elif USE_INPUT_SYSTEM 
+            // TODO: make the new input system work
+#endif
+
+            m_TargetCameraState.Translate(translation);
+
+            // Framerate-independent interpolation
+            // Calculate the lerp amount, such that we get 99% of the way to our target in the specified time
+            var positionLerpPct = 1f - Mathf.Exp((Mathf.Log(1f - 0.99f) / positionLerpTime) * Time.deltaTime);
+            var rotationLerpPct = 1f - Mathf.Exp((Mathf.Log(1f - 0.99f) / rotationLerpTime) * Time.deltaTime);
+            m_InterpolatingCameraState.LerpTowards(m_TargetCameraState, positionLerpPct, rotationLerpPct);
+
+            m_InterpolatingCameraState.UpdateTransform(transform);
+        }
     }
+
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -19,6 +20,7 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     public bool movingOnStairs;
     private bool _isLookingLeft;
     private float localScaleForY;
+    public RenderPipelineAsset pipelineAsset;
 
     //Private Properties
     private bool _canDoubleJump;
@@ -118,6 +120,7 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
 
     private void Start()
     {
+        QualitySettings.SetQualityLevel(5, true);
         _anim = GetComponent<Animator>();
         //_health = GetComponent<Health>();
         //_playerAttacks = GetComponent<PlayerAttacks>();

@@ -21,7 +21,7 @@ public class IS_Worm : S_Enemy
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        _target = waypoints[1].position;
+        if(enemyType != EnemyDefinition.STATIC) _target = waypoints[1].position;
     }
 
     private void Start()
