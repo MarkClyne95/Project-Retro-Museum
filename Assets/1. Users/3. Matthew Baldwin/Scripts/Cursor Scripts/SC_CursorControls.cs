@@ -64,6 +64,6 @@ public class SC_CursorControls : MonoBehaviour
 
     void OnChangeScene()
     {
-        temp.ShowLevel1();
+        temp.NextScene();
     }
 }
