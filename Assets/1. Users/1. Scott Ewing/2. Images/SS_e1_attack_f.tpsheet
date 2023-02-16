@@ -1,0 +1,17 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:9337a3a1c1266e5555354b7f56f25baa:8394b9929a3f8b2268235a38805e0bc8:b63082dfcb8034043e0c7384589ac8f4$
+#
+:format=40300
+:texture=SS_e1_attack_f.png
+:size=64x64
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+spose1;29;7;24;56; 0.5;0; 0;0;0;0; 4;24;0;0;0;0;56;24;56; 2;1;2;3;0;1;3
+sposf1;1;7;26;56; 0.5;0; 0;0;0;0; 4;26;0;0;0;0;56;26;56; 2;1;2;3;0;1;3

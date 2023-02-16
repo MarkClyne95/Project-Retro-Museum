@@ -1,0 +1,17 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:59d19b8c5340a6f3359bbfc4c8dec519:8e11c17ac0b5ae60866d887b4a5cea58:a001c720a185d7910961e4f07d5c5d69$
+#
+:format=40300
+:texture=I_e2_pinky_attack_f.png
+:size=64x128
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+sarge1;1;67;38;60; 0.5;0; 0;0;0;0; 7;38;26;32;3;29;0;2;0;0;47;0;60;34;60; 5;4;5;6;0;4;6;3;4;0;3;1;2;3;0;1
+sargf1;1;5;38;60; 0.5;0; 0;0;0;0; 4;38;0;0;0;0;60;38;60; 2;1;2;3;0;1;3
