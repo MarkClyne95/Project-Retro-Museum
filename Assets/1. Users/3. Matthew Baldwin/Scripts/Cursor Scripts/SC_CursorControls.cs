@@ -22,6 +22,7 @@ public class SC_CursorControls : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioSource explodeSFX;
 
+    [SerializeField] private SC_SwitchLevel temp;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,8 @@ public class SC_CursorControls : MonoBehaviour
         currentTurretSprite = turretOrientation[0];
 
         explodeSFX = GetComponent<AudioSource>();
+
+        temp = GameObject.FindGameObjectWithTag("AtariScene").GetComponent<SC_SwitchLevel>();
     }
 
 
@@ -44,11 +47,11 @@ public class SC_CursorControls : MonoBehaviour
 
         switch (mousePos.x)
         {
-            case < 400:
+            case < 300:
                 currentTurretSprite = turretOrientation[1];
                 turret.sprite = currentTurretSprite;
                 break;
-            case > 500:
+            case > 400:
                 currentTurretSprite = turretOrientation[2];
                 turret.sprite = currentTurretSprite;
                 break;
@@ -57,5 +60,10 @@ public class SC_CursorControls : MonoBehaviour
                 turret.sprite = currentTurretSprite;
                 break;
         }
+    }
+
+    void OnChangeScene()
+    {
+        temp.NextScene();
     }
 }

@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class BoxDestruction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject crateSmoke;
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Break");
+            Invoke("Splinter", 0.3f);
+            
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Splinter()
     {
-        
+        Instantiate(crateSmoke, transform.position, transform.rotation);
+
+        //Show specific retro game fact
+
+        //Then destroy self
+        Destroy(gameObject);
     }
 }

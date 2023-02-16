@@ -19,11 +19,9 @@ public class IS_Worm : S_Enemy
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        //damager = GetComponent<Damager>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        //health = GetComponent<Health>();
-        _target = waypoints[1].position;
+        if(enemyType != EnemyDefinition.STATIC) _target = waypoints[1].position;
     }
 
     private void Start()
@@ -61,17 +59,8 @@ public class IS_Worm : S_Enemy
 
     private void AttackTrigger()
     {
-        // if (!canAttack && !health.isHit)
-        // {
-        //     anim.SetBool("Move", false);
-        //     anim.SetBool("Idle", true);
-        //     attackTimer -= Time.deltaTime;
-        //     if (attackTimer <= 0)
-        //     {
-        //         canAttack = true;
-        //         Attack();
-        //     }
-        // }
+        anim.SetBool("Move", false);  
+        anim.SetBool("Idle", true);
     }
 
     protected override void Death()
