@@ -6,6 +6,10 @@ public class BoxBounce : MonoBehaviour
 {
     public GameObject player;
 
+    [SerializeField] private GameObject crateSmoke;
+
+    [SerializeField] private int counter = 0;
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
@@ -19,5 +23,15 @@ public class BoxBounce : MonoBehaviour
     {
         player.GetComponent<ThirdPersonLocomotion>().Jump();
         player.GetComponent<Animator>().SetBool("IsJumping", true);
+
+        counter += 1;
+
+        if(counter >= 3)
+        {
+            //Play smoke VFX
+            Instantiate(crateSmoke, transform.position, transform.rotation);
+
+            Destroy(gameObject);
+        }
     }
 }

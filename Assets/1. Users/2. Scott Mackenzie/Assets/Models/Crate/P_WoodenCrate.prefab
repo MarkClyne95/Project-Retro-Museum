@@ -75,6 +75,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  crateSmoke: {fileID: 363558611813271400, guid: 513e60989cc7d52428d2988a835e7a9e, type: 3}
+  counter: 0
 --- !u!54 &1625472162
 Rigidbody:
   m_ObjectHideFlags: 0
