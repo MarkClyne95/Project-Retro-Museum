@@ -94,5 +94,11 @@ public class ThirdPersonLocomotion : MonoBehaviour
     {
         isGrounded = false;
         velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
+        Invoke("resetJumpHeight", 0.3f);
+    }
+
+    private void resetJumpHeight()
+    {
+        jumpHeight = 3f;
     }
 }

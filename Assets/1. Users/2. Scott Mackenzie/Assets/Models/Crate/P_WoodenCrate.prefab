@@ -76,7 +76,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   crateSmoke: {fileID: 363558611813271400, guid: 513e60989cc7d52428d2988a835e7a9e, type: 3}
-  counter: 0
+  counter: -3
 --- !u!54 &1625472162
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -91,7 +91,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1001 &3229361795218432336
 PrefabInstance:
@@ -106,7 +106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7aff334028483e458e880ed8d72d829, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7aff334028483e458e880ed8d72d829, type: 3}
       propertyPath: m_LocalPosition.y

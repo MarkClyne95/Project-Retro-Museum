@@ -21,6 +21,7 @@ public class BoxBounce : MonoBehaviour
 
     private void playerBounce()
     {
+        player.GetComponent<ThirdPersonLocomotion>().jumpHeight = 4f;
         player.GetComponent<ThirdPersonLocomotion>().Jump();
         player.GetComponent<Animator>().SetBool("IsJumping", true);
 
