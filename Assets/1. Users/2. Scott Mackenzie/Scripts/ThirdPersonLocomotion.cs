@@ -5,6 +5,8 @@ using UnityEngine;
 public class ThirdPersonLocomotion : MonoBehaviour
 {
 
+    private GameManager gm;
+
     public CharacterController controller;
 
     public float turnSmoothTime = 0.1f;
@@ -26,9 +28,22 @@ public class ThirdPersonLocomotion : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+    private void Awake()
+    {
+        //gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+    }
+
     private void Start()
     {
         animator = GetComponent<Animator>();
+        //transform.position = gm.playerStart.transform.position;
+        //Invoke("SetStartPos", 0.1f);
+    }
+
+    public void SetPlayerPos()
+    {
+        gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        transform.position = gm.lastCheckpointPos;
     }
 
     // Update is called once per frame
