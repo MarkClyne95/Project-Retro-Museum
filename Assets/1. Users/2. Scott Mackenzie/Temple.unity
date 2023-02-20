@@ -1694,7 +1694,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 931487747, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.1851
+      value: 0.7555368
       objectReference: {fileID: 0}
     - target: {fileID: 931487747, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1742,7 +1742,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_text
-      value: Sample Text
+      value: By 2005, the PS1 became the first console to ever ship 100 million units.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_fontSize
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_margin.w
@@ -1753,8 +1757,16 @@ PrefabInstance:
       value: -0.78433895
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_margin.y
+      value: 2.2460957
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_margin.z
       value: 1.6717768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 614540969481819083, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_RootOrder
@@ -2328,8 +2340,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1959662087}
     m_Modifications:
     - target: {fileID: 931487747, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2029915
+      objectReference: {fileID: 0}
+    - target: {fileID: 931487747, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.1851
+      value: 1.1259874
       objectReference: {fileID: 0}
     - target: {fileID: 931487747, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2341,7 +2357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 931487747, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.71
+      value: -2.76
       objectReference: {fileID: 0}
     - target: {fileID: 1131950656, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2365,7 +2381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1131950656, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.05
+      value: -2.14
       objectReference: {fileID: 0}
     - target: {fileID: 1131950656, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2377,19 +2393,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_text
-      value: Sample Text
+      value: "PS1 games were strangely shipped on black discs. \n\nHowever, the only
+        reason for doing this was that it made them stand out."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_fontSize
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_margin.w
-      value: -5.074233
+      value: -5.9681206
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_margin.x
       value: -0.78433895
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_margin.y
+      value: 0.7711369
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_margin.z
       value: 1.6717768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 614540969481819083, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_RootOrder
@@ -4804,7 +4833,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 931487747, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.1851
+      value: 1.2360861
       objectReference: {fileID: 0}
     - target: {fileID: 931487747, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4824,19 +4853,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1131950656, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70039874
+      value: 0.47751674
       objectReference: {fileID: 0}
     - target: {fileID: 1131950656, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.022679253
+      value: 0.015462236
       objectReference: {fileID: 0}
     - target: {fileID: 1131950656, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7130177
+      value: 0.87802637
       objectReference: {fileID: 0}
     - target: {fileID: 1131950656, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.023087854
+      value: -0.028430896
       objectReference: {fileID: 0}
     - target: {fileID: 1131950656, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4848,11 +4877,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1131950656, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 91.023
+      value: 122.921
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_text
-      value: Sample Text
+      value: 'Some PS1 games had discs that doubled as normal audio CDs.
+
+
+        You
+        could put it into a CD player and it would play certain tracks from the game!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_fontSize
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_margin.w
@@ -4863,8 +4900,16 @@ PrefabInstance:
       value: -0.78433895
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_margin.y
+      value: -0.038729668
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_margin.z
       value: 1.6717768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 614540969481819083, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_RootOrder
@@ -10109,20 +10154,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 1959662087}
     m_Modifications:
     - target: {fileID: 931487747, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2036061
+      objectReference: {fileID: 0}
+    - target: {fileID: 931487747, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.1851
+      value: 1.2752861
       objectReference: {fileID: 0}
     - target: {fileID: 931487747, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.33
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 931487747, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.57
+      value: -1.88
       objectReference: {fileID: 0}
     - target: {fileID: 931487747, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.71
+      value: -2.52
       objectReference: {fileID: 0}
     - target: {fileID: 1131950656, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10158,19 +10207,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_text
-      value: Sample Text
+      value: 'The PS1 was exclusively released in Japan in 1994 but was released
+        in the US & Europe a year later.
+
+
+        PS1 console production stopped
+        in 2006.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_fontSize
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_margin.w
-      value: -5.074233
+      value: -6.056942
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_margin.x
-      value: -0.78433895
+      value: -2.0015793
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_margin.y
+      value: -0.25803208
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_margin.z
       value: 1.6717768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 614540969481819083, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_RootOrder
@@ -10395,31 +10461,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1962944467, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3603983
+      value: 0.65075207
       objectReference: {fileID: 0}
     - target: {fileID: 1962944467, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.5699108
+      value: 4.306083
       objectReference: {fileID: 0}
     - target: {fileID: 1962944467, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.0649924
+      value: -3.678104
       objectReference: {fileID: 0}
     - target: {fileID: 1962944467, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9651605
+      value: 0.9470672
       objectReference: {fileID: 0}
     - target: {fileID: 1962944467, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.21878433
+      value: 0.31330073
       objectReference: {fileID: 0}
     - target: {fileID: 1962944467, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.13997106
+      value: -0.06650174
       objectReference: {fileID: 0}
     - target: {fileID: 1962944467, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.03172889
+      value: 0.021999553
       objectReference: {fileID: 0}
     - target: {fileID: 2144780111, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: groundDistance
@@ -10439,15 +10505,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1868481647359434221, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.69
+      value: 47.59
       objectReference: {fileID: 0}
     - target: {fileID: 1868481647359434221, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.42
+      value: 10.99
       objectReference: {fileID: 0}
     - target: {fileID: 1868481647359434221, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.86
+      value: 2.08
       objectReference: {fileID: 0}
     - target: {fileID: 1868481647359434221, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10955,8 +11021,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735638139}
-  m_LocalRotation: {x: 0.20223415, y: 0.46065104, z: -0.10865622, w: 0.8573773}
-  m_LocalPosition: {x: 8.685869, y: 11.417875, z: -16.17261}
+  m_LocalRotation: {x: 0.27191365, y: 0.5083869, z: -0.17311662, w: 0.79852134}
+  m_LocalPosition: {x: 42.851917, y: 17.018517, z: -0.13276958}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12898,7 +12964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groupId: -1
-  mode: 1
+  mode: 0
   customPainterIndex: 0
   customPainterArgs: 
   enableTerrainMask: 1
@@ -13299,7 +13365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 1933435580}
-  m_PathPosition: 3.6800928
+  m_PathPosition: 8.592816
   m_PositionUnits: 0
   m_PathOffset: {x: 0.05848952, y: 4.950002, z: -5.870366}
   m_XDamping: 2
