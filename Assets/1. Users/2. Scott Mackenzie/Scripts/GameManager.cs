@@ -24,40 +24,44 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
 
-        if (Instance == null) // If there is no instance already
-        {
-            DontDestroyOnLoad(gameObject); // Keep the GameObject, this component is attached to, across different scenes
-            Instance = this;
-        }
-        else if (Instance != this) // If there is already an instance and it's not `this` instance
-        {
-            Destroy(gameObject); // Destroy the GameObject, this component is attached to
-        }
+        //if (Instance == null) // If there is no instance already
+        //{
+        //    DontDestroyOnLoad(gameObject); // Keep the GameObject, this component is attached to, across different scenes
+        //    Instance = this;
+        //}
+        //else if (Instance != this) // If there is already an instance and it's not `this` instance
+        //{
+        //    Destroy(gameObject); // Destroy the GameObject, this component is attached to
+        //}
 
-        playerStart = GameObject.FindWithTag("PlayerStart");
+
 
         //----------------------------------------------------------------------------------------------------------------------------------------
 
-        //Set starting position for each level
-        if (SceneManager.GetActiveScene().name == "Temple")
-        {
-            Debug.Log("Setting Start Pos");
-            lastCheckpointPos = playerStart.transform.position;
-            
-        }
 
-        if (SceneManager.GetActiveScene().name == "TempleEscape")
-        {
-            Debug.Log("Setting Start Pos");
-            lastCheckpointPos = playerStart.transform.position;
-        }
+
+        //if (SceneManager.GetActiveScene().name == "TempleEscape")
+        //{
+        //    Debug.Log("Setting Start Pos");
+        //    lastCheckpointPos = playerStart.transform.position;
+        //}
 
     }
 
     //Get a reference to Scene Switcher
     private void Start()
     {
-        //Debug.Log("PLAYER TRANS");
+
+        playerStart = GameObject.FindWithTag("PlayerStart");
+
+        //Set starting position for each level
+        if (SceneManager.GetActiveScene().name == "Temple")
+        {
+            Debug.Log("Setting Start Pos");
+            lastCheckpointPos = playerStart.transform.position;
+
+        }
+
         player = GameObject.FindWithTag("Player");
         player.GetComponent<ThirdPersonLocomotion>().SetPlayerPos();
         //player.transform.position = lastCheckpointPos;
