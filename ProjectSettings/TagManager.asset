@@ -13,6 +13,7 @@ TagManager:
   - BadtariCartSFX
   - AtariScene
   - PlayerStart
+  - Projectile
   layers:
   - Default
   - TransparentFX

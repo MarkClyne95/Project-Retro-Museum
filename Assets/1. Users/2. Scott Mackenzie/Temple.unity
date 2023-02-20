@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028533, g: 0.22571594, b: 0.30692497, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028536, g: 0.2257155, b: 0.3069245, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8963,11 +8963,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1962944467, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3603983
+      value: 1.3603984
       objectReference: {fileID: 0}
     - target: {fileID: 1962944467, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.5699108
+      value: 3.569911
       objectReference: {fileID: 0}
     - target: {fileID: 1962944467, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12712,6 +12712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PitDepth (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5477624693564372849, guid: 372099e7b1878f64a85c82a945a2b345, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 141d9d6ca43b6c843965491604c6deff, type: 2}
     - target: {fileID: 5477624693564372851, guid: 372099e7b1878f64a85c82a945a2b345, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -12769,6 +12773,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PitDepth
       objectReference: {fileID: 0}
+    - target: {fileID: 5477624693564372849, guid: 372099e7b1878f64a85c82a945a2b345, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 141d9d6ca43b6c843965491604c6deff, type: 2}
     - target: {fileID: 5477624693564372851, guid: 372099e7b1878f64a85c82a945a2b345, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -12826,6 +12834,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PitDepth (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5477624693564372849, guid: 372099e7b1878f64a85c82a945a2b345, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 141d9d6ca43b6c843965491604c6deff, type: 2}
     - target: {fileID: 5477624693564372851, guid: 372099e7b1878f64a85c82a945a2b345, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -12891,6 +12903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PitDepth (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5477624693564372849, guid: 372099e7b1878f64a85c82a945a2b345, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 141d9d6ca43b6c843965491604c6deff, type: 2}
     - target: {fileID: 5477624693564372851, guid: 372099e7b1878f64a85c82a945a2b345, type: 3}
       propertyPath: m_RootOrder
       value: 2
