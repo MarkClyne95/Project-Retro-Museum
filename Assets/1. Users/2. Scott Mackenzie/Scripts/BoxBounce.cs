@@ -12,7 +12,7 @@ public class BoxBounce : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") && player.GetComponent<ThirdPersonLocomotion>().isGrounded)
         {
             Debug.Log("Bounce");
             Invoke("playerBounce", 0.1f);

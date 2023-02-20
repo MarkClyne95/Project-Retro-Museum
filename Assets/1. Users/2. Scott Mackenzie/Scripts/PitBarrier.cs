@@ -29,8 +29,9 @@ public class PitBarrier : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            //Disable controls
-            //player.GetComponent<CharacterController>().enabled = false;
+            //Plummet player
+            player.GetComponent<ThirdPersonLocomotion>().gravity = -100f;
+            player.GetComponent<ThirdPersonLocomotion>().plummet();
 
             //Fade screen to black
 

@@ -22,7 +22,7 @@ public class ThirdPersonLocomotion : MonoBehaviour
     public float jumpHeight = 3f;
 
     [SerializeField] private Vector3 velocity;
-    [SerializeField] private bool isGrounded;
+    [SerializeField] public bool isGrounded;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -36,6 +36,9 @@ public class ThirdPersonLocomotion : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        gravity = -20f;
+        groundMask = LayerMask.GetMask("Ground");
+
         //transform.position = gm.playerStart.transform.position;
         //Invoke("SetStartPos", 0.1f);
     }
@@ -54,8 +57,9 @@ public class ThirdPersonLocomotion : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         Debug.Log("GROUNDED");
 
-        if(isGrounded && velocity.y < 0)
+        if(isGrounded && velocity.y <= 0)
         {
+            Debug.Log("DISABLE JUMPING");
             velocity.y = -7f;
             animator.SetBool("IsJumping", false);
         }
@@ -112,8 +116,18 @@ public class ThirdPersonLocomotion : MonoBehaviour
         Invoke("resetJumpHeight", 0.3f);
     }
 
+    //public void untranstitionJump()
+    //{
+    //    animator.SetBool("IsJumping", false);
+    //}
+
     private void resetJumpHeight()
     {
         jumpHeight = 3f;
+    }
+
+    public void plummet()
+    {
+        groundMask = LayerMask.GetMask("Nothing");
     }
 }
