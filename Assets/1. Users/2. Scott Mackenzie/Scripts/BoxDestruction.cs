@@ -1,10 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class BoxDestruction : MonoBehaviour
 {
-    public GameObject crateSmoke;
+    [SerializeField] private GameObject crateSmoke;
+
+    [SerializeField] private GameObject crateMesh;
+
+    [SerializeField] private GameObject retroUI;
+
+    private void Start()
+    {
+        retroUI.SetActive(false);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,11 +28,15 @@ public class BoxDestruction : MonoBehaviour
 
     private void Splinter()
     {
+        //Play smoke VFX
         Instantiate(crateSmoke, transform.position, transform.rotation);
 
         //Show specific retro game fact
+        retroUI.SetActive(true);
 
-        //Then destroy self
-        Destroy(gameObject);
+        //Then hide self
+        crateMesh.SetActive(false);
+        GetComponent<BoxCollider>().enabled = false;
+        GetComponent<Rigidbody>().detectCollisions = false;
     }
 }
