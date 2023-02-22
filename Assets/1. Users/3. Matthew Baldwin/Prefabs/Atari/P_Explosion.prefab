@@ -182,3 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   atariSFX: {fileID: 0}
   badtariSFX: {fileID: 0}
+  stats: {fileID: 0}
+  increaseScore:
+    m_PersistentCalls:
+      m_Calls: []
