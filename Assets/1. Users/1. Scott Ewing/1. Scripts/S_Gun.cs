@@ -43,9 +43,11 @@ public class S_Gun : MonoBehaviour{
         _animator.SetTrigger(_isFiring0);
         _isReloading = true;
         //_animator.SetBool(_isFiring, true);
-
+        
+        
+        
         if (_rayCastHelper.RaycastForTargets(out var hit) && hit.collider.gameObject.TryGetComponent(out ITakesDamage damageTaker)) {
-            damageTaker.TakeDamage(_damage);
+            damageTaker.TakeDamage(_damage, hit);
         }
 
         

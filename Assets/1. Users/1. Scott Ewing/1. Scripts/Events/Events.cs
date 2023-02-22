@@ -21,10 +21,16 @@ namespace ScottEwing.EventSystem{
     public class DamageTakenEvent : GameEvent{
         public int DamageTaken;
         public int RemainingHealth;
+        public RaycastHit Hit;
     }
     
     public class ActorDeathEvent : GameEvent{
         public int DamageTaken;
+        public RaycastHit Hit;
+        public bool Gibbed;
+    }
+    
+    public class ActorAttackEvent : GameEvent{
     }
     
 }
