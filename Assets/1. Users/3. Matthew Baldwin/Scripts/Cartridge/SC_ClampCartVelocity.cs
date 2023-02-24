@@ -6,6 +6,7 @@ public class SC_ClampCartVelocity : MonoBehaviour
 {
     [SerializeField] private float maxVelocity;
     [SerializeField] private Rigidbody2D physics;
+
     // Start is called before the first frame update
     void Start()
     {

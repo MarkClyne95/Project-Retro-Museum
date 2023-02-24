@@ -146,5 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7644bd6beacb84996c1429a5c4008c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxVelocity: 0
+  maxVelocity: 0.5
   physics: {fileID: 0}
