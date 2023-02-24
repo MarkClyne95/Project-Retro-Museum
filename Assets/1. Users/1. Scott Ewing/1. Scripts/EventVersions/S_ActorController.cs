@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using ScottEwing;
 using ScottEwing.EventSystem;
+using Sirenix.OdinInspector.Editor.StateUpdaters;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
@@ -10,33 +11,37 @@ using UnityEngine.AI;
 public class S_ActorController : MonoBehaviour{
     public ActorEventManager ActorEventManager = new ActorEventManager();
     [SerializeField] private s_ActorAudio _actorAudio;
-    [SerializeField] private S_ActorAttack _actorAttack;
+    [SerializeField] public S_ActorAttack _actorAttack;
     private sActorAnimator _actorAnimator;
+
+    public Transform Target { get; set; }
     //[SerializeField] private S_Health _health;
     //--Movement
-    private NavMeshAgent _agent;
-    private Transform _target;
+    //private NavMeshAgent _agent;
+    //private Transform _target;
     private bool _canMove;
+
+    /*enum ActorStates{
+        Idle, Walking, Attacking, Dead
+    }
+
+    private ActorStates _actorState = ActorStates.Idle;*/
     
-    private void Start() {
-        //_actorAudio = s_ActorAudio(this);
+    protected virtual void Start() {
         _actorAudio.Initialise(this);
-        _actorAttack.Initialise(this);
-        //_health.Initialise(this);
-        _agent = GetComponent<NavMeshAgent>();
-        _target = GameObject.FindWithTag("Player").transform;
         _actorAnimator = GetComponentInChildren<sActorAnimator>();
+        _actorAttack = GetComponentInChildren<S_ActorAttack>();
     }
 
     private void OnDestroy() {
         _actorAudio.OnDestroy();
-        _actorAttack.OnDestroy();
+        //_actorAttack.OnDestroy();
 
     }
 
-    private void Update() {
+    /*private void Update() {
         //if can see player
-        var attacked =_actorAttack.TryAttack(); 
+        var attacked =_actorAttack.TryAttack(_target.position); 
         if (attacked) {
             //stop moving
             _agent.ResetPath();
@@ -49,6 +54,21 @@ public class S_ActorController : MonoBehaviour{
             _actorAnimator.Move();
         }
     }
+
+    public void UpdateState() {
+        if (_actorState == ActorStates.Dead) {
+            return;
+        }else if (_target == null) {
+            _actorState = ActorStates.Idle;
+        }
+        
+        if (_actorAttack.CanAttack(out _, out _)) {
+            _actorState = ActorStates.Attacking;
+        }else if (!_actorAttack.IsAttacking) {
+            _actorState = ActorStates.Walking;
+        }
+        
+    }*/
 
     
     
@@ -72,7 +92,12 @@ public class S_ActorController : MonoBehaviour{
     }
     
     public void BroadcastAttackedEvent() {
-        var evt = new ActorAttackEvent();
-        ActorEventManager.Broadcast(evt);
+        //var evt = new ActorAttackEvent();
+        ActorEventManager.Broadcast(Events.ActorAttackEvent);
+    }
+
+    public void BroadCastStartWalkingEvent(Transform target) {
+        Events.StartWalkingEvent.Target = target;
+        ActorEventManager.Broadcast(Events.StartWalkingEvent);
     }
 }

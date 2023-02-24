@@ -16,19 +16,19 @@ public class S_Gun : MonoBehaviour{
     private readonly int _isFiring = Animator.StringToHash("isFiring");
     private readonly int _isFiring0 = Animator.StringToHash("isFiring0");
 
-    private DoomInput _doomInput; 
+    private DoomInputHandler _doomInputHandler; 
     
     
     private void Start() {
         _animator = GetComponent<Animator>();
         _playerInput = GetComponentInParent<PlayerInput>();
         _playerInput.actions.FindActionMap("Doom").Enable();
-        _doomInput = GetComponentInParent<DoomInput>();
-        _doomInput.Fire += Fire;
+        _doomInputHandler = GetComponentInParent<DoomInputHandler>();
+        _doomInputHandler.Fire += Fire;
     }
 
     private void OnDestroy() {
-        _doomInput.Fire -= Fire;
+        _doomInputHandler.Fire -= Fire;
     }
 
 

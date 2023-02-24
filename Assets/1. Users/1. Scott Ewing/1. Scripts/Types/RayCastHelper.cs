@@ -26,6 +26,8 @@ namespace ScottEwing
         public RayCastHelper() {
         }
 
+        public LookSource LookSource => _source;
+
         public RayCastHelper(LayerMask collisionLayers, LayerMask targetLayers) {
             CollisionLayers = collisionLayers;
             this.TargetLayers = targetLayers;

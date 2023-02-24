@@ -5,6 +5,6 @@ using UnityEngine;
 namespace ScottEwing{
     public interface ITakesDamage{
         
-        void TakeDamage(int damage, RaycastHit raycastHit);
+        bool TakeDamage(int damage, RaycastHit raycastHit);
     }
 }

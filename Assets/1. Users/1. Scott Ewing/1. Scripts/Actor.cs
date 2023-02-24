@@ -20,7 +20,7 @@ namespace ScottEwing{
             _animator = GetComponent<Animator>();
         }
 
-        public void TakeDamage(int damage, RaycastHit raycastHit) {
+        public bool TakeDamage(int damage, RaycastHit raycastHit) {
             _currentHealth -= damage;
             
             //_sActorController.TakeDamageEvent(damage, _currentHealth);
@@ -28,6 +28,8 @@ namespace ScottEwing{
                 _currentHealth = 0;
                 //_sActorController.DeathEvent(damage, _currentHealth);
             }
+
+            return false;
         }
     }
 }

@@ -24,6 +24,8 @@ public class sActorAnimator : MonoBehaviour
         _sActorController.ActorEventManager.AddListener<DamageTakenEvent>(OnDamageTaken);
         _sActorController.ActorEventManager.AddListener<ActorDeathEvent>(OnDeath);
         _sActorController.ActorEventManager.AddListener<ActorAttackEvent>(OnAttack);
+        _sActorController.ActorEventManager.AddListener<StartWalkingEvent>(OnStartWalking);
+
 
     }
 
@@ -31,8 +33,11 @@ public class sActorAnimator : MonoBehaviour
         _sActorController.ActorEventManager.RemoveListener<DamageTakenEvent>(OnDamageTaken);
         _sActorController.ActorEventManager.RemoveListener<ActorDeathEvent>(OnDeath);
         _sActorController.ActorEventManager.RemoveListener<ActorAttackEvent>(OnAttack);
+        _sActorController.ActorEventManager.RemoveListener<StartWalkingEvent>(OnStartWalking);
 
     }
+
+    
 
     private void OnDamageTaken(DamageTakenEvent obj) {
         Instantiate(_bloodFX, obj.Hit.point, Quaternion.identity, transform);
@@ -53,9 +58,11 @@ public class sActorAnimator : MonoBehaviour
         _animator.SetBool(_isWalking, false);
 
     }
-
-    public void Move() {
+    
+    private void OnStartWalking(StartWalkingEvent obj) {
         _animator.SetBool(_isWalking, true);
-
     }
+
+    /*public void Move() {
+    }*/
 }

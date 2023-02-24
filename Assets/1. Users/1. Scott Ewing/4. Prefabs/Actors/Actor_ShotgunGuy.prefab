@@ -1,5 +1,100 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &184178288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 184178289}
+  - component: {fileID: 184178291}
+  - component: {fileID: 184178290}
+  m_Layer: 0
+  m_Name: ActorAi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &184178289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184178288}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6883238362519452793}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &184178291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184178288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd1782782c33a144aa3b0d575bb80ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoreList:
+  - {fileID: 6883238361911487259}
+  EnableTagFilter: 0
+  AllowedTags: []
+  OnDetected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 184178290}
+        m_TargetAssemblyTypeName: ProjectRetroMuseum.ScottEwing.S_ActorAi, Assembly-CSharp
+        m_MethodName: TargetFound
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnLostDetection:
+    m_PersistentCalls:
+      m_Calls: []
+  DetectionMode: 0
+  RequiresLineOfSight: 1
+  BlocksLineOfSight:
+    serializedVersion: 2
+    m_Bits: 137
+  TestLOSTargetsOnly: 0
+  NumberOfRays: 1
+  MinimumVisibility: 0.5
+  SensorRange: 20
+  DetectsOnLayers:
+    serializedVersion: 2
+    m_Bits: 1024
+  SensorUpdateMode: 0
+  CheckInterval: 1
+  InitialBufferSize: 20
+  DynamicallyIncreaseBufferSize: 1
+--- !u!114 &184178290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184178288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c3daf328551706468836c5bdf609fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6883238360940442155
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,7 +223,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6883238360940442155}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f33a56a2abbe3f49817c7092b456b18, type: 3}
   m_Name: 
@@ -194,7 +289,7 @@ MonoBehaviour:
   _maxHealth: 100
   _currentHealth: 30
   _canBeGibbed: 1
-  _gibDamageThreshold: 10
+  _gibDamageThreshold: 15
 --- !u!1 &6883238362519452791
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +302,7 @@ GameObject:
   - component: {fileID: 6883238362519452792}
   - component: {fileID: 6883238362519452794}
   - component: {fileID: 6883238362519452795}
+  - component: {fileID: 1783895372}
   m_Layer: 0
   m_Name: Actor_ShotgunGuy
   m_TagString: Untagged
@@ -229,6 +325,7 @@ Transform:
   - {fileID: 6883238360940442158}
   - {fileID: 6883238361911487260}
   - {fileID: 6883238362737297650}
+  - {fileID: 184178289}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -254,25 +351,7 @@ MonoBehaviour:
     _attackClip: {fileID: 8300000, guid: b61dd3802f84ded43ac7d2227ee28b2c, type: 3}
     _hasGibbedAudio: 1
     _gibbedDeathClip: {fileID: 8300000, guid: 416831b5f34c1544f92bfb304475afba, type: 3}
-  _actorAttack:
-    _rayCastHelper:
-      _castType: 1
-      _sphereCastRadius: 0.1
-      _castDistance: 100
-      _source:
-        <CastSourceType>k__BackingField: 1
-        _sourceTransform: {fileID: 6883238362737297650}
-      <CollisionLayers>k__BackingField:
-        serializedVersion: 2
-        m_Bits: 457
-      _specifyTargetLayers: 1
-      <TargetLayers>k__BackingField:
-        serializedVersion: 2
-        m_Bits: 320
-      _triggerInteraction: 2
-    _reloadTime: 2
-    _isReloading: 0
-    _damage: 10
+  _actorAttack: {fileID: 0}
 --- !u!82 &6883238362519452794
 AudioSource:
   m_ObjectHideFlags: 0
@@ -285,7 +364,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -376,11 +455,33 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6883238362519452791}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f33a56a2abbe3f49817c7092b456b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!195 &1783895372
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6883238362519452791}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 1
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.6
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &6883238362737297649
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +491,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6883238362737297650}
+  - component: {fileID: 2036787188}
+  - component: {fileID: 2036787189}
+  - component: {fileID: 7728712522821073663}
   m_Layer: 0
   m_Name: Attack source
   m_TagString: Untagged
@@ -405,10 +509,111 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6883238362737297649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0.1}
+  m_LocalPosition: {x: 0, y: 1.25, z: 0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6883238362519452793}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2036787188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6883238362737297649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eef69e252fee6848bdd23e5429abac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoreList:
+  - {fileID: 6883238361911487259}
+  EnableTagFilter: 0
+  AllowedTags: []
+  OnDetected:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLostDetection:
+    m_PersistentCalls:
+      m_Calls: []
+  Length: 20
+  Radius: 0.25
+  ObstructedByLayers:
+    serializedVersion: 2
+    m_Bits: 137
+  DetectsOnLayers:
+    serializedVersion: 2
+    m_Bits: 1280
+  DetectionMode: 0
+  Direction: {x: 0, y: 0, z: 1}
+  WorldSpace: 0
+  SensorUpdateMode: 0
+  InitialBufferSize: 20
+  DynamicallyIncreaseBufferSize: 1
+  OnObstruction:
+    m_PersistentCalls:
+      m_Calls: []
+  OnClear:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2036787189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6883238362737297649}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd1782782c33a144aa3b0d575bb80ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoreList:
+  - {fileID: 6883238361911487259}
+  EnableTagFilter: 0
+  AllowedTags: []
+  OnDetected:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLostDetection:
+    m_PersistentCalls:
+      m_Calls: []
+  DetectionMode: 0
+  RequiresLineOfSight: 1
+  BlocksLineOfSight:
+    serializedVersion: 2
+    m_Bits: 137
+  TestLOSTargetsOnly: 0
+  NumberOfRays: 1
+  MinimumVisibility: 0.5
+  SensorRange: 20
+  DetectsOnLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  SensorUpdateMode: 0
+  CheckInterval: 1
+  InitialBufferSize: 20
+  DynamicallyIncreaseBufferSize: 1
+--- !u!114 &7728712522821073663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6883238362737297649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44602291de292494abe7826e88e59955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minAttackCooldown: 3
+  _maxAttackCooldown: 3
+  _attackCooldown: 1.5
+  _attackCooldownOver: 1
+  _damage: 10
+  _attackDuration: 0.5
+  <IsAttacking>k__BackingField: 0
+  _requireTarget: 1
+  _raySensor: {fileID: 2036787188}

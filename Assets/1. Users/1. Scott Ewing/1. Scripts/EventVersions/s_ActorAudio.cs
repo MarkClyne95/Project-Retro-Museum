@@ -39,8 +39,6 @@ public class s_ActorAudio : IActorComponent
         _sActorController.ActorEventManager.AddListener<DamageTakenEvent>(OnDamageTaken);
         _sActorController.ActorEventManager.AddListener<ActorDeathEvent>(OnDeath);
         _sActorController.ActorEventManager.AddListener<ActorAttackEvent>(OnAttack);
-
-
     }
     
     public void OnDestroy() {
@@ -71,7 +69,6 @@ public class s_ActorAudio : IActorComponent
         //_audioSource.clip = _attackClip;
         //_audioSource.Play();
         _audioSource.PlayOneShot(_attackClip);
-
     }
 
 }
