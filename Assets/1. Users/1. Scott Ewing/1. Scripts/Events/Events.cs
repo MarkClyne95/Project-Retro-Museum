@@ -8,6 +8,8 @@ namespace ScottEwing.EventSystem{
         public static Template TemplateEvent = new Template();
         public static ActorAttackEvent ActorAttackEvent = new ActorAttackEvent();
         public static StartWalkingEvent StartWalkingEvent = new StartWalkingEvent();
+        public static TryAttackEvent TryAttackEvent = new TryAttackEvent();
+
 
 
 #if SE_CHECKPOINTS
@@ -38,6 +40,9 @@ namespace ScottEwing.EventSystem{
     
     public class StartWalkingEvent : GameEvent{
         public Transform Target;
+    }
+    
+    public class TryAttackEvent : GameEvent{
     }
     
 }

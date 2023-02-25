@@ -272,7 +272,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.65, z: 0.01}
+  m_Size: {x: 1.4, y: 1.65, z: 0.01}
   m_Center: {x: 0, y: 0.825, z: 0}
 --- !u!114 &6883238361911487262
 MonoBehaviour:
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHealth: 100
-  _currentHealth: 30
+  _currentHealth: 20
   _canBeGibbed: 1
   _gibDamageThreshold: 15
 --- !u!1 &6883238362519452791
@@ -301,8 +301,7 @@ GameObject:
   - component: {fileID: 6883238362519452793}
   - component: {fileID: 6883238362519452792}
   - component: {fileID: 6883238362519452794}
-  - component: {fileID: 6883238362519452795}
-  - component: {fileID: 1783895372}
+  - component: {fileID: 1523627686696768988}
   m_Layer: 0
   m_Name: Actor_ShotgunGuy
   m_TagString: Untagged
@@ -448,19 +447,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6883238362519452795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6883238362519452791}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f33a56a2abbe3f49817c7092b456b18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!195 &1783895372
+--- !u!195 &1523627686696768988
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -492,7 +479,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6883238362737297650}
   - component: {fileID: 2036787188}
-  - component: {fileID: 2036787189}
   - component: {fileID: 7728712522821073663}
   m_Layer: 0
   m_Name: Attack source
@@ -558,44 +544,6 @@ MonoBehaviour:
   OnClear:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2036787189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6883238362737297649}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fd1782782c33a144aa3b0d575bb80ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IgnoreList:
-  - {fileID: 6883238361911487259}
-  EnableTagFilter: 0
-  AllowedTags: []
-  OnDetected:
-    m_PersistentCalls:
-      m_Calls: []
-  OnLostDetection:
-    m_PersistentCalls:
-      m_Calls: []
-  DetectionMode: 0
-  RequiresLineOfSight: 1
-  BlocksLineOfSight:
-    serializedVersion: 2
-    m_Bits: 137
-  TestLOSTargetsOnly: 0
-  NumberOfRays: 1
-  MinimumVisibility: 0.5
-  SensorRange: 20
-  DetectsOnLayers:
-    serializedVersion: 2
-    m_Bits: 256
-  SensorUpdateMode: 0
-  CheckInterval: 1
-  InitialBufferSize: 20
-  DynamicallyIncreaseBufferSize: 1
 --- !u!114 &7728712522821073663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,12 +556,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44602291de292494abe7826e88e59955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minAttackCooldown: 3
+  _minAttackCooldown: 1.75
   _maxAttackCooldown: 3
   _attackCooldown: 1.5
   _attackCooldownOver: 1
   _damage: 10
-  _attackDuration: 0.5
-  <IsAttacking>k__BackingField: 0
+  _attackDuration: 1.5
   _requireTarget: 1
+  <IsAttacking>k__BackingField: 0
   _raySensor: {fileID: 2036787188}
