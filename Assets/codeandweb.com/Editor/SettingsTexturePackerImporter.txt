@@ -3,19 +3,25 @@ tpsheetFileNames:
 - Assets/1. Users/1. Scott Ewing/2. Images/e1_walk_f.tpsheet
 - Assets/1. Users/1. Scott Ewing/2. Images/e2_pinky_attack_f.tpsheet
 - Assets/1. Users/1. Scott Ewing/2. Images/e2_pinky_walk_f.tpsheet
+- Assets/1. Users/1. Scott Ewing/2. Images/face_health.tpsheet
 - Assets/1. Users/1. Scott Ewing/2. Images/required_sprites_1.tpsheet
 - Assets/1. Users/1. Scott Ewing/2. Images/SS_e1_attack_f.tpsheet
 - Assets/1. Users/1. Scott Ewing/2. Images/SS_shotgun.tpsheet
+- Assets/1. Users/1. Scott Ewing/2. Images/UI/face_health.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
 - Assets/1. Users/1. Scott Ewing/2. Images/e1_walk_f.png
 - Assets/1. Users/1. Scott Ewing/2. Images/I_e2_pinky_attack_f.png
 - Assets/1. Users/1. Scott Ewing/2. Images/SS_e2_pinky_walk_f.png
+- Assets/1. Users/1. Scott Ewing/2. Images/face_health.png
 - Assets/1. Users/1. Scott Ewing/2. Images/required_sprites_1.png
 - Assets/1. Users/1. Scott Ewing/2. Images/SS_e1_attack_f.png
 - Assets/1. Users/1. Scott Ewing/2. Images/SS_shotgun.png
+- Assets/1. Users/1. Scott Ewing/2. Images/UI/face_health.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
+- 
 - 
 - 
 - 
