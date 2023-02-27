@@ -62,6 +62,8 @@ namespace ScottEwing{
 
             return false;
         }
+
+        public bool IsAlive() => _currentHealth > 0;
     }
     
 }

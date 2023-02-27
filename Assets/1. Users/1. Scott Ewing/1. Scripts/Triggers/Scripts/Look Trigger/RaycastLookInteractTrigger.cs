@@ -10,6 +10,7 @@ namespace ScottEwing.Triggers{
         AssignSourceTransform
     }
     
+    //--This is a look interact trigger which handles the ray casting (it's actually spherecasting) itself rather than need ing a cast interactor to exist in the scene
     public class RaycastLookInteractTrigger : LookInteractTrigger, ICastInteractor{
         [Tooltip("The game object that need to be looked at. Default is the game object this is attached to. If different, default and _lookTarget should be under same parent")]
         [SerializeField] private Transform _lookTarget = null;

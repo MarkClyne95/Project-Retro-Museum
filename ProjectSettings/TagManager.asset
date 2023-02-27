@@ -15,6 +15,7 @@ TagManager:
   - PlayerStart
   - Projectile
   - Score
+  - Lever
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - TakesDamage
   - Dead
   - PlayerActor
-  - 
+  - MovingPlatform
   - 
   - 
   - 
