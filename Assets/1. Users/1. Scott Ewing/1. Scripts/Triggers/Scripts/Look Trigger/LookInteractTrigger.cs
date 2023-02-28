@@ -83,13 +83,13 @@ namespace ScottEwing.Triggers{
             }
         }*/
 
-        protected override TriggerState InvokeOnTriggerEnter() {
+        protected override TriggerState InvokeOnTriggerEnter(Collider other = null) {
             if (ShouldCheckInput) {
                 Debug.Log("Need to confirm that the return is correct");
                 return TriggerState.None;
             }
             ShouldCheckInput = true;
-            return base.InvokeOnTriggerEnter();
+            return base.InvokeOnTriggerEnter(other);
         }
         
         protected override TriggerState InvokeOnTriggerExit() {

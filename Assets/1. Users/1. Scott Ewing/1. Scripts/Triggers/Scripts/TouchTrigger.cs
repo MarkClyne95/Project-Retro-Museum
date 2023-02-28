@@ -5,7 +5,7 @@ namespace ScottEwing.Triggers {
         protected override void OnTriggerEnter(Collider other) {
             if (!IsColliderValid(other)) return;
             Triggered();
-            InvokeOnTriggerEnter();
+            InvokeOnTriggerEnter(other);
         }
     } 
 }

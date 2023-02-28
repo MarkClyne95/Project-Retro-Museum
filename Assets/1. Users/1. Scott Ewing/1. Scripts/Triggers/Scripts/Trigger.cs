@@ -46,7 +46,7 @@ namespace ScottEwing.Triggers{
         [SerializeField] protected bool isDebug;  
         [SerializeField] private bool _invokeOnTriggerExitWhenTriggered = false;
         [SerializeField] protected UnityEvent _onTriggered;
-        [SerializeField] protected UnityEvent _onTriggerEnter;
+        [SerializeField] protected UnityEvent<Collider> _onTriggerEnter;
         [SerializeField] protected UnityEvent _onTriggerStay;
         [SerializeField] protected UnityEvent _onTriggerExit;
 
@@ -55,7 +55,7 @@ namespace ScottEwing.Triggers{
 
         protected virtual void OnTriggerEnter(Collider other) {
             if (IsColliderValid(other)) {
-                InvokeOnTriggerEnter();
+                InvokeOnTriggerEnter(other);
             }
         }
 
@@ -72,10 +72,10 @@ namespace ScottEwing.Triggers{
         }
 
 
-        protected virtual TriggerState InvokeOnTriggerEnter() {
+        protected virtual TriggerState InvokeOnTriggerEnter(Collider other = null) {
             if (isDebug) 
                 Debug.Log("OnTriggerEnter", this);
-            _onTriggerEnter?.Invoke();
+            _onTriggerEnter?.Invoke(other);
             return TriggerState.Enter;
         }
 

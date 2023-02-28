@@ -10,9 +10,9 @@ using UnityEngine.AI;
 
 public class S_ActorController : MonoBehaviour{
     public ActorEventManager ActorEventManager = new ActorEventManager();
-    [SerializeField] private s_ActorAudio _actorAudio;
+    //[SerializeField] private s_ActorAudio _actorAudio;
     [HideInInspector] public S_ActorAttack _actorAttack;
-    private S_ActorAnimator _actorAnimator;
+    //private S_ActorAnimator _actorAnimator;
 
     public Transform Target { get; set; }
     //[SerializeField] private S_Health _health;
@@ -28,13 +28,13 @@ public class S_ActorController : MonoBehaviour{
     private ActorStates _actorState = ActorStates.Idle;*/
     
     protected virtual void Start() {
-        _actorAudio.Initialise(this);
-        _actorAnimator = GetComponentInChildren<S_ActorAnimator>();
+        //_actorAudio.Initialise(this);
+        //_actorAnimator = GetComponentInChildren<S_ActorAnimator>();
         _actorAttack = GetComponentInChildren<S_HitscanActorAttack>();
     }
 
     private void OnDestroy() {
-        _actorAudio.OnDestroy();
+        //_actorAudio.OnDestroy();
         //_actorAttack.OnDestroy();
 
     }
@@ -104,5 +104,11 @@ public class S_ActorController : MonoBehaviour{
     public void BroadcastTryAttack() {
         ActorEventManager.Broadcast(Events.TryAttackEvent);
         
+    }
+
+    public void BroadcastReceiveHealth(int health) {
+        Events.ReceiveHealthEvent.Health = health;
+        ActorEventManager.Broadcast(Events.ReceiveHealthEvent);
+
     }
 }

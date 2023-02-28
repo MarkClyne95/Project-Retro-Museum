@@ -68,6 +68,8 @@ public class S_UiFace : MonoBehaviour{
 
         _actorController.ActorEventManager.AddListener<DamageTakenEvent>(OnTakeDamage);
         _actorController.ActorEventManager.AddListener<ActorDeathEvent>(OnActorDeath);
+        _actorController.ActorEventManager.AddListener<ReceiveHealthEvent>(OnReceiveHealth);
+
 
     }
 
@@ -76,8 +78,12 @@ public class S_UiFace : MonoBehaviour{
     private void OnDestroy() {
         _actorController.ActorEventManager.RemoveListener<DamageTakenEvent>(OnTakeDamage);
         _actorController.ActorEventManager.RemoveListener<ActorDeathEvent>(OnActorDeath);
+        _actorController.ActorEventManager.RemoveListener<ReceiveHealthEvent>(OnReceiveHealth);
+
 
     }
+
+    
 
     private void OnTakeDamage(DamageTakenEvent obj) {
         _faceImage.sprite = FindSprite(obj.RemainingHealth, true);
@@ -87,11 +93,8 @@ public class S_UiFace : MonoBehaviour{
         _returnToIdleRoutine = StartCoroutine(ReturntoIdleRoutine(obj.RemainingHealth));
     }
     
-    private void OnActorDeath(ActorDeathEvent obj) {
-        _faceImage.sprite = FindSprite(0, true);
-    }
-    
-    
+    private void OnActorDeath(ActorDeathEvent obj) => _faceImage.sprite = FindSprite(0, true);
+    private void OnReceiveHealth(ReceiveHealthEvent obj) => _faceImage.sprite = FindSprite(obj.Health, false);
 
     public Sprite FindSprite(int health, bool damaged) {
         var damageLevel = Data.GetDamageLevel(health);

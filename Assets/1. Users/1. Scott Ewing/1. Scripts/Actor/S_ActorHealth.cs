@@ -38,6 +38,7 @@ namespace ScottEwing{
         private bool disableColliderOnDeath = true;
         private Collider healthCollider;
 
+        
         private void Start() {
             _sActorController = GetComponentInParent<S_ActorController>();
             healthCollider = GetComponent<Collider>();
@@ -62,8 +63,16 @@ namespace ScottEwing{
 
             return false;
         }
+        
+        public void ReceiveHealth(int health, int maxHealthFromPickup) {
+            _currentHealth += health;
+            _currentHealth = Mathf.Min(_currentHealth, maxHealthFromPickup);
+            _sActorController.BroadcastReceiveHealth(_currentHealth);
+        }
 
         public bool IsAlive() => _currentHealth > 0;
+        public int CurrentHealth() => _currentHealth;
+
     }
     
 }

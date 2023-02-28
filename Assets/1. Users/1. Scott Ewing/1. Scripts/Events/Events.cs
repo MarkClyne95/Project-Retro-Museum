@@ -9,6 +9,12 @@ namespace ScottEwing.EventSystem{
         public static ActorAttackEvent ActorAttackEvent = new ActorAttackEvent();
         public static StartWalkingEvent StartWalkingEvent = new StartWalkingEvent();
         public static TryAttackEvent TryAttackEvent = new TryAttackEvent();
+        public static ReceiveHealthEvent ReceiveHealthEvent = new ReceiveHealthEvent();
+        public static ItemPickedUpEvent ItemPickedUpEvent = new ItemPickedUpEvent();
+        public static FactFoundEvent FactFoundEvent = new FactFoundEvent();
+
+
+
 
 
 
@@ -22,6 +28,13 @@ namespace ScottEwing.EventSystem{
     
     public class Template : GameEvent{
 
+    }
+    public class FactFoundEvent : GameEvent{
+    }
+    public class ItemPickedUpEvent : GameEvent{
+    }
+    public class ReceiveHealthEvent : GameEvent{
+        public int Health;
     }
     public class DamageTakenEvent : GameEvent{
         public int DamageTaken;
