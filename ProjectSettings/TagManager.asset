@@ -16,6 +16,7 @@ TagManager:
   - Projectile
   - Score
   - Lever
+  - Ladder
   layers:
   - Default
   - TransparentFX
