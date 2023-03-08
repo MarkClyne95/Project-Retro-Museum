@@ -17,6 +17,8 @@ TagManager:
   - Score
   - Lever
   - Ladder
+  - Enemy
+  - Spawner
   layers:
   - Default
   - TransparentFX

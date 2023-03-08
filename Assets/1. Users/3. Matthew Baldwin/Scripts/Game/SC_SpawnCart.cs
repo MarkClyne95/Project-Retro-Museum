@@ -1,5 +1,6 @@
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
+using System.Collections.Generic;
 
 public class SC_SpawnCart : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class SC_SpawnCart : MonoBehaviour
     [SerializeField] private GameObject atariCart;
     [SerializeField] private GameObject badtariCart;
     [SerializeField] private GameObject cartridgeHolder;
-    public int toSpawn;
+    public byte toSpawn;
+    public byte cartsAlive;
 
 
     [Header("Randomizer")]
@@ -40,10 +42,12 @@ public class SC_SpawnCart : MonoBehaviour
                 case 1:
                     SpawnAtari();
                     toSpawn--;
+                    cartsAlive++;
                     break;
                 case 2:
                     SpawnBadtari();
                     toSpawn--;
+                    cartsAlive++;
                     break;
             }
         }

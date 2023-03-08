@@ -35,12 +35,15 @@ public class SC_Barrier : MonoBehaviour
             loseHealthSFX.PlayOneShot(loseHealthSFX.clip, .5f);
             houses[stats.PlayerHealth].SetActive(false);
 
+            SC_WinLevel.instance.ScoreCheck();
         }
         else if (collision.gameObject.CompareTag("AtariCart"))
         {
             Destroy(collision.gameObject);
             saveCartSFX.PlayOneShot(saveCartSFX.clip, .5f);
             stats.IncreaseScore();
+
+            SC_WinLevel.instance.ScoreCheck();
         }
     }
 }

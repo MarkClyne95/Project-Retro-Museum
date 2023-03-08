@@ -27,6 +27,8 @@ public class SC_KillCart : MonoBehaviour
             stats.DecreaseScore();
             atariSFX = GameObject.FindGameObjectWithTag("AtariCartSFX").GetComponent<AudioSource>();
             atariSFX.PlayOneShot(atariSFX.clip, 2f);
+
+            SC_WinLevel.instance.ScoreCheck();
         }
 
         if (collision.gameObject.CompareTag("BadtariCart"))
@@ -36,6 +38,8 @@ public class SC_KillCart : MonoBehaviour
 
             badtariSFX = GameObject.FindGameObjectWithTag("BadtariCartSFX").GetComponent<AudioSource>();
             badtariSFX.PlayOneShot(badtariSFX.clip, 2f);
+
+            SC_WinLevel.instance.ScoreCheck();
         }
     }
 }

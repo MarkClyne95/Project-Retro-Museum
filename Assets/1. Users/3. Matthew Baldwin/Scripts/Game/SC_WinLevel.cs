@@ -13,35 +13,33 @@ public class SC_WinLevel : MonoBehaviour
     [SerializeField] private SC_SwitchLevel switchLevel;
 
     private Coroutine coroutine;
+    public static SC_WinLevel instance;
     // Start is called before the first frame update
     void Start()
     {
-        //coroutine = StartCoroutine(ScoreCheck());
-    }
-
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        if (stats.PlayerScore >= scoreThreshold && spawnCheck.toSpawn == 0 && coroutine == null)
+        if(instance != null)
         {
-            //Go to next level
-            coroutine = StartCoroutine(ScoreCheck());
-        }
-        else if(stats.PlayerScore < scoreThreshold && spawnCheck.toSpawn == 0)
+            Destroy(this.gameObject);
+        }else 
         {
-            //Game Over and reset
+            instance = this;
         }
     }
 
-    private void CallScoreCheck()
+
+    public void SetLevelVariables()
     {
-        
+        spawnCheck = GameObject.FindGameObjectWithTag("Spawner").GetComponent<SC_SpawnCart>();
     }
 
-    IEnumerator ScoreCheck()
+    public void ScoreCheck()
     {
-        yield return new WaitForSeconds(3f);
+        spawnCheck.cartsAlive--;
 
-        switchLevel.NextScene();
+        if (stats.PlayerScore >= scoreThreshold && spawnCheck.toSpawn == 0 && spawnCheck.cartsAlive == 0)
+        {
+            switchLevel.Invoke("NextScene", 3f);
+        }
     }
+
 }
