@@ -11,6 +11,7 @@ public class MetroidPlayerController : MonoBehaviour
 {
     public float walkSpeed = 5f;
     public float runSpeed = 8f;
+    public float airWalkSpeed = 3f;
     public float jumpImpulse = 10f;
 
     Vector2 moveInput;
@@ -21,16 +22,28 @@ public class MetroidPlayerController : MonoBehaviour
 
     public float CurrentMoveSpeed { get
         {
-            if (IsMoving)
+            
+            if (IsMoving && !touchingDirections.IsOnWall)
             {
-                if (IsRunning)
+                if (touchingDirections.IsGrounded)
                 {
-                    return runSpeed;
+
+
+                    if (IsRunning)
+                    {
+                        return runSpeed;
+                    }
+                    else
+                    {
+                        return walkSpeed;
+                    }
+                    
                 }
                 else
                 {
-                    return walkSpeed;
+                    return airWalkSpeed;
                 }
+
             }
             else
             {

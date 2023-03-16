@@ -9159,5 +9159,9 @@ PrefabInstance:
       propertyPath: walkSpeed
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 8339355192045908917, guid: f4a53ea9ee564ff429a97129ce50f2af, type: 3}
+      propertyPath: airWalkSpeed
+      value: 450
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4a53ea9ee564ff429a97129ce50f2af, type: 3}
