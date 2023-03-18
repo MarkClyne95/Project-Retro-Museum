@@ -32,8 +32,6 @@ public class SC_CursorControls : MonoBehaviour
         currentTurretSprite = turretOrientation[0];
 
         explodeSFX = GetComponent<AudioSource>();
-
-        temp = GameObject.FindGameObjectWithTag("AtariScene").GetComponent<SC_SwitchLevel>();
     }
 
 

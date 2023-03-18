@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -11,6 +13,7 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     [Header("Locomotion")] public float movementSpeed;
     public float jumpHeight;
     private int jumpCount = 1;
+    [SerializeField]private bool _onLadder;
     public float runSpeed = 1;
     [SerializeField] private Vector2 _moveInput;
     public bool canMove;
@@ -92,7 +95,8 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     {
         Flip();
         isGrounded = Physics2D.OverlapCircle(collisionGround.position, checkRadius, whatIsGround);
-        _rb.velocity = new Vector2(_moveInput.x * movementSpeed, _rb.velocity.y);
+        if(!_onLadder)_rb.velocity = new Vector2(_moveInput.x * movementSpeed, _rb.velocity.y);
+        else _rb.velocity = new Vector2(0, _moveInput.y * movementSpeed);
     }
 
     private void Update()
@@ -103,18 +107,15 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
             {
                 _doubleJumped = false;
                 isJumping = false;
-                //_anim.SetBool("Jump", false);
             }
             else
             {
                 _anim.SetBool("Jump", false);
-                //_anim.SetLayerWeight(1, 1);
             }
         }
         else
         {
             _anim.SetBool("Jump", true);
-            //_anim.SetLayerWeight(1, 0);
         }
     }
 
@@ -144,11 +145,11 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         _moveInput = input.ReadValue<Vector2>();
         // if (isGrounded) _jumpForce = 0;
         //
-        if (_moveInput.x < 0)
+        if (_moveInput.x < 0 && !_onLadder)
         {
             _isLookingLeft = true;
         }
-        else if (_moveInput.x > 0)
+        else if (_moveInput.x > 0 && !_onLadder)
         {
             _isLookingLeft = false;
         }
@@ -220,5 +221,21 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         Gizmos.color = Color.red;
         //Use the same vars you use to draw your Overlap SPhere to draw your Wire Sphere.
         Gizmos.DrawWireSphere (collisionGround.position , checkRadius);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Ladder")
+        {
+            _onLadder = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Ladder")
+        {
+            _onLadder = false;
+        }
     }
 }

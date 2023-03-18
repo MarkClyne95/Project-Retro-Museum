@@ -8,7 +8,7 @@ public class SC_SwitchLevel : MonoBehaviour
     [SerializeField] private GameObject[] levels;
 
     [Header("ActiveLevel")]
-    [SerializeField] private int levelIndex = 1;
+    [SerializeField] private byte levelIndex = 1;
 
     public int count;
 
@@ -29,6 +29,9 @@ public class SC_SwitchLevel : MonoBehaviour
         }
 
         levels[levelIndex].SetActive(true);
+
+        if(levelIndex % 2 != 0)
+            SC_WinLevel.instance.SetLevelVariables();
     }
 
     public void FullReset()
