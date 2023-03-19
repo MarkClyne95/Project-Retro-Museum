@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hello, this is Mark Clyne. Nice to meet you!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d9b454495b7d24a7a933eb61bdfa0607, type: 2}
-  m_sharedMaterial: {fileID: 7409485994217783921, guid: d9b454495b7d24a7a933eb61bdfa0607, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c39418ba8cf5133428e5c11ea10eb7ce, type: 2}
+  m_sharedMaterial: {fileID: -2468051858189375351, guid: c39418ba8cf5133428e5c11ea10eb7ce, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
