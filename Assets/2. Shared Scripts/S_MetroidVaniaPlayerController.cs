@@ -48,6 +48,7 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     private Rigidbody2D _rb;
     private Animator _anim;
     private SpriteRenderer sr;
+    [SerializeField]private S_GameManager _gm;
 
     #region Singleton
 
@@ -95,7 +96,6 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         _anim = GetComponent<Animator>();
         canMove = true;
         localScaleForY = transform.localScale.y;
-
         horizontal = Animator.StringToHash("Horizontal");
         vertical = Animator.StringToHash("Vertical");
         jump = Animator.StringToHash("Jump");
