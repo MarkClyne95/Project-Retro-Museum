@@ -37,24 +37,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Hammer Attack"",
-                    ""type"": ""Button"",
-                    ""id"": ""48a863b8-a204-47c7-bcd8-4ad7bd29b53e"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Throw Hammer"",
-                    ""type"": ""Button"",
-                    ""id"": ""c80d5db7-0ca0-4091-97c0-7838f7083c7e"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Run"",
                     ""type"": ""Button"",
                     ""id"": ""01a0d66b-dc4b-41ec-8935-d159a695b087"",
@@ -91,24 +73,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Next Feat"",
-                    ""type"": ""Button"",
-                    ""id"": ""1f4ed623-10b5-4f6e-98f0-4af7d2df837f"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Previous Feat"",
-                    ""type"": ""Button"",
-                    ""id"": ""18f1e998-e665-4004-b52c-898bd208718a"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Movement"",
                     ""type"": ""Value"",
                     ""id"": ""20f6ce2f-6f1b-40a9-a965-59d56cda8d15"",
@@ -119,61 +83,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""eb8e70ee-907d-4214-8992-2ea0a622ea4f"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Hammer Attack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""606e7a63-5f33-4fd8-a412-73415381c667"",
-                    ""path"": ""<Keyboard>/k"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Hammer Attack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""459ae1f8-ba86-48ef-a514-9e9a2dd486b0"",
-                    ""path"": ""<Gamepad>/buttonWest"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Hammer Attack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ce9964a3-ef74-411d-a7f4-7709d4835ef7"",
-                    ""path"": ""<Keyboard>/m"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Throw Hammer"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a18f067c-7c2d-419e-bc40-76d67fe11d26"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Throw Hammer"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
                 {
                     ""name"": """",
                     ""id"": ""7ece3e8d-c567-400b-8cba-498f361aba23"",
@@ -248,28 +157,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Dash"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""da01efb0-8e7f-4b8a-9e51-5eee85ce008e"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Next Feat"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""477ca026-443f-48b7-826b-a8b29913b235"",
-                    ""path"": ""<Gamepad>/leftShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Previous Feat"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -441,14 +328,10 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
-        m_Player_HammerAttack = m_Player.FindAction("Hammer Attack", throwIfNotFound: true);
-        m_Player_ThrowHammer = m_Player.FindAction("Throw Hammer", throwIfNotFound: true);
         m_Player_Run = m_Player.FindAction("Run", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_SpecialAttack = m_Player.FindAction("Special Attack", throwIfNotFound: true);
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
-        m_Player_NextFeat = m_Player.FindAction("Next Feat", throwIfNotFound: true);
-        m_Player_PreviousFeat = m_Player.FindAction("Previous Feat", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
     }
 
@@ -510,28 +393,20 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Player;
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Shoot;
-    private readonly InputAction m_Player_HammerAttack;
-    private readonly InputAction m_Player_ThrowHammer;
     private readonly InputAction m_Player_Run;
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_SpecialAttack;
     private readonly InputAction m_Player_Dash;
-    private readonly InputAction m_Player_NextFeat;
-    private readonly InputAction m_Player_PreviousFeat;
     private readonly InputAction m_Player_Movement;
     public struct PlayerActions
     {
         private @PlayerInputs m_Wrapper;
         public PlayerActions(@PlayerInputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
-        public InputAction @HammerAttack => m_Wrapper.m_Player_HammerAttack;
-        public InputAction @ThrowHammer => m_Wrapper.m_Player_ThrowHammer;
         public InputAction @Run => m_Wrapper.m_Player_Run;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @SpecialAttack => m_Wrapper.m_Player_SpecialAttack;
         public InputAction @Dash => m_Wrapper.m_Player_Dash;
-        public InputAction @NextFeat => m_Wrapper.m_Player_NextFeat;
-        public InputAction @PreviousFeat => m_Wrapper.m_Player_PreviousFeat;
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
@@ -545,12 +420,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Shoot.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
                 @Shoot.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
                 @Shoot.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
-                @HammerAttack.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHammerAttack;
-                @HammerAttack.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHammerAttack;
-                @HammerAttack.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHammerAttack;
-                @ThrowHammer.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnThrowHammer;
-                @ThrowHammer.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnThrowHammer;
-                @ThrowHammer.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnThrowHammer;
                 @Run.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRun;
                 @Run.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRun;
                 @Run.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRun;
@@ -563,12 +432,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Dash.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
                 @Dash.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
                 @Dash.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
-                @NextFeat.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNextFeat;
-                @NextFeat.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNextFeat;
-                @NextFeat.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNextFeat;
-                @PreviousFeat.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPreviousFeat;
-                @PreviousFeat.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPreviousFeat;
-                @PreviousFeat.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPreviousFeat;
                 @Movement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
@@ -579,12 +442,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Shoot.started += instance.OnShoot;
                 @Shoot.performed += instance.OnShoot;
                 @Shoot.canceled += instance.OnShoot;
-                @HammerAttack.started += instance.OnHammerAttack;
-                @HammerAttack.performed += instance.OnHammerAttack;
-                @HammerAttack.canceled += instance.OnHammerAttack;
-                @ThrowHammer.started += instance.OnThrowHammer;
-                @ThrowHammer.performed += instance.OnThrowHammer;
-                @ThrowHammer.canceled += instance.OnThrowHammer;
                 @Run.started += instance.OnRun;
                 @Run.performed += instance.OnRun;
                 @Run.canceled += instance.OnRun;
@@ -597,12 +454,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Dash.started += instance.OnDash;
                 @Dash.performed += instance.OnDash;
                 @Dash.canceled += instance.OnDash;
-                @NextFeat.started += instance.OnNextFeat;
-                @NextFeat.performed += instance.OnNextFeat;
-                @NextFeat.canceled += instance.OnNextFeat;
-                @PreviousFeat.started += instance.OnPreviousFeat;
-                @PreviousFeat.performed += instance.OnPreviousFeat;
-                @PreviousFeat.canceled += instance.OnPreviousFeat;
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
@@ -622,14 +473,10 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     public interface IPlayerActions
     {
         void OnShoot(InputAction.CallbackContext context);
-        void OnHammerAttack(InputAction.CallbackContext context);
-        void OnThrowHammer(InputAction.CallbackContext context);
         void OnRun(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnSpecialAttack(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
-        void OnNextFeat(InputAction.CallbackContext context);
-        void OnPreviousFeat(InputAction.CallbackContext context);
         void OnMovement(InputAction.CallbackContext context);
     }
 }

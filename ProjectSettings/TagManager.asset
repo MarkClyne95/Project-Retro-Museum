@@ -33,7 +33,7 @@ TagManager:
   - Dead
   - PlayerActor
   - MovingPlatform
-  - 
+  - EnemyM
   - 
   - 
   - 
@@ -59,6 +59,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1150493443
+    locked: 0
+  - name: Ground
+    uniqueID: 2275475367
     locked: 0
   - name: Foreground
     uniqueID: 3569672377

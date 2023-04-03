@@ -155,19 +155,16 @@ MonoBehaviour:
   energyPoints: 10
   movementSpeed: 2
   jumpHeight: 2
-  runSpeed: 5
+  _onLadder: 0
   _moveInput: {x: 0, y: 0}
   canMove: 0
-  isRunning: 0
   isJumping: 0
   isGrounded: 0
-  movingOnStairs: 0
-  collisionGround: {fileID: 0}
+  pipelineAsset: {fileID: 0}
+  collisionGround: {fileID: 6032224825605102065}
   collisionGroundPos: {x: 0, y: 0, z: 0}
-  dustEffect: {fileID: 0}
   feet: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   checkRadius: 0
-  angelGuide: {fileID: 0}

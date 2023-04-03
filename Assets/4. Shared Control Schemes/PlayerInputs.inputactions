@@ -15,24 +15,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Hammer Attack",
-                    "type": "Button",
-                    "id": "48a863b8-a204-47c7-bcd8-4ad7bd29b53e",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Throw Hammer",
-                    "type": "Button",
-                    "id": "c80d5db7-0ca0-4091-97c0-7838f7083c7e",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Run",
                     "type": "Button",
                     "id": "01a0d66b-dc4b-41ec-8935-d159a695b087",
@@ -69,24 +51,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Next Feat",
-                    "type": "Button",
-                    "id": "1f4ed623-10b5-4f6e-98f0-4af7d2df837f",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Previous Feat",
-                    "type": "Button",
-                    "id": "18f1e998-e665-4004-b52c-898bd208718a",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Movement",
                     "type": "Value",
                     "id": "20f6ce2f-6f1b-40a9-a965-59d56cda8d15",
@@ -97,61 +61,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "eb8e70ee-907d-4214-8992-2ea0a622ea4f",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Hammer Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "606e7a63-5f33-4fd8-a412-73415381c667",
-                    "path": "<Keyboard>/k",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Hammer Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "459ae1f8-ba86-48ef-a514-9e9a2dd486b0",
-                    "path": "<Gamepad>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Hammer Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "ce9964a3-ef74-411d-a7f4-7709d4835ef7",
-                    "path": "<Keyboard>/m",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Throw Hammer",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a18f067c-7c2d-419e-bc40-76d67fe11d26",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Throw Hammer",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "7ece3e8d-c567-400b-8cba-498f361aba23",
@@ -226,28 +135,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Dash",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "da01efb0-8e7f-4b8a-9e51-5eee85ce008e",
-                    "path": "<Gamepad>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Next Feat",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "477ca026-443f-48b7-826b-a8b29913b235",
-                    "path": "<Gamepad>/leftShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Previous Feat",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

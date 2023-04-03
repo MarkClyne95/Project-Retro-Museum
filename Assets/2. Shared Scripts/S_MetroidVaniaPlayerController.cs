@@ -14,20 +14,15 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     public float jumpHeight;
     private int jumpCount = 1;
     [SerializeField]private bool _onLadder;
-    public float runSpeed = 1;
-    [SerializeField] private Vector2 _moveInput;
+    public Vector2 _moveInput;
     public bool canMove;
-    public bool isRunning;
     public bool isJumping;
     public bool isGrounded;
-    public bool movingOnStairs;
     private bool _isLookingLeft;
     private float localScaleForY;
     public RenderPipelineAsset pipelineAsset;
 
     //Private Properties
-    private bool _canDoubleJump;
-    private bool _doubleJumped;
     private bool _falling;
     private float _maxFallSpeed;
     private float _checkRadius;
@@ -45,24 +40,15 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     [SerializeField] private Vector3 collisionGroundPos;
 
     //Game Objects
-    [Header("Game Objects")] [SerializeField]
-    private GameObject dustEffect;
-
+    [Header("Game Objects")]
     [SerializeField] private GameObject feet;
-    //[SerializeField] private GameObject wings;
     [SerializeField] private LayerMask whatIsGround;
     public float checkRadius;
-    //private PlayerState _playerState;
     private PlayerInputs _playerInputs;
     private Rigidbody2D _rb;
-    //private Health _health;
     private Animator _anim;
-    //private PlayerAttacks _playerAttacks;
-    //private SoundManager _sound;
     private SpriteRenderer sr;
-    
-    [Tooltip("Angel Guide GameObject")] 
-    public GameObject angelGuide;
+    [SerializeField]private S_GameManager _gm;
 
     #region Singleton
 
@@ -95,56 +81,29 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     {
         Flip();
         isGrounded = Physics2D.OverlapCircle(collisionGround.position, checkRadius, whatIsGround);
-        if(!_onLadder)_rb.velocity = new Vector2(_moveInput.x * movementSpeed, _rb.velocity.y);
-        else _rb.velocity = new Vector2(0, _moveInput.y * movementSpeed);
+
+        _rb.velocity = new Vector2(_moveInput.x * movementSpeed, _rb.velocity.y);
     }
 
     private void Update()
     {
-        if (isGrounded)
-        {
-            if (isJumping)
-            {
-                _doubleJumped = false;
-                isJumping = false;
-            }
-            else
-            {
-                _anim.SetBool("Jump", false);
-            }
-        }
-        else
-        {
-            _anim.SetBool("Jump", true);
-        }
+        
     }
 
     private void Start()
     {
         QualitySettings.SetQualityLevel(5, true);
         _anim = GetComponent<Animator>();
-        //_health = GetComponent<Health>();
-        //_playerAttacks = GetComponent<PlayerAttacks>();
-        //wings.SetActive(false);
         canMove = true;
-        //_sound = SoundManager.instance;
         localScaleForY = transform.localScale.y;
-
         horizontal = Animator.StringToHash("Horizontal");
         vertical = Animator.StringToHash("Vertical");
         jump = Animator.StringToHash("Jump");
     }
 
-    public void OnPreviousFeat(InputAction.CallbackContext context)
-    {
-        throw new System.NotImplementedException();
-    }
-
     public void OnMovement(InputAction.CallbackContext input)
     {
         _moveInput = input.ReadValue<Vector2>();
-        // if (isGrounded) _jumpForce = 0;
-        //
         if (_moveInput.x < 0 && !_onLadder)
         {
             _isLookingLeft = true;
@@ -153,12 +112,13 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         {
             _isLookingLeft = false;
         }
+        
         _anim.SetBool("Run", _moveInput.x != 0);
     }
 
     private void Flip()
     {
-        transform.localScale = _isLookingLeft ? new Vector2(-1, 1) : new Vector2(1, 1);
+        transform.localScale = _isLookingLeft ? new Vector2(-11, 11) : new Vector2(11, 11);
     }
 
     private void OnShoot(InputValue ctx)
@@ -173,17 +133,6 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     {
         throw new System.NotImplementedException();
     }
-
-    public void OnHammerAttack(InputAction.CallbackContext context)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void OnThrowHammer(InputAction.CallbackContext context)
-    {
-        throw new System.NotImplementedException();
-    }
-
     public void OnRun(InputAction.CallbackContext context)
     {
         throw new System.NotImplementedException();
@@ -194,9 +143,9 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         if (ctx.ReadValueAsButton() && isGrounded)
         {
             _rb.velocity = new Vector2(_rb.velocity.x, jumpHeight);
-            isGrounded = false;
+            _anim.SetBool(jump, true);
+            Invoke(nameof(SetAnimBool), 0.5f);
         }
-        
     }
 
     public void OnSpecialAttack(InputAction.CallbackContext context)
@@ -209,9 +158,9 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         throw new System.NotImplementedException();
     }
 
-    public void OnNextFeat(InputAction.CallbackContext context)
+    private void SetAnimBool()
     {
-        throw new System.NotImplementedException();
+        _anim.SetBool(jump, false);
     }
 
     #endregion
