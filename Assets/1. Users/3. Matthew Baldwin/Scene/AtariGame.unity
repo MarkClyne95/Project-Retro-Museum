@@ -3254,6 +3254,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1146971396}
+  - component: {fileID: 1146971398}
+  - component: {fileID: 1146971397}
   m_Layer: 0
   m_Name: AudioMaster
   m_TagString: Untagged
@@ -3280,6 +3282,121 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1146971397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146971395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1f5656a44340e46ab4a676b5c038ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 1146971398}
+  audioClips:
+  - {fileID: 8300000, guid: 4ee9373ba9799c9469f0175a7ab9801e, type: 3}
+  - {fileID: 8300000, guid: 7f26fd59fd82ee945b3c3d9c63bb456a, type: 3}
+  - {fileID: 8300000, guid: 49b74917453261a4d929e063d539e258, type: 3}
+  - {fileID: 8300000, guid: 526c64985495d3240ab73e642a2698a2, type: 3}
+  - {fileID: 8300000, guid: 2038f723712404940b1af22bba4f74cf, type: 3}
+--- !u!82 &1146971398
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146971395}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2038f723712404940b1af22bba4f74cf, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1151273259
 GameObject:
   m_ObjectHideFlags: 0
@@ -5020,7 +5137,7 @@ GameObject:
   - component: {fileID: 1573361839}
   m_Layer: 0
   m_Name: AtariExplode
-  m_TagString: AtariCartSFX
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5148,6 +5265,7 @@ GameObject:
   - component: {fileID: 1574317549}
   - component: {fileID: 1574317547}
   - component: {fileID: 1574317548}
+  - component: {fileID: 1574317551}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Player
@@ -5223,6 +5341,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1574317551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574317546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 752df4686fa62834ebe03fe043d78108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1591810758
 GameObject:
   m_ObjectHideFlags: 0
@@ -6096,7 +6226,7 @@ GameObject:
   - component: {fileID: 1753399952}
   m_Layer: 0
   m_Name: BadtariExplode
-  m_TagString: BadtariCartSFX
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

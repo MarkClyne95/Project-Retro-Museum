@@ -19,6 +19,7 @@ TagManager:
   - Ladder
   - Enemy
   - Spawner
+  - AudioMaster
   layers:
   - Default
   - TransparentFX

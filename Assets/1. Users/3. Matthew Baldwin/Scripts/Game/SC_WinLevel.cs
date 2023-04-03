@@ -12,7 +12,6 @@ public class SC_WinLevel : MonoBehaviour
     [Header("Level Information")]
     [SerializeField] private SC_SwitchLevel switchLevel;
 
-    private Coroutine coroutine;
     public static SC_WinLevel instance;
     // Start is called before the first frame update
     void Start()
@@ -39,7 +38,19 @@ public class SC_WinLevel : MonoBehaviour
         if (stats.PlayerScore >= scoreThreshold && spawnCheck.toSpawn == 0 && spawnCheck.cartsAlive == 0)
         {
             switchLevel.Invoke("NextScene", 3f);
+            
         }
     }
 
+    private void OnEnable()
+    {
+        SC_EventManager.OnBadtariDestroy += ScoreCheck;
+        SC_EventManager.OnAtariDestroy += ScoreCheck;
+    }
+
+    private void OnDisable()
+    {
+        SC_EventManager.OnBadtariDestroy -= ScoreCheck;
+        SC_EventManager.OnAtariDestroy -= ScoreCheck;
+    }
 }
