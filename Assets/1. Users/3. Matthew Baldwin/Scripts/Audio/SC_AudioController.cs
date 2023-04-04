@@ -1,41 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SC_AudioController : MonoBehaviour
 {
-    [SerializeField] private AudioSource source;
-    [SerializeField] private AudioClip[] audioClips;
+    [SerializeField] private AudioSource[] source;
 
     #region Sounds
     private void AtariDestroySFX()
     {
-        source.clip = audioClips[0];
-        source.PlayOneShot(source.clip, 1f);
+        source[0].PlayOneShot(source[0].clip, 2f);
     }
 
     private void BadtariDestroySFX()
     {
-        source.clip = audioClips[1];
-        source.PlayOneShot(source.clip, 1f);
+        source[1].PlayOneShot(source[1].clip, 2f);
     }
 
     private void SaveCartSFX()
     {
-        source.clip = audioClips[2];
-        source.PlayOneShot(source.clip, 1f);
+        source[2].PlayOneShot(source[2].clip, 1f);
     }
 
     private void LoseHealthSFX()
     {
-        source.clip = audioClips[3];
-        source.PlayOneShot(source.clip, 1f);
+        source[3].PlayOneShot(source[3].clip, 1f);
     }
 
     private void TurretShoot()
+    { 
+        source[4].PlayOneShot(source[4].clip, .1f);
+    }
+
+    private void LoseGame()
     {
-        source.clip = audioClips[4];
-        source.PlayOneShot(source.clip, 1f);
+        source[5].PlayOneShot(source[5].clip, 1f);
+    }
+
+    private void WinGame()
+    {
+        source[6].PlayOneShot(source[6].clip, 2f);
     }
     #endregion
 
@@ -44,12 +46,20 @@ public class SC_AudioController : MonoBehaviour
     {
         SC_EventManager.OnBadtariDestroy += BadtariDestroySFX;
         SC_EventManager.OnAtariDestroy += AtariDestroySFX;
+        SC_EventManager.OnExplosion += TurretShoot;
+        SC_EventManager.OnAtariLand += SaveCartSFX;
+        SC_EventManager.OnBadtariLand += LoseHealthSFX;
+        SC_EventManager.OnNextLevel += WinGame;
     }
 
     private void OnDisable()
     {
         SC_EventManager.OnBadtariDestroy -= BadtariDestroySFX;
         SC_EventManager.OnAtariDestroy -= AtariDestroySFX;
+        SC_EventManager.OnExplosion -= TurretShoot;
+        SC_EventManager.OnAtariLand -= SaveCartSFX;
+        SC_EventManager.OnBadtariLand -= LoseHealthSFX;
+        SC_EventManager.OnNextLevel -= WinGame;
     }
     #endregion
 }

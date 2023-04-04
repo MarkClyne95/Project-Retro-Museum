@@ -10,8 +10,17 @@ public class SC_EventManager : MonoBehaviour
     public delegate void AtariDestroy();
     public static event AtariDestroy OnAtariDestroy;
 
+    public delegate void BadtariLand();
+    public static event BadtariLand OnBadtariLand;
+
+    public delegate void AtariLand();
+    public static event AtariLand OnAtariLand;
+
     public delegate void NextLevel();
     public static event NextLevel OnNextLevel;
+
+    public delegate void Explosion();
+    public static event Explosion OnExplosion;
 
     public void BadtariKilled()
     {
@@ -25,6 +34,18 @@ public class SC_EventManager : MonoBehaviour
             OnAtariDestroy();
     }
 
+    public void BadtariLanded()
+    {
+        if (OnBadtariLand != null)
+            OnBadtariLand();
+    }
+
+    public void AtariLanded()
+    {
+        if (OnAtariLand != null)
+            OnAtariLand();
+    }
+
     public void IncrementLevel()
     {
         if(OnNextLevel != null)
@@ -32,4 +53,13 @@ public class SC_EventManager : MonoBehaviour
             OnNextLevel();
         }
     }
+
+    public void ExplosionDone()
+    {
+        if (OnExplosion != null)
+        {
+            OnExplosion();
+        }
+    }
+
 }

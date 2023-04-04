@@ -39,16 +39,28 @@ public class SC_PlayerStats : MonoBehaviour
         scoreUI.text = "score: " + playerScore;
     }
 
+    public void ScoreReset()
+    {
+        playerScore = 0;
+        scoreUI.text = "score: " + playerScore;
+    }
+
     private void OnEnable()
     {
         SC_EventManager.OnBadtariDestroy += IncreaseScore;
         SC_EventManager.OnAtariDestroy += DecreaseScore;
+        SC_EventManager.OnAtariLand += IncreaseScore;
+        SC_EventManager.OnBadtariLand += DecreaseScore;
+        SC_EventManager.OnNextLevel += ScoreReset;
     }
 
     private void OnDisable()
     {
         SC_EventManager.OnBadtariDestroy -= IncreaseScore;
         SC_EventManager.OnAtariDestroy -= DecreaseScore;
+        SC_EventManager.OnAtariLand -= IncreaseScore;
+        SC_EventManager.OnBadtariLand -= DecreaseScore;
+        SC_EventManager.OnNextLevel += ScoreReset;
     }
 }
 

@@ -19,8 +19,8 @@ public class SC_CursorControls : MonoBehaviour
     [SerializeField] private Sprite currentTurretSprite;
     [SerializeField] private Sprite[] turretOrientation;
 
-    [Header("Audio")]
-    [SerializeField] private AudioSource explodeSFX;
+    [Header("Events")]
+    [SerializeField] private SC_EventManager events;
 
     [SerializeField] private SC_SwitchLevel temp;
 
@@ -28,10 +28,12 @@ public class SC_CursorControls : MonoBehaviour
     void Start()
     {
         Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
+
+        turret = GameObject.FindGameObjectWithTag("Turret").GetComponent<SpriteRenderer>();
         currentTurretSprite = turret.sprite;
         currentTurretSprite = turretOrientation[0];
 
-        explodeSFX = GetComponent<AudioSource>();
+        events = GameObject.FindGameObjectWithTag("Player").GetComponent<SC_EventManager>();
     }
 
 
@@ -41,7 +43,7 @@ public class SC_CursorControls : MonoBehaviour
 
         Instantiate(explosion, (Vector3)Camera.main.ScreenToWorldPoint(mousePos), this.gameObject.transform.rotation);
 
-        explodeSFX.PlayOneShot(explodeSFX.clip, .1f);
+        events.ExplosionDone();
 
         switch (mousePos.x)
         {

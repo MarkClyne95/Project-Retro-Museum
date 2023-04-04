@@ -8,9 +8,7 @@ TagManager:
   - AtariController
   - AtariCart
   - AtariExplosion
-  - AtariCartSFX
   - BadtariCart
-  - BadtariCartSFX
   - AtariScene
   - PlayerStart
   - Projectile
@@ -20,6 +18,8 @@ TagManager:
   - Enemy
   - Spawner
   - AudioMaster
+  - Turret
+  - GameScene
   layers:
   - Default
   - TransparentFX

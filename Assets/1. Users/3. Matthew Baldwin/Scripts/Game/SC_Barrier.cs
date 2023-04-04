@@ -7,14 +7,13 @@ public class SC_Barrier : MonoBehaviour
     [SerializeField] private GameObject[] houses;
     [SerializeField] private SC_PlayerStats stats;
 
-    [Header("Audio")]
-    [SerializeField] private AudioSource loseHealthSFX;
-    [SerializeField] private AudioSource saveCartSFX;
+    [Header("Events")]
+    [SerializeField] private SC_EventManager events;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        events = GameObject.FindGameObjectWithTag("Player").GetComponent<SC_EventManager>();
     }
 
     // Update is called once per frame
@@ -30,9 +29,8 @@ public class SC_Barrier : MonoBehaviour
             Destroy(collision.gameObject);
 
             stats.PlayerHealth -= 1;
-            stats.DecreaseScore();
 
-            loseHealthSFX.PlayOneShot(loseHealthSFX.clip, .5f);
+            events.BadtariLanded();
             houses[stats.PlayerHealth].SetActive(false);
 
             SC_WinLevel.instance.ScoreCheck();
@@ -40,8 +38,8 @@ public class SC_Barrier : MonoBehaviour
         else if (collision.gameObject.CompareTag("AtariCart"))
         {
             Destroy(collision.gameObject);
-            saveCartSFX.PlayOneShot(saveCartSFX.clip, .5f);
-            stats.IncreaseScore();
+            
+            events.AtariLanded();
 
             SC_WinLevel.instance.ScoreCheck();
         }
