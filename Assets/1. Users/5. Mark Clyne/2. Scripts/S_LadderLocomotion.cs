@@ -10,12 +10,14 @@ public class S_LadderLocomotion : MonoBehaviour
     private Rigidbody2D _rb;
     private S_MetroidVaniaPlayerController _playerController;
     [SerializeField]private float _speed;
+    private Animator _anim;
     #endregion
     // Start is called before the first frame update
     private void Awake()
     {
         _rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
         _playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<S_MetroidVaniaPlayerController>();
+        _anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -45,6 +47,7 @@ public class S_LadderLocomotion : MonoBehaviour
     {
         if (col.CompareTag("Ladder"))
         {
+            _anim.SetBool("OnLadder", true);
             _isLadder = true;
         }
     }
@@ -53,6 +56,7 @@ public class S_LadderLocomotion : MonoBehaviour
     {
         if (other.CompareTag("Ladder"))
         {
+            _anim.SetBool("OnLadder", false);
             _isLadder = false;
             _isClimbing = false;
         }
