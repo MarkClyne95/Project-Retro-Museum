@@ -8,4 +8,9 @@ public class SC_Destroy : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+
+    private void OnDisable()
+    {
+        Destroy(this.gameObject);
+    }
 }

@@ -12,6 +12,11 @@ public class SC_SwitchLevel : MonoBehaviour
 
     public int count;
 
+    public byte LevelIndex
+    {
+        get { return levelIndex; }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,13 +35,13 @@ public class SC_SwitchLevel : MonoBehaviour
 
         levels[levelIndex].SetActive(true);
 
-        if(levelIndex % 2 != 0)
+        if(levels[levelIndex].CompareTag("GameScene"))
             SC_WinLevel.instance.SetLevelVariables();
     }
 
     public void FullReset()
     {
-        for(int i = 0; i<=levels.Length; i++)
+        for(int i = 0; i<levels.Length; i++)
         {
             levels[i].SetActive(false);
         }

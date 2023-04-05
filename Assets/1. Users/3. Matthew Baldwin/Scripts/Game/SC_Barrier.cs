@@ -6,21 +6,16 @@ public class SC_Barrier : MonoBehaviour
 {
     [SerializeField] private GameObject[] houses;
     [SerializeField] private SC_PlayerStats stats;
+    [SerializeField] private SC_SwitchLevel switchLevel;
 
-    [Header("Audio")]
-    [SerializeField] private AudioSource loseHealthSFX;
-    [SerializeField] private AudioSource saveCartSFX;
+    [Header("Events")]
+    [SerializeField] private SC_EventManager events;
 
     // Start is called before the first frame update
     void Start()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        events = GameObject.FindGameObjectWithTag("Player").GetComponent<SC_EventManager>();
+        switchLevel = GameObject.FindGameObjectWithTag("Player").GetComponent<SC_SwitchLevel>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,22 +24,49 @@ public class SC_Barrier : MonoBehaviour
         {
             Destroy(collision.gameObject);
 
-            stats.PlayerHealth -= 1;
-            stats.DecreaseScore();
+            if (stats.PlayerHealth > 1)
+            {
+                stats.PlayerHealth -= 1;
+                houses[stats.PlayerHealth].SetActive(false);
+                events.BadtariLanded();
 
-            loseHealthSFX.PlayOneShot(loseHealthSFX.clip, .5f);
-            houses[stats.PlayerHealth].SetActive(false);
-
-            SC_WinLevel.instance.ScoreCheck();
+                SC_WinLevel.instance.ScoreCheck();
+            }
+            else
+            {
+                events.EndGame();
+                switchLevel.Invoke("FullReset", 3f);
+            }
         }
         else if (collision.gameObject.CompareTag("AtariCart"))
         {
             Destroy(collision.gameObject);
-            saveCartSFX.PlayOneShot(saveCartSFX.clip, .5f);
-            stats.IncreaseScore();
+            
+            events.AtariLanded();
 
             SC_WinLevel.instance.ScoreCheck();
         }
     }
+
+    private void ResetHouses()
+    {
+        foreach (GameObject g in houses)
+        {
+            g.SetActive(true);
+        }
+    }
+
+    private void OnEnable()
+    {
+        SC_EventManager.OnGameOver += ResetHouses;
+        SC_EventManager.OnNextLevel += ResetHouses;
+    }
+
+    private void OnDisable()
+    {
+        SC_EventManager.OnGameOver -= ResetHouses;
+        SC_EventManager.OnNextLevel -= ResetHouses;
+    }
+
 }
 
