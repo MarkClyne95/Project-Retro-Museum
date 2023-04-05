@@ -41,13 +41,13 @@ public class SC_WinLevel : MonoBehaviour
         switch (switchLevel.LevelIndex)
         {
             case 2:
-                scoreThreshold = 4000;
-                break;
-            case 5:
                 scoreThreshold = 6000;
                 break;
+            case 5:
+                scoreThreshold = 11000;
+                break;
             case 8:
-                scoreThreshold = 8000;
+                scoreThreshold = 17000;
                 break;
         }
     }
@@ -63,7 +63,12 @@ public class SC_WinLevel : MonoBehaviour
         }
         else if(stats.PlayerScore < scoreThreshold && spawnCheck.toSpawn == 0 && spawnCheck.cartsAlive == 0)
         {
+            events.EndGame();
             switchLevel.Invoke("FullReset", 3f);
+        }
+        else if(stats.endless == true)
+        {
+            spawnCheck.toSpawn++;
         }
     }
 

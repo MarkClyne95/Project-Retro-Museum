@@ -18,6 +18,7 @@ public class SC_CursorControls : MonoBehaviour
     [SerializeField] private SpriteRenderer turret;
     [SerializeField] private Sprite currentTurretSprite;
     [SerializeField] private Sprite[] turretOrientation;
+    private GameObject level;
 
     [Header("Events")]
     [SerializeField] private SC_EventManager events;
@@ -34,6 +35,8 @@ public class SC_CursorControls : MonoBehaviour
         currentTurretSprite = turretOrientation[0];
 
         events = GameObject.FindGameObjectWithTag("Player").GetComponent<SC_EventManager>();
+
+        level = this.gameObject.transform.parent.gameObject;
     }
 
 
@@ -41,9 +44,10 @@ public class SC_CursorControls : MonoBehaviour
     {       
         mousePos = new Vector3(Input.mousePosition.x + 16, Input.mousePosition.y - 16, 11);
 
-        Instantiate(explosion, (Vector3)Camera.main.ScreenToWorldPoint(mousePos), this.gameObject.transform.rotation);
+        Instantiate(explosion, (Vector3)Camera.main.ScreenToWorldPoint(mousePos), this.gameObject.transform.rotation, level.transform);
 
         events.ExplosionDone();
+
 
         switch (mousePos.x)
         {
@@ -51,7 +55,7 @@ public class SC_CursorControls : MonoBehaviour
                 currentTurretSprite = turretOrientation[1];
                 turret.sprite = currentTurretSprite;
                 break;
-            case > 400:
+            case > 500:
                 currentTurretSprite = turretOrientation[2];
                 turret.sprite = currentTurretSprite;
                 break;

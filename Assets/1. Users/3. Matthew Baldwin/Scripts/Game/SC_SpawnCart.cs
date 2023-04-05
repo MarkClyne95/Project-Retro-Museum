@@ -10,15 +10,18 @@ public class SC_SpawnCart : MonoBehaviour
     [SerializeField] private GameObject badtariCart;
     [SerializeField] private GameObject cartridgeHolder;
     public byte toSpawn;
+    private byte toSpawnReset;
     public byte cartsAlive;
 
 
     [Header("Randomizer")]
     [SerializeField] private int range;
     private int randomVal;
+    private float randomPos;
     // Start is called before the first frame update
     void Start()
     {
+        spawnPos = this.gameObject.transform.position;
     }
 
     // Update is called once per frame
@@ -29,13 +32,14 @@ public class SC_SpawnCart : MonoBehaviour
 
     public void RunRandomizer() => randomVal = Random.Range(0, range);
 
+    public void RunPositionRandomizer() => randomPos = Random.Range(-7.5f, 7.5f);
+
     private void SpawnCart()
     {
         if (toSpawn > 0)
         {
             RunRandomizer();
-
-            spawnPos = this.gameObject.transform.position;
+            RunPositionRandomizer();
 
             switch (randomVal)
             {
@@ -53,7 +57,19 @@ public class SC_SpawnCart : MonoBehaviour
         }
     }
 
-    private void SpawnAtari() => Instantiate(atariCart, spawnPos, this.gameObject.transform.rotation, cartridgeHolder.transform);
+    private void SpawnAtari() => Instantiate(atariCart, new Vector3(randomPos, spawnPos.y, spawnPos.z), this.gameObject.transform.rotation, cartridgeHolder.transform);
+    
+    private void SpawnBadtari() => Instantiate(badtariCart, new Vector3(randomPos, spawnPos.y, spawnPos.z), this.gameObject.transform.rotation, cartridgeHolder.transform);
 
-    private void SpawnBadtari() => Instantiate(badtariCart, spawnPos, this.gameObject.transform.rotation, cartridgeHolder.transform);
+    private void OnDisable()
+    {
+        toSpawn = toSpawnReset;
+        cartsAlive = 0;
+    }
+
+    private void OnEnable()
+    {
+        toSpawnReset = toSpawn;
+        cartsAlive = 0;
+    }
 }

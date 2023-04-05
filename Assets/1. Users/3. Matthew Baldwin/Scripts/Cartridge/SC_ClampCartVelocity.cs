@@ -18,4 +18,18 @@ public class SC_ClampCartVelocity : MonoBehaviour
     {
         physics.velocity = Vector2.ClampMagnitude(physics.velocity, maxVelocity);
     }
+
+    private void GameOver()
+    {
+        Destroy(this.gameObject);
+    }
+
+    private void OnEnable()
+    {
+        SC_EventManager.OnGameOver += GameOver;
+    }
+    private void OnDisable()
+    {
+        SC_EventManager.OnGameOver -= GameOver;
+    }
 }

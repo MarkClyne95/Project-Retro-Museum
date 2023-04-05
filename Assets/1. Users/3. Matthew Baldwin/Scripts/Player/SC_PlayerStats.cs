@@ -7,6 +7,7 @@ public class SC_PlayerStats : MonoBehaviour
     [SerializeField] private byte playerHealth;
     [SerializeField] private int playerScore;
 
+    [SerializeField] public bool endless;
     [SerializeField] private TextMeshProUGUI scoreUI;
 
 
@@ -39,11 +40,16 @@ public class SC_PlayerStats : MonoBehaviour
         scoreUI.text = "score: " + playerScore;
     }
 
-    public void ScoreReset()
+    public void StatReset()
     {
         playerScore = 0;
         scoreUI.text = "score: " + playerScore;
+
+        playerHealth = 4;
+
+        endless = false;
     }
+
 
     private void OnEnable()
     {
@@ -51,7 +57,8 @@ public class SC_PlayerStats : MonoBehaviour
         SC_EventManager.OnAtariDestroy += DecreaseScore;
         SC_EventManager.OnAtariLand += IncreaseScore;
         SC_EventManager.OnBadtariLand += DecreaseScore;
-        SC_EventManager.OnNextLevel += ScoreReset;
+        SC_EventManager.OnNextLevel += StatReset;
+        SC_EventManager.OnGameOver += StatReset;
     }
 
     private void OnDisable()
@@ -60,7 +67,8 @@ public class SC_PlayerStats : MonoBehaviour
         SC_EventManager.OnAtariDestroy -= DecreaseScore;
         SC_EventManager.OnAtariLand -= IncreaseScore;
         SC_EventManager.OnBadtariLand -= DecreaseScore;
-        SC_EventManager.OnNextLevel += ScoreReset;
+        SC_EventManager.OnNextLevel -= StatReset;
+        SC_EventManager.OnGameOver -= StatReset;
     }
 }
 

@@ -50,6 +50,7 @@ public class SC_AudioController : MonoBehaviour
         SC_EventManager.OnAtariLand += SaveCartSFX;
         SC_EventManager.OnBadtariLand += LoseHealthSFX;
         SC_EventManager.OnNextLevel += WinGame;
+        SC_EventManager.OnGameOver += LoseGame;
     }
 
     private void OnDisable()
@@ -60,6 +61,7 @@ public class SC_AudioController : MonoBehaviour
         SC_EventManager.OnAtariLand -= SaveCartSFX;
         SC_EventManager.OnBadtariLand -= LoseHealthSFX;
         SC_EventManager.OnNextLevel -= WinGame;
+        SC_EventManager.OnGameOver += LoseGame;
     }
     #endregion
 }

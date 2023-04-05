@@ -6,6 +6,7 @@ public class SC_Barrier : MonoBehaviour
 {
     [SerializeField] private GameObject[] houses;
     [SerializeField] private SC_PlayerStats stats;
+    [SerializeField] private SC_SwitchLevel switchLevel;
 
     [Header("Events")]
     [SerializeField] private SC_EventManager events;
@@ -14,12 +15,7 @@ public class SC_Barrier : MonoBehaviour
     void Start()
     {
         events = GameObject.FindGameObjectWithTag("Player").GetComponent<SC_EventManager>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        switchLevel = GameObject.FindGameObjectWithTag("Player").GetComponent<SC_SwitchLevel>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -28,12 +24,19 @@ public class SC_Barrier : MonoBehaviour
         {
             Destroy(collision.gameObject);
 
-            stats.PlayerHealth -= 1;
+            if (stats.PlayerHealth > 1)
+            {
+                stats.PlayerHealth -= 1;
+                houses[stats.PlayerHealth].SetActive(false);
+                events.BadtariLanded();
 
-            events.BadtariLanded();
-            houses[stats.PlayerHealth].SetActive(false);
-
-            SC_WinLevel.instance.ScoreCheck();
+                SC_WinLevel.instance.ScoreCheck();
+            }
+            else
+            {
+                events.EndGame();
+                switchLevel.Invoke("FullReset", 3f);
+            }
         }
         else if (collision.gameObject.CompareTag("AtariCart"))
         {
@@ -44,5 +47,26 @@ public class SC_Barrier : MonoBehaviour
             SC_WinLevel.instance.ScoreCheck();
         }
     }
+
+    private void ResetHouses()
+    {
+        foreach (GameObject g in houses)
+        {
+            g.SetActive(true);
+        }
+    }
+
+    private void OnEnable()
+    {
+        SC_EventManager.OnGameOver += ResetHouses;
+        SC_EventManager.OnNextLevel += ResetHouses;
+    }
+
+    private void OnDisable()
+    {
+        SC_EventManager.OnGameOver -= ResetHouses;
+        SC_EventManager.OnNextLevel -= ResetHouses;
+    }
+
 }
 

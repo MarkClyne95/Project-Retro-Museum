@@ -22,6 +22,9 @@ public class SC_EventManager : MonoBehaviour
     public delegate void Explosion();
     public static event Explosion OnExplosion;
 
+    public delegate void GameOver();
+    public static event GameOver OnGameOver;
+
     public void BadtariKilled()
     {
         if (OnBadtariDestroy != null)
@@ -59,6 +62,14 @@ public class SC_EventManager : MonoBehaviour
         if (OnExplosion != null)
         {
             OnExplosion();
+        }
+    }
+
+    public void EndGame()
+    {
+        if (OnGameOver != null)
+        {
+            OnGameOver();
         }
     }
 
