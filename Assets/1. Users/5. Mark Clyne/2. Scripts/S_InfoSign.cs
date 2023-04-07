@@ -8,10 +8,16 @@ public class S_InfoSign : MonoBehaviour
 {
     [SerializeField] private GameObject _infoUI;
     public string infoText;
+    private S_InfoSign[] b2d = new S_InfoSign[20];
+
+    private void Start()
+    {
+        b2d = FindObjectsOfType<S_InfoSign>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Bullet"))
         {
             Time.timeScale = 0;
             S_MetroidVaniaPlayerController.instance.canMove = false;
@@ -31,6 +37,9 @@ public class S_InfoSign : MonoBehaviour
 
     private void ResetCollider()
     {
-        gameObject.GetComponent<Collider2D>().enabled = true;
+        foreach (var box in b2d)
+        {
+            box.GetComponent<BoxCollider2D>().enabled = true;
+        }
     }
 }

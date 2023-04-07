@@ -7,10 +7,19 @@ using UnityEngine;
 public class S_Bullet : MonoBehaviour
 {
     [SerializeField] private float speed;
-    // Start is called before the first frame update
-    void Start()
+    private Rigidbody2D _rb;
+
+    private void Start()
     {
-        GetComponent<Rigidbody2D>().velocity = transform.right * speed;
+        _rb = GetComponent<Rigidbody2D>();
+        if (S_MetroidVaniaPlayerController.instance._isLookingLeft)
+        {
+            _rb.velocity = Vector2.left * speed;
+        }
+        else
+        {
+            _rb.velocity = Vector2.right * speed;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -21,6 +30,14 @@ public class S_Bullet : MonoBehaviour
         {
             enemy.TakeDamage(1);
             Destroy(gameObject);
+        }
+        else if (col.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject, 1);
         }
             
     }

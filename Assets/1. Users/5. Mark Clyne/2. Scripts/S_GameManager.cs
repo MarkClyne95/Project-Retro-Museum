@@ -8,6 +8,8 @@ public class S_GameManager : MonoBehaviour
     [SerializeField]private int _coinAmount;
     [SerializeField]private string[] _badges;
 
+    public static S_GameManager instance;
+
     public S_GameManager()
     {
         _coinAmount = 0;

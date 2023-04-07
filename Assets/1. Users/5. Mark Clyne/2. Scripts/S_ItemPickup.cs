@@ -9,6 +9,7 @@ public class S_ItemPickup : MonoBehaviour
     private GameObject player;
     private Animator anim;
     private bool _interacted;
+    public int coinValue;
 
     private void Start()
     {
@@ -27,7 +28,7 @@ public class S_ItemPickup : MonoBehaviour
                 case "Coin":
                     _gm = GameObject.FindObjectOfType<S_GameManager>();
                     Destroy(gameObject);
-                    _gm.SetCoinAmount(_gm.GetCoinAmount() + 1);
+                    _gm.SetCoinAmount(_gm.GetCoinAmount() + coinValue);
                     _interacted = true;
                     break;
                 
