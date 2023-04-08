@@ -11,6 +11,9 @@ public class PitBarrier : MonoBehaviour
 
     private GameObject player;
 
+    [SerializeField] private AudioSource waterSplash;
+    [SerializeField] private AudioSource randySquawk;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +35,12 @@ public class PitBarrier : MonoBehaviour
             //Plummet player
             player.GetComponent<ThirdPersonLocomotion>().gravity = -100f;
             player.GetComponent<ThirdPersonLocomotion>().plummet();
+
+            //Play Splash SFX
+            waterSplash.Play();
+
+            //Play Squawk SFX
+            randySquawk.Play();
 
             //Fade screen to black
 
