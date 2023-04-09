@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -2074,12 +2074,12 @@ TextureImporter:
       Platformer_SpriteSheet_63: 147638252
       Platformer_SpriteSheet_60: 1222238067
       Platformer_SpriteSheet_39: -1354064554
-      Platformer_SpriteSheet_15: -621033823
       Platformer_SpriteSheet_42: -1964313969
+      Platformer_SpriteSheet_15: -621033823
       Platformer_SpriteSheet_21: -951273640
       Platformer_SpriteSheet_6: 1338930853
-      Platformer_SpriteSheet_73: 810231855
       Platformer_SpriteSheet_88: -1271013227
+      Platformer_SpriteSheet_73: 810231855
       Platformer_SpriteSheet_11: 435858966
       Platformer_SpriteSheet_20: -1566109188
       Platformer_SpriteSheet_25: 2093483431

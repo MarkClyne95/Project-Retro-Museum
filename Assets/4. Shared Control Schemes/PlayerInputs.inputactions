@@ -33,24 +33,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Special Attack",
-                    "type": "Button",
-                    "id": "4194b811-46bf-48a5-ad4f-f779e61a3183",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Dash",
-                    "type": "Button",
-                    "id": "8da66200-4888-4430-a8dd-7fa1a0ad359b",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Movement",
                     "type": "Value",
                     "id": "20f6ce2f-6f1b-40a9-a965-59d56cda8d15",
@@ -96,50 +78,6 @@
                 },
                 {
                     "name": "",
-                    "id": "ee3b4f70-02cc-4d15-b323-79b525f32cc1",
-                    "path": "<Keyboard>/h",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Special Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "65ce8c2e-2fd4-4c02-a68e-c236e1dcca10",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Special Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b4325a88-e0f5-49e7-b287-adb037df4eee",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Dash",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "fe6641ce-fc6e-485a-9a6b-a91aea8c0ea2",
-                    "path": "<Keyboard>/r",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Dash",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "636fb10c-a0ad-40a7-adae-12f1fcbb0637",
                     "path": "<Keyboard>/l",
                     "interactions": "Hold",
@@ -155,7 +93,7 @@
                     "path": "<Mouse>/rightButton",
                     "interactions": "Hold",
                     "processors": "",
-                    "groups": "",
+                    "groups": "PlayerMovement",
                     "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false

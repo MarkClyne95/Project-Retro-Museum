@@ -1,0 +1,2531 @@
+fileFormatVersion: 2
+guid: 312cf57f3aaea224980898f74e35bdf6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 120
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_1
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 650
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f1e248e467b2a489c41d188465d987
+      internalID: -365270366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_2
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 650
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f936ca5a28f754db241aee99c9676e
+      internalID: -492179474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_3
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 650
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7117765ae92e7234f9854840722bdbfa
+      internalID: -689208335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_4
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 657
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a92b2240d1682f4da35d5fd7cdbefd6
+      internalID: -52656194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_5
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 650
+        width: 7
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47bf9c701c4c84b4a89879911366658a
+      internalID: 1737536606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_6
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 674
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3153719bfedbd384bab331f6b3673dbf
+      internalID: -1921567668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_7
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 650
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90ca7de1089d994fa0148e6ee84ae09
+      internalID: 1299607919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_8
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 650
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58da7ddb069fda40828a9df6b097acd
+      internalID: -907486109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_9
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 650
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd622d8348669654f961a59eeabbb6b0
+      internalID: -2067349243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_10
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 650
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634269d8e2a329647b011a621202a79a
+      internalID: -498225638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_11
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 650
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222565bcdae2bb3488736fd436011977
+      internalID: 213637668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_12
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 650
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5817ad22718d31542a02b1af6fda5e8e
+      internalID: -1392255174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_13
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 648
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f712f16204543b642bb1efc78070121b
+      internalID: 1159656553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_14
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 666
+        width: 22
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bed47069e4ed2459000ec95c7aa569
+      internalID: -1062329668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_15
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 650
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8867348e3d4a34448be2e638cc24da92
+      internalID: 1970262871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_16
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 650
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477df12e9daafd749af69e83ed6f7cbb
+      internalID: -646699602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_17
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 610
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1182b3fee11d334680b956ba7862fe5
+      internalID: 1597963788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_18
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 610
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06584410e706ea341bc7e1e5d0ea8434
+      internalID: -1205173306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 610
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb102397ba23ca043b0bafda2a3ebdac
+      internalID: -1250285911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_20
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 610
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af5812487fc72049af77d791ab6cd9f
+      internalID: 1523372004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_21
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 610
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e46775598b3fa144af8f531f508c016
+      internalID: -45362806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_22
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 610
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd374533efd3d054f86e5a451111bbd3
+      internalID: -661238635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_23
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 570
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fc2e52c97cdf24ea853507937d9f8e
+      internalID: 268844364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_24
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 570
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3569adaff21d945b4c2d052667d281
+      internalID: -306429843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_25
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 570
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9141af2fcb5a4d54bba75bf4ea23bbda
+      internalID: -644657112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_26
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 570
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516dac2db49519147ba7c0339bfb7620
+      internalID: -456788648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_27
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 570
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b4be3cf4162b049a9627568dd3083a
+      internalID: 2006030888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_28
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 570
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec22887284ab8a41b4b1c6c3f0b05a4
+      internalID: 859650347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_29
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 570
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58495b14be426e941a9d84dc7027cbdd
+      internalID: 617759392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_31
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 513
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3bee82f565794948b119c2aa4ce0463
+      internalID: -100344988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_32
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 514
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38711649125a9e48bde668f54984382
+      internalID: 2095756496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_33
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 514
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6d293eea4066242bc6974976353f9b
+      internalID: 2018389898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_34
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 514
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb44d05315264394abba8dc97ba2f4c9
+      internalID: -1857375030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_35
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 514
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c4bb494253c1a43ba31e8952e9a561
+      internalID: 1508105474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_36
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 514
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8033eb0f0379904f964e39c85348a97
+      internalID: -530436277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_37
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 514
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e2d3f0c39e33b4096172745c112256
+      internalID: 1180072897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_38
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 514
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5090c0c0b562a45a69f2f57b1fc0a9
+      internalID: 1539423274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_39
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 510
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1117cc5ff6bfc5d4d92aeb58e754725b
+      internalID: 1251350485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_40
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 514
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe14ff258b42f184ab3768e4ce909e59
+      internalID: -1802743219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_41
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 514
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f300ead581c8c843959ea868e7077da
+      internalID: 1401563405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_42
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 514
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a076de676ac1c0741b0b287b436fb778
+      internalID: 641829781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_43
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 514
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729a3d0fff1df9b48803575f30cfc747
+      internalID: 383276303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_45
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 458
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9b68861c06c364886971190e616a70
+      internalID: 839851139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_46
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 458
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5faf3b563cf647a40a6abd100603fa81
+      internalID: -1881276862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_47
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 458
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235142f1d9fa28d43b6c6c3a5e60dd7c
+      internalID: 1680709085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_48
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 458
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1fbea9a5c7a164b8ec11c021ffecd1
+      internalID: -513114123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_49
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 458
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34b44f8507ee2840bb23347d34ac600
+      internalID: -619435097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_50
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 458
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7004ff4c250661945bed593afea51616
+      internalID: 1436707631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_51
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 458
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310614793f0c00943830eef491c83fea
+      internalID: -676655278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_52
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 458
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834b278748d977a4f90bba7297ccf769
+      internalID: 1482766446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_53
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 458
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311954ac378188542895d8c8091e369f
+      internalID: 2123660974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_55
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 402
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef5c87184411b541b89a77dc2c09cbb
+      internalID: 2028847677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_56
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 402
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919540f14f37ac64a883aa895b5b723c
+      internalID: 78922302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_57
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 401
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac96b2185385374aa5046356f9d1791
+      internalID: 285530229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_59
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 346
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44011523650df14a8378bc2c7748128
+      internalID: 2081418516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_60
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 346
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157cf01ad7cd0224fb9d03c7655d19d1
+      internalID: -1145101691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_61
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 346
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f970cdf62fad544bdecd431df2a9db
+      internalID: 825623300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_62
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 346
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484432921942d9e459856209c4f69251
+      internalID: 334914600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_64
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 288
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3271607aac366744d937e5058269011b
+      internalID: -715473524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_65
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 285
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f3b28b045d3fb4c96f0e899e86736f
+      internalID: 1929932360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_66
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 285
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7d13749319ce44c97c7ff00ed6d294
+      internalID: 1665131142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_67
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 290
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43058c99d50d262419ff8ebf430c8a27
+      internalID: 1135280144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_68
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 290
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cd9f8ef2f9f9c47874d281739ede79
+      internalID: -1386947022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_69
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 290
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd72d996e26f6d478658cfe2b783f65
+      internalID: -1721304822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_70
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 290
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0db64c52b8c9745b3223ef52bfb9aa
+      internalID: -743833959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_71
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 290
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ba31abc07aca24cae5180dff9ea1ae
+      internalID: -945954745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_72
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 290
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6cb45362b3df1748bec9ef0c37f2008
+      internalID: 1422307904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_73
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 290
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370c3a3ebb8b8e741a1bf6ce62e8b1d3
+      internalID: 1684314143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_74
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 290
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42b6c450fb7d194399dfd837a1b10a7
+      internalID: -1360639405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_75
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 288
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477c3d6e894f2534cbfb994111e0a329
+      internalID: 890770209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_78
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 222
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dfe1611d52c0c4e917ca5852dd6feb
+      internalID: 2040470837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_79
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 222
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a448720c72b109d40a8e9bda791ec817
+      internalID: -1430704742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_80
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 222
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf0e8d8740cc344784765f8839f6a0f
+      internalID: -453855421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_81
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 222
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d25844caaab0e84391de7b6443e4bda
+      internalID: -137048072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_82
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 222
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98da5a9cfb6654d4092fba0fb9e0a80c
+      internalID: -929314511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_83
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 222
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d28cd5a509d8e340a5042e9d1f8240e
+      internalID: 1978520672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_84
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 222
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03a0354cb048b6478dc32fef7b5ff3e
+      internalID: 1586048225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_85
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 220
+        width: 99
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc2a537b96506646b40e50a028eb21a
+      internalID: -1452370967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_87
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 166
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289159570cfb31e40b69549b42dc5bf2
+      internalID: -2073987170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_88
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 152
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca635062a7e4361488bcdb6b34fb63fd
+      internalID: -1993167219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_89
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 146
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1836187b3dbd941b025882611e1680
+      internalID: 1449255899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_90
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 151
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825158c98e6d1c94caa6f7f162404103
+      internalID: -710215046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_91
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 166
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9510b109c78b3f944a12797a8845a55b
+      internalID: -315564027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_93
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 86
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21f1b9326302ef4bb48cdba62e73a1f
+      internalID: 1765931544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_94
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 86
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c935db0a0cc23fc49ae37fae1271c64f
+      internalID: -1526865360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_95
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 86
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2695c13ac3c3d5646b84b60c45ff0910
+      internalID: 2139161356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_96
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 86
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee0f57412732174ab6e909ddbf4d9b9
+      internalID: -264082413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_97
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 86
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2fe965f399b7a4997653675e54d193
+      internalID: 1220630838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_98
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 86
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f0d3583147a0a418e2c627617abc35
+      internalID: -450156133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_99
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 86
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6ff5be3b00a4147a77a917db2ed4bc
+      internalID: -1197054835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_100
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 86
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5517fe25a4a176649815b2d68f68ffa8
+      internalID: 672826406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_101
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 86
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e03413badb19d4bb9af98a238adaf7
+      internalID: -1031485732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_102
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 86
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d188fa26b7b14241a5a406786a7b672
+      internalID: -1537070019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_103
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 42
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc9a3cfbc41a084d9746bc941b698e3
+      internalID: 2051205489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_104
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 42
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3910f69e841ab5744a6ea87ab4e07c9e
+      internalID: -856834208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_105
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 42
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ae4873f857036448a2ed9ca091be22
+      internalID: -1289815781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_106
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 42
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58094981943443844ba159de3a978f44
+      internalID: -650260081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_107
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 42
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc516c4a255f6645a1b9d58bf2f5d5f
+      internalID: 1695685122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_108
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 42
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25d3bfc085ab884fb3af7bdb7a319df
+      internalID: -93334214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_109
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 44
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87d61f93a40d064cb1c68627a689c0a
+      internalID: 1194882148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_110
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 41
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d550b5f89c0b81f48bfb4d50b03728af
+      internalID: 1935174627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_111
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 19
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f114909f4ec7ad843b55cbd76bedc3f1
+      internalID: -1659798290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_112
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 19
+        width: 66
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e181a9b354a78748bf4ca8887c092df
+      internalID: 106862399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_113
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 8
+        width: 42
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6705446b45f3f5b48a790449d4e85b06
+      internalID: -635076401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_114
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 8
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7ce7c8c095cb042b31c31c913f5140
+      internalID: -1731671753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_115
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 8
+        width: 32
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b378988aab34a43ad28f53caecd54e
+      internalID: -1985560043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_116
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 8
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38abe5ccaa42c8048adcf9103a15f120
+      internalID: -1343522258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_117
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 8
+        width: 19
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45de0a298ad58ba4aaec1a98c3c5fa27
+      internalID: -1471931806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_118
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 8
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385396ebe9253764eba3eae9afab090b
+      internalID: -1331906075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_115: -1985560043
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_14: -1062329668
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_4: -52656194
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_34: -1857375030
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_66: 1665131142
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_80: -453855421
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_108: -93334214
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_26: -456788648
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_10: -498225638
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_73: 1684314143
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_35: 1508105474
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_49: -619435097
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_36: -530436277
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_24: -306429843
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_71: -945954745
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_8: -907486109
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_112: 106862399
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_13: 1159656553
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_1: -365270366
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_29: 617759392
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_16: -646699602
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_42: 641829781
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_62: 334914600
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_52: 1482766446
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_104: -856834208
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_97: 1220630838
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_47: 1680709085
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_56: 78922302
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_84: 1586048225
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_2: -492179474
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_38: 1539423274
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_98: -450156133
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_94: -1526865360
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_57: 285530229
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_86: -2105876515
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_11: 213637668
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_6: -1921567668
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_20: 1523372004
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_60: -1145101691
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_21: -45362806
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_83: 1978520672
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_55: 2028847677
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_59: 2081418516
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_64: -715473524
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_51: -676655278
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_32: 2095756496
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_28: 859650347
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_43: 383276303
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_67: 1135280144
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_18: -1205173306
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_37: 1180072897
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_44: 1442595259
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_117: -1471931806
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_46: -1881276862
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_90: -710215046
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_50: 1436707631
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_89: 1449255899
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_22: -661238635
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_110: 1935174627
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_95: 2139161356
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_106: -650260081
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_70: -743833959
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_75: 890770209
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_5: 1737536606
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_102: -1537070019
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_91: -315564027
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_30: -833096218
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_87: -2073987170
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_78: 2040470837
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_69: -1721304822
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_3: -689208335
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_23: 268844364
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_0: 244456037
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_25: -644657112
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_72: 1422307904
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_31: -100344988
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_45: 839851139
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_99: -1197054835
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_12: -1392255174
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_27: 2006030888
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_65: 1929932360
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_82: -929314511
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_9: -2067349243
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_63: -1725896824
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_74: -1360639405
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_96: -264082413
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_68: -1386947022
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_17: 1597963788
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_77: 1549882973
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_15: 1970262871
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_48: -513114123
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_116: -1343522258
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_54: -638182401
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_85: -1452370967
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_111: -1659798290
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_109: 1194882148
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_107: 1695685122
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_79: -1430704742
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_105: -1289815781
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_53: 2123660974
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_100: 672826406
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_76: 210107202
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_118: -1331906075
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_103: 2051205489
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_41: 1401563405
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_88: -1993167219
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_114: -1731671753
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_7: 1299607919
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_33: 2018389898
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_93: 1765931544
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_92: -816218737
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_81: -137048072
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_58: 1890713277
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_19: -1250285911
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_61: 825623300
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_39: 1251350485
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_101: -1031485732
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_113: -635076401
+      Custom Edited - Mega Man Customs - Mega Man NES Style Upgraded_40: -1802743219
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

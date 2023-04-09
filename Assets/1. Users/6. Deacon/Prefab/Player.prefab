@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6118441923842629194}
   - component: {fileID: 1529472822775606626}
   - component: {fileID: 3848891800602008410}
+  - component: {fileID: 8855156928139153657}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -725294919
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 4
   m_Sprite: {fileID: -1993661620, guid: 8849941d035355a428c42b03411e027f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,6 +104,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   runSpeed: 8
+  airWalkSpeed: 3
+  jumpImpulse: 10
   _isFacingRight: 1
 --- !u!114 &4113011541110018589
 MonoBehaviour:
@@ -150,7 +153,19 @@ MonoBehaviour:
     m_ActionId: cebf5d1f-4155-4b4a-a876-2de947890623
     m_ActionName: Player/Look[/Mouse/delta,/Pen/delta]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8339355192045908917}
+        m_TargetAssemblyTypeName: MetroidPlayerController, Assembly-CSharp
+        m_MethodName: OnAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: f3b116af-ba19-450c-8bd5-ccfa20f11f06
     m_ActionName: Player/Attack[/Mouse/leftButton]
   - m_PersistentCalls:
@@ -209,6 +224,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: ce887893-c26a-4d81-a06b-be17b1074ab3
     m_ActionName: Player/Run[/Keyboard/leftShift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bd64bc4b-1a6a-4250-b2b1-98b790d2da9c
+    m_ActionName: Player/Jump[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -271,3 +290,33 @@ CapsuleCollider2D:
   m_Offset: {x: -0.008672542, y: -0.0069380817}
   m_Size: {x: 0.21265478, y: 0.49387622}
   m_Direction: 0
+--- !u!114 &8855156928139153657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7620362097005042843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ecaad5847121841bacfa6e91f93822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  castFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  groundDistance: 0.05
+  wallDistance: 0.2
+  ceilingDistance: 0.05
+  _isGrounded: 0

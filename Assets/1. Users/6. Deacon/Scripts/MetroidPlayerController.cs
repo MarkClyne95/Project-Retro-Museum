@@ -18,37 +18,45 @@ public class MetroidPlayerController : MonoBehaviour
     TouchingDirections touchingDirections;
 
     static string yVelocity = "yVelocity";
-    static string jump = "Jump";
+    static string jumpTrigger = "Jump";
+    static string attackTrigger = "attack";
+    static string canMove = "canMove";
 
     public float CurrentMoveSpeed { get
         {
-            
-            if (IsMoving && !touchingDirections.IsOnWall)
+            if(CanMove)
             {
-                if (touchingDirections.IsGrounded)
+                if (IsMoving && !touchingDirections.IsOnWall)
                 {
-
-
-                    if (IsRunning)
+                    if (touchingDirections.IsGrounded)
                     {
-                        return runSpeed;
+
+                        if (IsRunning)
+                        {
+                            return runSpeed;
+                        }
+                        else
+                        {
+                            return walkSpeed;
+                        }
+
                     }
                     else
                     {
-                        return walkSpeed;
+                        return airWalkSpeed;
                     }
-                    
+
                 }
                 else
                 {
-                    return airWalkSpeed;
+                    return 0;
                 }
-
             }
             else
             {
                 return 0;
             }
+                
         }
     }
 
@@ -89,6 +97,11 @@ public class MetroidPlayerController : MonoBehaviour
             }
             _isFacingRight = value; 
         
+        } }
+
+    public bool CanMove { get
+        {
+            return animator.GetBool(canMove);
         } }
 
     Rigidbody2D rb;
@@ -143,10 +156,18 @@ public class MetroidPlayerController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if(context.started && touchingDirections.IsGrounded)
+        if(context.started && touchingDirections.IsGrounded && CanMove)
         {
-            animator.SetTrigger(jump);
+            animator.SetTrigger(jumpTrigger);
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
+        }
+    }
+
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            animator.SetTrigger(attackTrigger);
         }
     }
 }

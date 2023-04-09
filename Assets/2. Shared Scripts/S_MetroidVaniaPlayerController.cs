@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using SensorToolkit.Example;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,17 +11,22 @@ using Vector3 = UnityEngine.Vector3;
 public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerActions
 {
     //Public properties
-    [Header("Locomotion")] public float movementSpeed;
+    [Header("Locomotion")] 
+    public float movementSpeed;
     public float jumpHeight;
+    public float maxJumpHeight;
     private int jumpCount = 1;
     [SerializeField]private bool _onLadder;
     public Vector2 _moveInput;
     public bool canMove;
     public bool isJumping;
     public bool isGrounded;
-    private bool _isLookingLeft;
-    private float localScaleForY;
-    public RenderPipelineAsset pipelineAsset;
+    public bool canShoot;
+    public bool _isLookingLeft;
+    private bool _invincible;
+
+    [Header("Bullet Properies")] 
+    [SerializeField] private Transform bulletStart;
 
     //Private Properties
     private bool _falling;
@@ -29,14 +35,11 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     private float _jumpForce;
 
     //animator hash int
-    private int horizontal;
-    private int vertical;
     private int jump;
 
     //Ground Detection
     [Header("Ground Detection")] [SerializeField]
     private Transform collisionGround;
-
     [SerializeField] private Vector3 collisionGroundPos;
 
     //Game Objects
@@ -49,6 +52,8 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     private Animator _anim;
     private SpriteRenderer sr;
     [SerializeField]private S_GameManager _gm;
+    [SerializeField] private GameObject _bullet;
+    public float bulletSpeed;
 
     #region Singleton
 
@@ -79,8 +84,16 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
 
     private void FixedUpdate()
     {
-        Flip();
         isGrounded = Physics2D.OverlapCircle(collisionGround.position, checkRadius, whatIsGround);
+
+        if (!isGrounded && !_onLadder)
+        {
+            _anim.SetBool("Jump", true);
+        }
+        else
+        {
+            _anim.SetBool("Jump", false);
+        }
 
         _rb.velocity = new Vector2(_moveInput.x * movementSpeed, _rb.velocity.y);
     }
@@ -92,25 +105,25 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
 
     private void Start()
     {
-        QualitySettings.SetQualityLevel(5, true);
         _anim = GetComponent<Animator>();
         canMove = true;
-        localScaleForY = transform.localScale.y;
-        horizontal = Animator.StringToHash("Horizontal");
-        vertical = Animator.StringToHash("Vertical");
+        _isLookingLeft = false;
         jump = Animator.StringToHash("Jump");
     }
 
     public void OnMovement(InputAction.CallbackContext input)
     {
         _moveInput = input.ReadValue<Vector2>();
+        Debug.Log(_moveInput);
         if (_moveInput.x < 0 && !_onLadder)
         {
             _isLookingLeft = true;
+            Flip();
         }
         else if (_moveInput.x > 0 && !_onLadder)
         {
             _isLookingLeft = false;
+            Flip();
         }
         
         _anim.SetBool("Run", _moveInput.x != 0);
@@ -121,18 +134,47 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         transform.localScale = _isLookingLeft ? new Vector2(-11, 11) : new Vector2(11, 11);
     }
 
-    private void OnShoot(InputValue ctx)
+    public void SetInvincible(bool status)
     {
-        if (ctx.isPressed)
+        _invincible = status;
+    }
+
+    public void TakeDamage(int amount)
+    {
+        if (!_invincible)
         {
-            Debug.LogError("Yeah");
+            healthPoints -= amount;
+            Mathf.Clamp(healthPoints, 0, maxHealthPoints);
+
+            if (healthPoints <= 0)
+            {
+                //death
+            }
         }
     }
 
     public void OnShoot(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        if (context.ReadValueAsButton())
+        {
+            if (_anim.GetBool("Run") == true)
+            {
+                Invoke(nameof(ShootBullet), 0.1f);
+                _anim.SetTrigger("RunShoot");
+            }
+            else
+            {
+                Invoke(nameof(ShootBullet), 0.1f);
+                _anim.SetTrigger("Shoot");
+            }
+        }
     }
+
+    private void ShootBullet()
+    {
+        var bul = Instantiate(_bullet, bulletStart.position, Quaternion.identity);
+    }
+    
     public void OnRun(InputAction.CallbackContext context)
     {
         throw new System.NotImplementedException();
@@ -142,27 +184,10 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     {
         if (ctx.ReadValueAsButton() && isGrounded)
         {
-            _rb.velocity = new Vector2(_rb.velocity.x, jumpHeight);
-            _anim.SetBool(jump, true);
-            Invoke(nameof(SetAnimBool), 0.5f);
+            isJumping = true;
+            _rb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
         }
     }
-
-    public void OnSpecialAttack(InputAction.CallbackContext context)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void OnDash(InputAction.CallbackContext context)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    private void SetAnimBool()
-    {
-        _anim.SetBool(jump, false);
-    }
-
     #endregion
     
     private void OnDrawGizmosSelected()
@@ -174,7 +199,7 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Ladder")
+        if (other.CompareTag("Ladder"))
         {
             _onLadder = true;
         }
@@ -182,7 +207,7 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Ladder")
+        if (other.CompareTag("Ladder"))
         {
             _onLadder = false;
         }
