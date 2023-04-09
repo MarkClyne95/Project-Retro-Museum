@@ -8,14 +8,23 @@ public class BoxBounce : MonoBehaviour
 
     [SerializeField] private GameObject crateSmoke;
 
+    [SerializeField] private GameObject crateMesh;
+
     [SerializeField] private int counter = 0;
+
+    [SerializeField] private AudioSource crateBounce;
+    [SerializeField] private AudioSource crateDestruction;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player") && player.GetComponent<ThirdPersonLocomotion>().isGrounded)
+        GetComponent<Animator>().SetBool("SquashStretch", true);
+
+        if (other.CompareTag("Player") && player.GetComponent<ThirdPersonLocomotion>().isGrounded)
         {
             Debug.Log("Bounce");
-            Invoke("playerBounce", 0.1f);
+
+            crateBounce.Play();
+            Invoke("playerBounce", 0.01f);
         }
     }
 
@@ -32,7 +41,20 @@ public class BoxBounce : MonoBehaviour
             //Play smoke VFX
             Instantiate(crateSmoke, transform.position, transform.rotation);
 
-            Destroy(gameObject);
+            crateDestruction.Play();
+
+            crateMesh.SetActive(false);
         }
     }
+
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Back to Crate Idle");
+            GetComponent<Animator>().SetBool("SquashStretch", false);
+        }
+    }
+
 }

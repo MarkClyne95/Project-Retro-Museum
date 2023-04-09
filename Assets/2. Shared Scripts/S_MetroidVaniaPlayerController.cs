@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using SensorToolkit.Example;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -20,7 +21,12 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     public bool canMove;
     public bool isJumping;
     public bool isGrounded;
-    private bool _isLookingLeft;
+    public bool canShoot;
+    public bool _isLookingLeft;
+    private bool _invincible;
+
+    [Header("Bullet Properies")] 
+    [SerializeField] private Transform bulletStart;
 
     //Private Properties
     private bool _falling;
@@ -78,8 +84,16 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
 
     private void FixedUpdate()
     {
-        Flip();
         isGrounded = Physics2D.OverlapCircle(collisionGround.position, checkRadius, whatIsGround);
+
+        if (!isGrounded && !_onLadder)
+        {
+            _anim.SetBool("Jump", true);
+        }
+        else
+        {
+            _anim.SetBool("Jump", false);
+        }
 
         _rb.velocity = new Vector2(_moveInput.x * movementSpeed, _rb.velocity.y);
     }
@@ -92,20 +106,24 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     private void Start()
     {
         _anim = GetComponent<Animator>();
-        canMove = true; 
+        canMove = true;
+        _isLookingLeft = false;
         jump = Animator.StringToHash("Jump");
     }
 
     public void OnMovement(InputAction.CallbackContext input)
     {
         _moveInput = input.ReadValue<Vector2>();
+        Debug.Log(_moveInput);
         if (_moveInput.x < 0 && !_onLadder)
         {
             _isLookingLeft = true;
+            Flip();
         }
         else if (_moveInput.x > 0 && !_onLadder)
         {
             _isLookingLeft = false;
+            Flip();
         }
         
         _anim.SetBool("Run", _moveInput.x != 0);
@@ -116,11 +134,22 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         transform.localScale = _isLookingLeft ? new Vector2(-11, 11) : new Vector2(11, 11);
     }
 
-    private void OnShoot(InputValue ctx)
+    public void SetInvincible(bool status)
     {
-        if (ctx.isPressed)
+        _invincible = status;
+    }
+
+    public void TakeDamage(int amount)
+    {
+        if (!_invincible)
         {
-            Debug.LogError("Yeah");
+            healthPoints -= amount;
+            Mathf.Clamp(healthPoints, 0, maxHealthPoints);
+
+            if (healthPoints <= 0)
+            {
+                //death
+            }
         }
     }
 
@@ -130,16 +159,22 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         {
             if (_anim.GetBool("Run") == true)
             {
+                Invoke(nameof(ShootBullet), 0.1f);
                 _anim.SetTrigger("RunShoot");
-                var bullet = Instantiate(_bullet, transform.position, transform.rotation, transform);
             }
             else
             {
+                Invoke(nameof(ShootBullet), 0.1f);
                 _anim.SetTrigger("Shoot");
-                var bullet = Instantiate(_bullet, transform.position, transform.rotation, transform);
             }
         }
     }
+
+    private void ShootBullet()
+    {
+        var bul = Instantiate(_bullet, bulletStart.position, Quaternion.identity);
+    }
+    
     public void OnRun(InputAction.CallbackContext context)
     {
         throw new System.NotImplementedException();
@@ -151,16 +186,8 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         {
             isJumping = true;
             _rb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
-            _anim.SetBool(jump, true);
-            Invoke(nameof(SetAnimBool), 0.5f);
         }
     }
-
-    private void SetAnimBool()
-    {
-        _anim.SetBool(jump, false);
-    }
-
     #endregion
     
     private void OnDrawGizmosSelected()

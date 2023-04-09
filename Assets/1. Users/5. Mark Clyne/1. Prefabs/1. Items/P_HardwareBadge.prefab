@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5600790345441800135}
   - component: {fileID: 2084715616307193533}
   - component: {fileID: -3490716359748072948}
-  - component: {fileID: 3624220781181640772}
+  - component: {fileID: 8478452183434313297}
   m_Layer: 0
   m_Name: P_HardwareBadge
   m_TagString: HardwareBadge
@@ -133,7 +133,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3624220781181640772
+--- !u!114 &8478452183434313297
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,6 +142,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 181573724404279074}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e13dc159ad10fc24a9f9a40ea83b48ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 4596bea98f907f640960e01ad2c6d3b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _badgeType: 0
+  _playerUI: {fileID: 0}

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class S_Enemy : MonoBehaviour
@@ -11,6 +12,7 @@ public class S_Enemy : MonoBehaviour
     public float speed = 2;
     public float scaleFactor;
     public float spriteScaling;
+    [SerializeField]private GameObject coin;
 
 
     private void Start()

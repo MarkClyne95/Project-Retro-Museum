@@ -20,6 +20,13 @@ TagManager:
   - AudioMaster
   - Turret
   - GameScene
+  - World
+  - Coin
+  - SoftwareBadge
+  - HardwareBadge
+  - HistoryBadge
+  - Bullet
+  - UI
   layers:
   - Default
   - TransparentFX
