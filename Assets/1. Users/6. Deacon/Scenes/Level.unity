@@ -740,8 +740,8 @@ GameObject:
   - component: {fileID: 1080808904}
   - component: {fileID: 1080808903}
   - component: {fileID: 1080808902}
-  m_Layer: 0
-  m_Name: Tilemap
+  m_Layer: 3
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7496,6 +7496,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1583757457 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2721618182248883858, guid: 13581a35a65171d479e83a0d3b8a68ef, type: 3}
+  m_PrefabInstance: {fileID: 4007536613047622560}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f256dbbcb6f8147bb9369b13c7fb01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1620976613
 GameObject:
   m_ObjectHideFlags: 0
@@ -7653,6 +7664,22 @@ MonoBehaviour:
   wallDistance: 0.2
   ceilingDistance: 0.05
   _isGrounded: 0
+--- !u!114 &1947646144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947646130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c947167dff6e942ac4756b43f551ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 100
+  _isAlive: 1
+  isInvinvible: 0
 --- !u!1 &1990875751
 GameObject:
   m_ObjectHideFlags: 0
@@ -12794,7 +12821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1452865190815305572, guid: 13581a35a65171d479e83a0d3b8a68ef, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.67
+      value: -1.3
       objectReference: {fileID: 0}
     - target: {fileID: 1452865190815305572, guid: 13581a35a65171d479e83a0d3b8a68ef, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12828,9 +12855,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6397096372558270875, guid: 13581a35a65171d479e83a0d3b8a68ef, type: 3}
+      propertyPath: wallDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6641794119991330238, guid: 13581a35a65171d479e83a0d3b8a68ef, type: 3}
       propertyPath: walkSpeed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641794119991330238, guid: 13581a35a65171d479e83a0d3b8a68ef, type: 3}
+      propertyPath: attackZone
+      value: 
+      objectReference: {fileID: 1583757457}
+    - target: {fileID: 6641794119991330238, guid: 13581a35a65171d479e83a0d3b8a68ef, type: 3}
+      propertyPath: walkStopRate
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829737574953507929, guid: 13581a35a65171d479e83a0d3b8a68ef, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0484028
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829737574953507929, guid: 13581a35a65171d479e83a0d3b8a68ef, type: 3}
+      propertyPath: m_Size.y
+      value: 2.3267794
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829737574953507929, guid: 13581a35a65171d479e83a0d3b8a68ef, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0756613
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829737574953507929, guid: 13581a35a65171d479e83a0d3b8a68ef, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.01606828
       objectReference: {fileID: 0}
     - target: {fileID: 8554602770668345018, guid: 13581a35a65171d479e83a0d3b8a68ef, type: 3}
       propertyPath: m_Name
