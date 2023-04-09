@@ -41,10 +41,10 @@ TagManager:
   - PlayerActor
   - MovingPlatform
   - EnemyM
-  - 
-  - 
-  - 
-  - 
+  - MetoridPlayer
+  - MetoridEnemy
+  - PlayerHitbox
+  - EnemyHitbox
   - 
   - 
   - 

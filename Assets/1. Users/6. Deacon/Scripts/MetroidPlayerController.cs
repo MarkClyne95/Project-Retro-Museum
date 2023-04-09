@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
@@ -20,7 +21,9 @@ public class MetroidPlayerController : MonoBehaviour
     static string yVelocity = "yVelocity";
     static string jumpTrigger = "Jump";
     static string attackTrigger = "attack";
-    static string canMove = "canMove";
+    public static string canMove = "canMove";
+    public static string hasTarget = "hasTarget";
+    public static string isAlive = "isAlive";
 
     public float CurrentMoveSpeed { get
         {
@@ -104,6 +107,13 @@ public class MetroidPlayerController : MonoBehaviour
             return animator.GetBool(canMove);
         } }
 
+    public bool IsAlive
+    {
+        get
+        {
+            return animator.GetBool(isAlive);
+        }
+    }
     Rigidbody2D rb;
     Animator animator;
 
@@ -125,9 +135,17 @@ public class MetroidPlayerController : MonoBehaviour
     {
         moveInput = context.ReadValue<Vector2>();
 
-        IsMoving = moveInput != Vector2.zero;
+        if (IsAlive)
+        {
+            IsMoving = moveInput != Vector2.zero;
 
-        SetFacingDirection(moveInput);
+            SetFacingDirection(moveInput);
+        }
+        else
+        {
+            IsMoving = false;
+        }
+       
     }
 
     private void SetFacingDirection(Vector2 moveInput)
