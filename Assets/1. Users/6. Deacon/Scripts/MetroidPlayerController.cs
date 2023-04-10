@@ -21,6 +21,8 @@ public class MetroidPlayerController : MonoBehaviour
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
 
+    public GameObject interactNotification;
+
     Vector2 moveInput;
     TouchingDirections touchingDirections;
     Damageable damageable;
@@ -242,6 +244,16 @@ public class MetroidPlayerController : MonoBehaviour
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
+    }
+
+    public void NotifyPlayer()
+    {
+        interactNotification.SetActive(true);
+    }
+
+    public void DeNotifyPlayer()
+    {
+        interactNotification.SetActive(false);
     }
 
 }

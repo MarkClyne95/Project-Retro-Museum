@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
     public Slider healthSlider;
-    public TMP_Text healthBarText;
 
     Damageable playerDamageble;
 
@@ -25,7 +23,6 @@ public class HealthBar : MonoBehaviour
     void Start()
     {
         healthSlider.value = CalculateSliderPercentage(playerDamageble.Health, playerDamageble.MaxHealth);
-        healthBarText.text = "HP " + playerDamageble.Health + " / " + playerDamageble.MaxHealth;
     }
 
     private void OnEnable()
@@ -47,6 +44,5 @@ public class HealthBar : MonoBehaviour
     private void OnPlayerHealthChanged(int newHealth, int maxHealth)
     {
         healthSlider.value = CalculateSliderPercentage(newHealth, maxHealth);
-        healthBarText.text = "HP " + newHealth + " / " + maxHealth;
     }
 }
