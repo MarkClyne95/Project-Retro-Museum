@@ -45,8 +45,8 @@ TagManager:
   - MetoridEnemy
   - PlayerHitbox
   - EnemyHitbox
-  - 
-  - 
+  - GroundDetection
+  - MPickUp
   - 
   - 
   - 

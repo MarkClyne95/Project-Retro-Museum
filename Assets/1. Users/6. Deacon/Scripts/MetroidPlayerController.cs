@@ -7,7 +7,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
+[RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections), typeof(Damageable))]
 public class MetroidPlayerController : MonoBehaviour
 {
     public float walkSpeed = 5f;
@@ -15,8 +15,16 @@ public class MetroidPlayerController : MonoBehaviour
     public float airWalkSpeed = 3f;
     public float jumpImpulse = 10f;
 
+    private bool canDash = true;
+    private bool isDashing;
+    private float dashingPower = 6f;
+    private float dashingTime = 0.2f;
+    private float dashingCooldown = 1f;
+
     Vector2 moveInput;
     TouchingDirections touchingDirections;
+    Damageable damageable;
+
 
     static string yVelocity = "yVelocity";
     static string jumpTrigger = "Jump";
@@ -24,7 +32,21 @@ public class MetroidPlayerController : MonoBehaviour
     public static string canMove = "canMove";
     public static string hasTarget = "hasTarget";
     public static string isAlive = "isAlive";
+    public static string hitTrigger = "hit";
+    public static string lockVelocity = "lockVelocity";
+    public static string attackCooldown = "attackCooldown";
 
+    private void Update()
+    {
+        if (isDashing)
+        {
+            return;
+        }
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
+    }
     public float CurrentMoveSpeed { get
         {
             if(CanMove)
@@ -114,19 +136,31 @@ public class MetroidPlayerController : MonoBehaviour
             return animator.GetBool(isAlive);
         }
     }
+
+   
     Rigidbody2D rb;
     Animator animator;
+    TrailRenderer tr;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        tr = GetComponent<TrailRenderer>();
         animator = GetComponent<Animator>();
         touchingDirections = GetComponent<TouchingDirections>();
+        damageable = GetComponent<Damageable>();
+
+        
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed * Time.fixedDeltaTime, rb.velocity.y);
+        if (isDashing)
+        {
+            return;
+        }
+        if(!damageable.LockVelocity)
+            rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed * Time.fixedDeltaTime, rb.velocity.y);
 
         animator.SetFloat(yVelocity, rb.velocity.y);
     }
@@ -188,4 +222,26 @@ public class MetroidPlayerController : MonoBehaviour
             animator.SetTrigger(attackTrigger);
         }
     }
+
+    public void OnHit(int damage, Vector2 knockback)
+    {
+        rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
+    }
+
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
+    }
+
 }
