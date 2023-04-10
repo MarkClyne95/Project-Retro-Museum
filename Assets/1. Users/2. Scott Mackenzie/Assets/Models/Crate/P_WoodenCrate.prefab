@@ -83,6 +83,8 @@ MonoBehaviour:
   counter: -3
   crateBounce: {fileID: 2484195650231029310}
   crateDestruction: {fileID: 5339157912336511519}
+  collider1: {fileID: 4478813195017829356}
+  collider2: {fileID: 8666116764088781213}
 --- !u!54 &1625472162
 Rigidbody:
   m_ObjectHideFlags: 0
