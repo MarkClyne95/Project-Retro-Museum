@@ -266,7 +266,7 @@ MonoBehaviour:
     m_Bits: 16
   _triggeredByTag: Player
   _triggeredType: 2
-  _cooldownTime: 0.5
+  _cooldownTime: 1.2
   <IsActivatable>k__BackingField: 1
   isDebug: 0
   _invokeOnTriggerExitWhenTriggered: 0
@@ -295,7 +295,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _durationRequiredForTrigger: 1.2
-  _cancelOnTriggerExit: 1
+  _cancelOnTriggerExit: 0
 --- !u!1 &5139001924920259295
 GameObject:
   m_ObjectHideFlags: 0

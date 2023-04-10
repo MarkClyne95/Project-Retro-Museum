@@ -20,7 +20,7 @@ public class SceneSwitch : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Jungle")
         {
-            SceneManager.LoadScene("Museum");
+            SceneManager.LoadScene(1);
         }
     }
 }
