@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using ScottEwing;
 using ScottEwing.EventSystem;
-using Sirenix.OdinInspector.Editor.StateUpdaters;
+//using Sirenix.OdinInspector.Editor.StateUpdaters;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;

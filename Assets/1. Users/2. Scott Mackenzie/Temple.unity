@@ -5093,11 +5093,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_text
-      value: 'Some PS1 games had discs that doubled as normal audio CDs.
+      value: 'The PS1 was conceived by Ken Kutaragi, a Sony executive who was later
+        dubbed "the Father of PlayStation".
 
 
-        You
-        could put it into a CD player and it would play certain tracks from the game!'
+        Ken''s interest in working
+        with video games stemmed from seeing his daughter play games on Nintentdo''s
+        Famicom.'
       objectReference: {fileID: 0}
     - target: {fileID: 1131950657, guid: e7f974a1cb666084fb11fcd10642e82f, type: 3}
       propertyPath: m_fontSize
@@ -10927,15 +10929,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8763367534917446997, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.31330073
+      value: 0.3133007
       objectReference: {fileID: 0}
     - target: {fileID: 8763367534917446997, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.06650174
+      value: -0.06650179
       objectReference: {fileID: 0}
     - target: {fileID: 8763367534917446997, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.021999553
+      value: 0.021999521
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
@@ -11373,7 +11375,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735638139}
-  m_LocalRotation: {x: 0.27191365, y: 0.5083869, z: -0.17311662, w: 0.79852134}
+  m_LocalRotation: {x: 0.27191365, y: 0.5083869, z: -0.17311664, w: 0.7985214}
   m_LocalPosition: {x: 42.851917, y: 17.018517, z: -0.13276958}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -14969,18 +14971,6 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1568706951539540930, guid: f4030aff721db19459bb2ed7f069c876, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1568706951539540930, guid: f4030aff721db19459bb2ed7f069c876, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1568706951539540930, guid: f4030aff721db19459bb2ed7f069c876, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1568706951539540930, guid: f4030aff721db19459bb2ed7f069c876, type: 3}
       propertyPath: m_LocalPosition.x
       value: 69.609985
       objectReference: {fileID: 0}
@@ -15021,32 +15011,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5057889092096149099, guid: f4030aff721db19459bb2ed7f069c876, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
-    - target: {fileID: 5057889092096149099, guid: f4030aff721db19459bb2ed7f069c876, type: 3}
       propertyPath: m_Name
       value: Checkpoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854410011430060262, guid: f4030aff721db19459bb2ed7f069c876, type: 3}
-      propertyPath: m_Size.x
-      value: 19.77885
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854410011430060262, guid: f4030aff721db19459bb2ed7f069c876, type: 3}
-      propertyPath: m_Size.y
-      value: 7.546363
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854410011430060262, guid: f4030aff721db19459bb2ed7f069c876, type: 3}
-      propertyPath: m_Center.x
-      value: 0.38988495
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854410011430060262, guid: f4030aff721db19459bb2ed7f069c876, type: 3}
-      propertyPath: m_Center.y
-      value: 1.1399188
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854410011430060262, guid: f4030aff721db19459bb2ed7f069c876, type: 3}
-      propertyPath: m_Center.z
-      value: 0.00000023744671
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4030aff721db19459bb2ed7f069c876, type: 3}
