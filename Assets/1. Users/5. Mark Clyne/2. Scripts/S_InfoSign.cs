@@ -7,6 +7,7 @@ using UnityEngine;
 public class S_InfoSign : MonoBehaviour
 {
     [SerializeField] private GameObject _infoUI;
+    [TextArea(15,20)]
     public string infoText;
     private S_InfoSign[] b2d = new S_InfoSign[20];
 

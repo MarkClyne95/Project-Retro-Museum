@@ -66,7 +66,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello, this is Mark Clyne. Nice to meet you!
+  m_text: Whats up people? hey, i heard that you like to make games for the nintendo
+    entertainment system, is that true?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c39418ba8cf5133428e5c11ea10eb7ce, type: 2}
   m_sharedMaterial: {fileID: -2468051858189375351, guid: c39418ba8cf5133428e5c11ea10eb7ce, type: 2}
@@ -93,12 +94,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 6.4
+  m_fontSizeBase: 10.37
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
+  m_fontSizeMax: 18.4
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -129,7 +130,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 51.8172, y: -21.684357, z: 52.098755, w: -22.24759}
+  m_margin: {x: 51.8172, y: -21.684357, z: 52.098755, w: -2.27}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

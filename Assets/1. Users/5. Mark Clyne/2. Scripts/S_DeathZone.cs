@@ -32,5 +32,6 @@ public class S_DeathZone : MonoBehaviour
     private void Death()
     {
         S_MetroidVaniaPlayerController.instance.transform.position = new Vector2(501, 309);
+        S_MetroidVaniaPlayerController.instance.SetHitpoints(S_MetroidVaniaPlayerController.instance.maxHealthPoints);
     }
 }

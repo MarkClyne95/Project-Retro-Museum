@@ -14,6 +14,7 @@ public class SC_PlayerStats : MonoBehaviour
     private void Start()
     {
         scoreUI.text = "score: " + playerScore;
+        Screen.SetResolution(1920,1080,true);
     }
 
     public byte PlayerHealth
