@@ -14,7 +14,7 @@ GameObject:
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -56,5 +56,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.2665253, y: 5.2665253, z: 5.2665253}
-  m_Center: {x: 2.1332626, y: 0, z: 0}
+  m_Size: {x: 19.77885, y: 7.546363, z: 5.2665253}
+  m_Center: {x: 0.38988495, y: 1.1399188, z: 0.00000023744671}

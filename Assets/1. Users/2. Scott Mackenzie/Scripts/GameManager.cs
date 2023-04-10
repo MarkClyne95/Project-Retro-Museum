@@ -46,18 +46,6 @@ public class GameManager : MonoBehaviour
         //    lastCheckpointPos = playerStart.transform.position;
         //}
 
-        playerStart = GameObject.FindWithTag("PlayerStart");
-
-        //Set starting position for each level
-        if (SceneManager.GetActiveScene().name == "Temple")
-        {
-            Debug.Log("Setting Start Pos");
-            lastCheckpointPos = playerStart.transform.position;
-
-        }
-
-        player = GameObject.FindWithTag("Player");
-        player.GetComponent<ThirdPersonLocomotion>().SetPlayerPos();
 
         Screen.SetResolution(800, 600, true);
     }
@@ -66,6 +54,18 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
 
+        playerStart = GameObject.FindWithTag("PlayerStart");
+
+        //Set starting position for each level
+        if (SceneManager.GetActiveScene().name == "Temple" || SceneManager.GetActiveScene().name == "Jungle")
+        {
+            Debug.Log("Setting Start Pos");
+            lastCheckpointPos = playerStart.transform.position;
+
+        }
+
+        player = GameObject.FindWithTag("Player");
+        player.GetComponent<ThirdPersonLocomotion>().SetPlayerPos();
 
         //player.transform.position = lastCheckpointPos;
         //sceneSwitch = GameObject.FindGameObjectWithTag("SceneFader").GetComponent<SceneSwitch>();
