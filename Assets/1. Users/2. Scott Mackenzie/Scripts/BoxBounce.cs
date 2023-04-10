@@ -15,6 +15,9 @@ public class BoxBounce : MonoBehaviour
     [SerializeField] private AudioSource crateBounce;
     [SerializeField] private AudioSource crateDestruction;
 
+    [SerializeField] private Collider collider1;
+    [SerializeField] private Collider collider2;
+
     private void OnTriggerEnter(Collider other)
     {
         GetComponent<Animator>().SetBool("SquashStretch", true);
@@ -44,6 +47,9 @@ public class BoxBounce : MonoBehaviour
             crateDestruction.Play();
 
             crateMesh.SetActive(false);
+
+            collider1.enabled = false;
+            collider2.enabled = false;
         }
     }
 

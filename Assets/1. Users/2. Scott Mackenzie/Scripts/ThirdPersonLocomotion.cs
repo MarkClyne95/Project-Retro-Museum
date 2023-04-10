@@ -28,6 +28,8 @@ public class ThirdPersonLocomotion : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+    [SerializeField] private AudioSource jumpBounce;
+
     private void Awake()
     {
         //gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
@@ -114,6 +116,8 @@ public class ThirdPersonLocomotion : MonoBehaviour
         isGrounded = false;
         velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
         Invoke("resetJumpHeight", 0.3f);
+
+        jumpBounce.Play();
     }
 
     //public void untranstitionJump()

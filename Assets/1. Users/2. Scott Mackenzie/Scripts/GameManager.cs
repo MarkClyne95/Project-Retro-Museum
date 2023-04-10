@@ -46,12 +46,6 @@ public class GameManager : MonoBehaviour
         //    lastCheckpointPos = playerStart.transform.position;
         //}
 
-    }
-
-    //Get a reference to Scene Switcher
-    private void Start()
-    {
-
         playerStart = GameObject.FindWithTag("PlayerStart");
 
         //Set starting position for each level
@@ -64,6 +58,15 @@ public class GameManager : MonoBehaviour
 
         player = GameObject.FindWithTag("Player");
         player.GetComponent<ThirdPersonLocomotion>().SetPlayerPos();
+
+        Screen.SetResolution(800, 600, true);
+    }
+
+    //Get a reference to Scene Switcher
+    private void Start()
+    {
+
+
         //player.transform.position = lastCheckpointPos;
         //sceneSwitch = GameObject.FindGameObjectWithTag("SceneFader").GetComponent<SceneSwitch>();
     }
