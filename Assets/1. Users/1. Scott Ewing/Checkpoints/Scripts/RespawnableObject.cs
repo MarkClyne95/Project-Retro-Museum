@@ -40,7 +40,7 @@ namespace ScottEwing.Checkpoints
         }
 
         protected override void OnCheckpointReset(ResetToCheckpointEvent obj) {
-            if (_updateRespawnTransformOnCheckpointReached) {
+            if (_respawnOnCheckpointReload) {
                 base.OnCheckpointReset(obj);
             }
         }
