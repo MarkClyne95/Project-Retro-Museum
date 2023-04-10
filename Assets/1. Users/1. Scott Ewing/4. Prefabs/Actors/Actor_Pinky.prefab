@@ -122,7 +122,7 @@ MonoBehaviour:
   _maxAttackCooldown: 0
   _attackCooldown: 0
   _attackCooldownOver: 1
-  _damage: 20
+  _damage: 10
   _attackDuration: 1
   _requireTarget: 1
   <IsAttacking>k__BackingField: 0
