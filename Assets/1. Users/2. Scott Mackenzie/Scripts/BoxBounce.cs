@@ -37,20 +37,21 @@ public class BoxBounce : MonoBehaviour
         player.GetComponent<ThirdPersonLocomotion>().Jump();
         player.GetComponent<Animator>().SetBool("IsJumping", true);
 
-        counter += 1;
+        //Destroy crate after player jumps on it a certain number of times
+        //counter += 1;
 
-        if(counter >= 3)
-        {
-            //Play smoke VFX
-            Instantiate(crateSmoke, transform.position, transform.rotation);
+        //if(counter >= 3)
+        //{
+        //    //Play smoke VFX
+        //    Instantiate(crateSmoke, transform.position, transform.rotation);
 
-            crateDestruction.Play();
+        //    crateDestruction.Play();
 
-            crateMesh.SetActive(false);
+        //    crateMesh.SetActive(false);
 
-            collider1.enabled = false;
-            collider2.enabled = false;
-        }
+        //    collider1.enabled = false;
+        //    collider2.enabled = false;
+        //}
     }
 
 

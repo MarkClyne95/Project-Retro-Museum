@@ -32,7 +32,7 @@ public class ThirdPersonLocomotion : MonoBehaviour
 
     private void Awake()
     {
-        //gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
     }
 
     private void Start()
@@ -57,18 +57,18 @@ public class ThirdPersonLocomotion : MonoBehaviour
         //----------------Jumping Functionality----------------//
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-        Debug.Log("GROUNDED");
+        //Debug.Log("GROUNDED");
 
         if(isGrounded && velocity.y <= 0)
         {
-            Debug.Log("DISABLE JUMPING");
+            //Debug.Log("DISABLE JUMPING");
             velocity.y = -7f;
             animator.SetBool("IsJumping", false);
         }
 
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
-            Debug.Log("JUMPING");
+            //Debug.Log("JUMPING");
             animator.SetBool("IsJumping", true);
             Invoke("Jump", 0.1f);
         }
@@ -99,14 +99,14 @@ public class ThirdPersonLocomotion : MonoBehaviour
 
             animator.SetBool("IsMoving", true);
 
-            Debug.Log(animator.GetBool("IsMoving"));
+            //Debug.Log(animator.GetBool("IsMoving"));
         }
 
         if(direction.magnitude <= 0f)
         {
             animator.SetBool("IsMoving", false);
 
-            Debug.Log(animator.GetBool("IsMoving"));
+            //Debug.Log(animator.GetBool("IsMoving"));
         }
 
     }
@@ -133,5 +133,12 @@ public class ThirdPersonLocomotion : MonoBehaviour
     public void plummet()
     {
         groundMask = LayerMask.GetMask("Nothing");
+        Invoke("resetGroundMask", 1.2f);
+    }
+
+    private void resetGroundMask()
+    {
+        gravity = -20f;
+        groundMask = LayerMask.GetMask("Ground");
     }
 }
