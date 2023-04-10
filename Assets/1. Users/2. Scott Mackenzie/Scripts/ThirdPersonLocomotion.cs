@@ -133,7 +133,7 @@ public class ThirdPersonLocomotion : MonoBehaviour
     public void plummet()
     {
         groundMask = LayerMask.GetMask("Nothing");
-        Invoke("resetGroundMask", 1.2f);
+        Invoke("resetGroundMask", 1.1f);
     }
 
     private void resetGroundMask()
