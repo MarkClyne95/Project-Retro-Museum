@@ -15,6 +15,11 @@ public class WrongBox : MonoBehaviour
     [SerializeField] private Collider collider1;
     [SerializeField] private Collider collider2;
 
+    private void Start()
+    {
+        crateDestruction.volume = PlayerPrefs.GetFloat("SFXVolume");
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         //GetComponent<Animator>().SetBool("SquashStretch", true);

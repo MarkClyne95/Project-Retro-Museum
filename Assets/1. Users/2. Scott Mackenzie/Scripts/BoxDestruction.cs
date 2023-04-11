@@ -16,6 +16,7 @@ public class BoxDestruction : MonoBehaviour
     private void Start()
     {
         retroUI.SetActive(false);
+        crateDestruction.volume = PlayerPrefs.GetFloat("SFXVolume");
     }
 
     private void OnTriggerEnter(Collider other)

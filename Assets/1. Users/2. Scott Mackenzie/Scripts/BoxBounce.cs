@@ -18,6 +18,12 @@ public class BoxBounce : MonoBehaviour
     [SerializeField] private Collider collider1;
     [SerializeField] private Collider collider2;
 
+    private void Start()
+    {
+        crateBounce.volume = PlayerPrefs.GetFloat("SFXVolume");
+        crateDestruction.volume = PlayerPrefs.GetFloat("SFXVolume");
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         GetComponent<Animator>().SetBool("SquashStretch", true);

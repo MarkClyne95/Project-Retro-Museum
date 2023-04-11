@@ -41,6 +41,8 @@ public class ThirdPersonLocomotion : MonoBehaviour
         gravity = -20f;
         groundMask = LayerMask.GetMask("Ground");
 
+        jumpBounce.volume = PlayerPrefs.GetFloat("SFXVolume");
+
         //transform.position = gm.playerStart.transform.position;
         //Invoke("SetStartPos", 0.1f);
     }
@@ -133,7 +135,7 @@ public class ThirdPersonLocomotion : MonoBehaviour
     public void plummet()
     {
         groundMask = LayerMask.GetMask("Nothing");
-        Invoke("resetGroundMask", 1.1f);
+        Invoke("resetGroundMask", 1.2f);
     }
 
     private void resetGroundMask()
