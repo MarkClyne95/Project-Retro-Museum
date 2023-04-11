@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine;
 
-public class MetroidInteractable : MonoBehaviour
+public class M2 : MonoBehaviour
 {
-    public static MetroidInteractable currentInteractable;
-    public static bool isInRange;
-
+    public bool isInRange;
     public KeyCode interactKey;
     public UnityEvent interactAction;
 
@@ -18,7 +16,6 @@ public class MetroidInteractable : MonoBehaviour
         {
             if (Input.GetKeyDown(interactKey))
             {
-                currentInteractable = this;
                 interactAction.Invoke();
             }
         }
@@ -37,12 +34,9 @@ public class MetroidInteractable : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (currentInteractable == this)
-            {
-                currentInteractable = null;
-            }
             isInRange = false;
             collision.gameObject.GetComponent<MetroidPlayerController>().DeNotifyPlayer();
         }
     }
+
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenQuestion : MonoBehaviour
+public class OpenQuestion2 : MonoBehaviour
 {
     public GameObject question;
     public float delayTime = 5f;
@@ -10,7 +10,7 @@ public class OpenQuestion : MonoBehaviour
     public void OQuestion()
     {
         question.SetActive(true);
-        Invoke("DeactivateQuestion", delayTime); 
+        Invoke("DeactivateQuestion", delayTime);
     }
 
     private void DeactivateQuestion()
