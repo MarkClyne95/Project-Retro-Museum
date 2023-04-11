@@ -134,10 +134,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 106
+        width: 45
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,7 +158,7 @@ TextureImporter:
         width: 34
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,7 +179,7 @@ TextureImporter:
         width: 13
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,6 +187,48 @@ TextureImporter:
       bones: []
       spriteID: b2ef99509e569cd4296adcfb4b31a538
       internalID: -1707044392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stbar_segmented_3
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 14
+        width: 44
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689b1fdc7aaf4c54395f3f2b36e974d2
+      internalID: 1728405099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stbar_segmented_4
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0
+        width: 61
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4c2314c8b48ac45bd35ab301622d62
+      internalID: 382475252
       vertices: []
       indices: 
       edges: []
@@ -203,6 +245,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       stbar_segmented_3: 1728405099
+      stbar_segmented_4: 382475252
       stbar_segmented_1: -1834544022
       stbar_segmented_0: 1742786480
       stbar_segmented_2: -1707044392
