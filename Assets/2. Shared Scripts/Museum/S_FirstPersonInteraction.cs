@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,17 +10,24 @@ public class S_FirstPersonInteraction : MonoBehaviour
     private RaycastHit _hit;
     private Vector3 _forward;
     [SerializeField]private float _rayLength = 50f;
+    [SerializeField] private TMP_Text interactText;
+
+    private void Start()
+    {
+        interactText.text = $"Press {interactKey} to interact";
+    }
 
     private void Update()
     {
-        _forward = transform.TransformDirection(transform.forward);
-        Debug.DrawRay(transform.position, Camera.main.transform.forward * _rayLength, Color.blue);
-        if (Physics.Raycast(transform.position, Camera.main.transform.forward, out _hit, _rayLength))
+        _forward = new Vector3(transform.position.x, transform.position.y +1, transform.position.z);
+        Debug.DrawRay(_forward, Camera.main.transform.forward * _rayLength, Color.blue);
+        if (Physics.Raycast(_forward, Camera.main.transform.forward, out _hit, _rayLength))
         {
             var interactableObject = _hit.collider.gameObject.GetComponent<S_InteractableObject>();
 
             if (interactableObject != null)
             {
+                interactText.gameObject.SetActive(true);
                 switch (interactableObject.objectType)
                 {
                     case ObjectType.Console:
@@ -36,6 +44,10 @@ public class S_FirstPersonInteraction : MonoBehaviour
                         break;
                 }
             }
+        }
+        else
+        {
+            interactText.gameObject.SetActive(false);
         }
     }
 
