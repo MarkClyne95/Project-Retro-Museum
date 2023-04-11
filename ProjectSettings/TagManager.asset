@@ -27,6 +27,9 @@ TagManager:
   - HistoryBadge
   - Bullet
   - UI
+  - FallDectector
+  - CheckPoint
+  - Dia
   layers:
   - Default
   - TransparentFX

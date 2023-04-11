@@ -48,7 +48,7 @@ public class PitBarrier : MonoBehaviour
             Invoke("ActivateCameraShake", 0.6f);
 
             //Load scene from last checkpoint
-            Invoke("LoadCheckpoint", 1.5f);
+            //Invoke("LoadCheckpoint", 1.5f);
         }
     }
 
@@ -57,8 +57,8 @@ public class PitBarrier : MonoBehaviour
         CameraShakeManager.instance.CameraShake(impulseSource);
     }
 
-    private void LoadCheckpoint()
-    {
-        gm.OnPlayerDeath();
-    }
+    //private void LoadCheckpoint()
+    //{
+    //    gm.OnPlayerDeath();
+    //}
 }

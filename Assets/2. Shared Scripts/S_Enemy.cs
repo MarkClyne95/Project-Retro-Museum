@@ -72,9 +72,11 @@ public class S_Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
-            //hurt player
+            var player = collision.GetComponent<S_MetroidVaniaPlayerController>();
+            
+            player.TakeDamage(1);
         }
     }
 }

@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 5477624693564372851}
   - component: {fileID: 5477624693564372850}
   - component: {fileID: 5477624693564372849}
-  - component: {fileID: 5477624693564372848}
+  - component: {fileID: 5043476738688637651}
   - component: {fileID: 5477624693564372852}
   - component: {fileID: 5477624693564372853}
   - component: {fileID: 4280311663082999071}
   - component: {fileID: 8441462817732638869}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: PitDepth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,8 +88,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5477624693564372848
-MeshCollider:
+--- !u!65 &5043476738688637651
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -98,10 +98,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 9.999999, y: 21.3862, z: 9.999998}
+  m_Center: {x: 0, y: -9.936409, z: 0}
 --- !u!114 &5477624693564372852
 MonoBehaviour:
   m_ObjectHideFlags: 0

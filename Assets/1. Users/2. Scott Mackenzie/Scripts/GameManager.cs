@@ -73,16 +73,16 @@ public class GameManager : MonoBehaviour
 
 
     //Reload current level when player dies
-    public void OnPlayerDeath()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    //public void OnPlayerDeath()
+    //{
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         //player.GetComponent<ThirdPersonLocomotion>().SetPlayerPos();
         //Debug.Log("PLAYER TRANSFORM");
         //player = GameObject.FindWithTag("Player");
         //player.GetComponent<CharacterController>().enabled = true;
 
         //player.transform.position = lastCheckpointPos;
-    }
+    //}
  
 
     public void EndGame()

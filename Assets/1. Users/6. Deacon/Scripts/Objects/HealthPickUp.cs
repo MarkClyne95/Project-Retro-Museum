@@ -23,8 +23,9 @@ public class HealthPickUp : MonoBehaviour
         if(damageable)
         {
             bool wasHealed = damageable.Heal(healhRestore);
+            MetroidScoring.totalScore += 500;
 
-            if(wasHealed)
+            if (wasHealed)
                 Destroy(gameObject);
 
         }
