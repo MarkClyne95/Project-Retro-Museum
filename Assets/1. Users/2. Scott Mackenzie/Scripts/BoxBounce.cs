@@ -20,8 +20,8 @@ public class BoxBounce : MonoBehaviour
 
     private void Start()
     {
-        crateBounce.volume = PlayerPrefs.GetFloat("SFXVolume");
-        crateDestruction.volume = PlayerPrefs.GetFloat("SFXVolume");
+        crateBounce.volume = PlayerPrefs.GetFloat("SFXVol");
+        crateDestruction.volume = PlayerPrefs.GetFloat("SFXVol");
     }
 
     private void OnTriggerEnter(Collider other)
