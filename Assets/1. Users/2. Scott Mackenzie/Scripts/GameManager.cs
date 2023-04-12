@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
         //    lastCheckpointPos = playerStart.transform.position;
         //}
 
+        QualitySettings.SetQualityLevel(5);
 
         Screen.SetResolution(800, 600, true);
     }
