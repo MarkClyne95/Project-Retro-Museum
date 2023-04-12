@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -163,69 +163,6 @@ TextureImporter:
       bones: []
       spriteID: d03731ffe8ee2774d84d435a1dc3904b
       internalID: 2096487727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SagaSaturattack_3
-      rect:
-        serializedVersion: 2
-        x: 2245
-        y: 483
-        width: 14
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 200b2600ff06f6a458849cee6fa979ea
-      internalID: -1039633758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SagaSaturattack_6
-      rect:
-        serializedVersion: 2
-        x: 2638
-        y: 378
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd62b1bbc3fe9554d83277d552f02e4c
-      internalID: 46108025
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SagaSaturattack_8
-      rect:
-        serializedVersion: 2
-        x: 2643
-        y: 355
-        width: 4
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1170f59eceaa0244bb6850802fb1f0e
-      internalID: 1700484435
       vertices: []
       indices: 
       edges: []

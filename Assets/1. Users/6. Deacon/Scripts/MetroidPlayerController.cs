@@ -166,8 +166,6 @@ public class MetroidPlayerController : MonoBehaviour
         respawnPoint = transform.position;
         scoreText.text = "Score : 00" + MetroidScoring.totalScore;
 
-
-
     }
 
     private void FixedUpdate()
