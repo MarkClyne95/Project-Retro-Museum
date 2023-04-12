@@ -31,7 +31,7 @@ namespace ScottEwing{
     public class S_ActorHealth : MonoBehaviour, ITakesDamage{
         [SerializeField] private int _maxHealth = 100;
         [SerializeField] private int _currentHealth = 100;
-        private S_ActorController _sActorController;
+        private S_ActorController _actorController;
         private GameObject bloodEffectPrefab;
         [SerializeField] private bool _canBeGibbed = true;
         [SerializeField] private int _gibDamageThreshold = 10;
@@ -40,7 +40,7 @@ namespace ScottEwing{
 
         
         private void Start() {
-            _sActorController = GetComponentInParent<S_ActorController>();
+            _actorController = GetComponentInParent<S_ActorController>();
             healthCollider = GetComponent<Collider>();
         }
 
@@ -48,13 +48,13 @@ namespace ScottEwing{
             _currentHealth -= damage;
             
             if (_currentHealth > 0 ) {
-                if (_sActorController != null) _sActorController.BroadcastTakeDamageEvent(damage, _currentHealth, hit);
+                if (_actorController != null) _actorController.BroadcastTakeDamageEvent(damage, _currentHealth, hit);
             }
             else if (_currentHealth <= 0) {
                 bool isGibbed = _canBeGibbed && damage >= _gibDamageThreshold;
                 _currentHealth = 0;
                 gameObject.layer = Layers.DeadValue();
-                if (_sActorController != null) _sActorController.BroadcastDeathEvent(damage, _currentHealth, hit, isGibbed);
+                if (_actorController != null) _actorController.BroadcastDeathEvent(damage, _currentHealth, hit, isGibbed);
                 if (disableColliderOnDeath) {
                     healthCollider.isTrigger = true;
                 }
@@ -67,7 +67,7 @@ namespace ScottEwing{
         public void ReceiveHealth(int health, int maxHealthFromPickup) {
             _currentHealth += health;
             _currentHealth = Mathf.Min(_currentHealth, maxHealthFromPickup);
-            _sActorController.BroadcastReceiveHealth(_currentHealth);
+            _actorController.BroadcastReceiveHealth(_currentHealth);
         }
 
         public bool IsAlive() => _currentHealth > 0;

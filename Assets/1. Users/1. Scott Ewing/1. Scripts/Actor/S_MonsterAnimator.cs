@@ -24,7 +24,7 @@ public class S_MonsterAnimator : S_ActorAnimator
         _sActorController.ActorEventManager.AddListener<ActorDeathEvent>(OnDeath);
         _sActorController.ActorEventManager.AddListener<ActorAttackEvent>(OnAttack);*/
         base.Start();
-        _sActorController.ActorEventManager.AddListener<StartWalkingEvent>(OnStartWalking);
+        _actorController.ActorEventManager.AddListener<StartWalkingEvent>(OnStartWalking);
 
 
     }
@@ -34,7 +34,7 @@ public class S_MonsterAnimator : S_ActorAnimator
         _sActorController.ActorEventManager.RemoveListener<ActorDeathEvent>(OnDeath);
         _sActorController.ActorEventManager.RemoveListener<ActorAttackEvent>(OnAttack);*/
         base.OnDestroy();
-        _sActorController.ActorEventManager.RemoveListener<StartWalkingEvent>(OnStartWalking);
+        _actorController.ActorEventManager.RemoveListener<StartWalkingEvent>(OnStartWalking);
 
     }
 

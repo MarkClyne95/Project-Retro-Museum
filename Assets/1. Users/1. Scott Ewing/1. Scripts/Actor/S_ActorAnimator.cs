@@ -7,7 +7,7 @@ using UnityEngine;
 public class S_ActorAnimator : MonoBehaviour
 {
     [SerializeField] protected Animator _animator;
-    protected S_ActorController _sActorController;
+    protected S_ActorController _actorController;
     protected readonly int _death = Animator.StringToHash("Death");
     protected readonly int _deathGibbed = Animator.StringToHash("DeathGibbed");
 
@@ -20,19 +20,19 @@ public class S_ActorAnimator : MonoBehaviour
 
     protected virtual void Start() {
         _animator = GetComponent<Animator>();
-        _sActorController = GetComponentInParent<S_ActorController>();
-        _sActorController.ActorEventManager.AddListener<DamageTakenEvent>(OnDamageTaken);
-        _sActorController.ActorEventManager.AddListener<ActorDeathEvent>(OnDeath);
-        _sActorController.ActorEventManager.AddListener<ActorAttackEvent>(OnAttack);
+        _actorController = GetComponentInParent<S_ActorController>();
+        _actorController.ActorEventManager.AddListener<DamageTakenEvent>(OnDamageTaken);
+        _actorController.ActorEventManager.AddListener<ActorDeathEvent>(OnDeath);
+        _actorController.ActorEventManager.AddListener<ActorAttackEvent>(OnAttack);
         //_sActorController.ActorEventManager.AddListener<StartWalkingEvent>(OnStartWalking);
 
 
     }
 
     protected virtual  void OnDestroy() {
-        _sActorController.ActorEventManager.RemoveListener<DamageTakenEvent>(OnDamageTaken);
-        _sActorController.ActorEventManager.RemoveListener<ActorDeathEvent>(OnDeath);
-        _sActorController.ActorEventManager.RemoveListener<ActorAttackEvent>(OnAttack);
+        _actorController.ActorEventManager.RemoveListener<DamageTakenEvent>(OnDamageTaken);
+        _actorController.ActorEventManager.RemoveListener<ActorDeathEvent>(OnDeath);
+        _actorController.ActorEventManager.RemoveListener<ActorAttackEvent>(OnAttack);
         //_sActorController.ActorEventManager.RemoveListener<StartWalkingEvent>(OnStartWalking);
 
     }

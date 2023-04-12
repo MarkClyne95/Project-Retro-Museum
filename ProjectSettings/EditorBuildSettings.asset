@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/6. Shared Scenes/Menus/L_MainMenu.unity
     guid: 658056fe45842ab4f9bc020c005e7b14
   - enabled: 1
+    path: Assets/1. Users/1. Scott Ewing/Doom Assets/DoomLevel.unity
+    guid: 4be7af8ac5d685e418353eac3442c5a9
+  - enabled: 1
     path: Assets/1. Users/3. Matthew Baldwin/Scene/AtariGame.unity
     guid: f4625942d1a2e0e4c9d302469567e700
   - enabled: 1
