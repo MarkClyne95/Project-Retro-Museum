@@ -67,7 +67,7 @@ public class SC_AudioController : MonoBehaviour
         SC_EventManager.OnAtariLand -= SaveCartSFX;
         SC_EventManager.OnBadtariLand -= LoseHealthSFX;
         SC_EventManager.OnNextLevel -= WinGame;
-        SC_EventManager.OnGameOver += LoseGame;
+        SC_EventManager.OnGameOver -= LoseGame;
     }
     #endregion
 }
