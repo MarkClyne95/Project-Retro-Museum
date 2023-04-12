@@ -45,15 +45,14 @@ public class GameManager : MonoBehaviour
         //    Debug.Log("Setting Start Pos");
         //    lastCheckpointPos = playerStart.transform.position;
         //}
-
-        QualitySettings.SetQualityLevel(5);
-
-        Screen.SetResolution(800, 600, true);
     }
 
     //Get a reference to Scene Switcher
     private void Start()
     {
+        QualitySettings.SetQualityLevel(5);
+
+        Screen.SetResolution(800, 600, true);
 
         playerStart = GameObject.FindWithTag("PlayerStart");
 
