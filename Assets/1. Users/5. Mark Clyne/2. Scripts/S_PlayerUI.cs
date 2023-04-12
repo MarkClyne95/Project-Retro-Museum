@@ -40,6 +40,7 @@ public class S_PlayerUI : MonoBehaviour
     {
         if (badge != null)
         {
+            Cursor.visible = true;
             Time.timeScale = 0;
             QuestionUI.SetActive(true);
             question.text = "What model is the CPU used in the Nintendo Entertainment System?";
@@ -62,6 +63,7 @@ public class S_PlayerUI : MonoBehaviour
     {
         if (badge != null)
         {
+            Cursor.visible = true;
             Time.timeScale = 0;
             QuestionUI.SetActive(true);
             question.text = "What year did the Nintendo Entertainment System release in North America?";
@@ -85,6 +87,7 @@ public class S_PlayerUI : MonoBehaviour
     {
         if (badge != null)
         {
+            Cursor.visible = true;
             Time.timeScale = 0;
             QuestionUI.SetActive(true);
             question.text = "How many copies did 'Super Mario Bros.' sell?";
@@ -105,6 +108,7 @@ public class S_PlayerUI : MonoBehaviour
 
     private void CorrectAnswer(Image img)
     {
+        Cursor.visible = false;
         Time.timeScale = 1;
         img.enabled = true;
         QuestionUI.SetActive(false);
@@ -112,6 +116,7 @@ public class S_PlayerUI : MonoBehaviour
 
     private void IncorrectAnswer(Image img)
     {
+        Cursor.visible = false;
         Time.timeScale = 1;
         img.enabled = false;
         QuestionUI.SetActive(false);

@@ -26,6 +26,7 @@ public class MetroidPlayerController : MonoBehaviour
 
     private Vector3 respawnPoint;
     public GameObject fallDetector;
+    public GameObject fallDetector2;
     public TextMeshProUGUI scoreText;
 
 
@@ -58,6 +59,7 @@ public class MetroidPlayerController : MonoBehaviour
         }
 
         fallDetector.transform.position = new Vector2(transform.position.x, fallDetector.transform.position.y);
+        fallDetector2.transform.position = new Vector2(transform.position.x, fallDetector2.transform.position.y);
     }
     public float CurrentMoveSpeed { get
         {
@@ -163,8 +165,6 @@ public class MetroidPlayerController : MonoBehaviour
         damageable = GetComponent<Damageable>();
         respawnPoint = transform.position;
         scoreText.text = "Score : 00" + MetroidScoring.totalScore;
-
-
 
     }
 

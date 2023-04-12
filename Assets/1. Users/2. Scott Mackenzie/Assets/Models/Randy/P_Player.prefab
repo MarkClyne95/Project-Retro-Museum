@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 2144780111}
   - component: {fileID: 2545749292401690797}
   - component: {fileID: 7252476109890176805}
-  - component: {fileID: 8250688776889509791}
+  - component: {fileID: 5125842335539142069}
   m_Layer: 6
   m_Name: P_Player
   m_TagString: Player
@@ -248,7 +248,7 @@ MonoBehaviour:
   _updateRespawnTransformType: 1
   _updateRespawnTransformOnCheckpointReached: 1
   _respawnOnCheckpointReload: 0
---- !u!114 &8250688776889509791
+--- !u!114 &5125842335539142069
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4216241277739671570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ce8c2e5af3b10345a8275c6f8abec50, type: 3}
+  m_Script: {fileID: 11500000, guid: 27274ddd0c54ca84a8ff93db89ef8729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _triggeredBy: 1
@@ -265,8 +265,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 16
   _triggeredByTag: Player
-  _triggeredType: 2
-  _cooldownTime: 1.2
+  _triggeredType: 3
+  _cooldownTime: 2
   <IsActivatable>k__BackingField: 1
   isDebug: 0
   _invokeOnTriggerExitWhenTriggered: 0
@@ -276,7 +276,40 @@ MonoBehaviour:
       - m_Target: {fileID: 7252476109890176805}
         m_TargetAssemblyTypeName: ScottEwing.Checkpoints.RespawnableObject, Assembly-CSharp
         m_MethodName: Respawn
-        m_Mode: 1
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1.2
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  _onTriggerStay:
+    m_PersistentCalls:
+      m_Calls: []
+  _onTriggerExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -285,17 +318,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _onTriggerEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onTriggerStay:
-    m_PersistentCalls:
-      m_Calls: []
-  _onTriggerExit:
-    m_PersistentCalls:
-      m_Calls: []
-  _durationRequiredForTrigger: 1.2
-  _cancelOnTriggerExit: 0
 --- !u!1 &5139001924920259295
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,8 +345,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5139001924920259295}
-  m_LocalRotation: {x: 0.17297138, y: 0.66630167, z: -0.16306596, w: 0.7067762}
-  m_LocalPosition: {x: -33.912075, y: 9.041594, z: -12.212912}
+  m_LocalRotation: {x: 0.18100932, y: 0.66439027, z: -0.17063789, w: 0.70477223}
+  m_LocalPosition: {x: -33.908833, y: 9.041486, z: -12.212743}
   m_LocalScale: {x: 0.66666424, y: 0.6666642, z: 0.66666406}
   m_ConstrainProportionsScale: 0
   m_Children: []

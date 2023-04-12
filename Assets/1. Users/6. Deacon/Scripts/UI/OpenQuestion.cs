@@ -15,6 +15,6 @@ public class OpenQuestion : MonoBehaviour
 
     private void DeactivateQuestion()
     {
-        question.SetActive(false); 
+        question.SetActive(false);
     }
 }

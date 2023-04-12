@@ -30,6 +30,7 @@ TagManager:
   - FallDectector
   - CheckPoint
   - Dia
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -50,7 +51,7 @@ TagManager:
   - EnemyHitbox
   - GroundDetection
   - MPickUp
-  - 
+  - Boss
   - 
   - 
   - 
