@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 //#if SE_EVENTSYSTEM
 using ScottEwing.EventSystem;
+using Sirenix.OdinInspector;
 //#endif
 
 namespace ScottEwing.Checkpoints
@@ -40,18 +41,33 @@ namespace ScottEwing.Checkpoints
         }
 
         protected override void OnCheckpointReset(ResetToCheckpointEvent obj) {
-            if (_updateRespawnTransformOnCheckpointReached) {
+            if (_respawnOnCheckpointReload) {
                 base.OnCheckpointReset(obj);
             }
         }
 #endif
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Respawn();
+            }
+        }
+
+        public void Respawn(float waitTime)
+        {
+            Invoke("Respawn", waitTime);
+        }
+
+        [Button]
 
         public override void Respawn() {
             StartCoroutine(Routine());
             //--Need to wait a frame because obi can't deactivate ropes during physics update. This was being called during on trigger enter 
             IEnumerator Routine() {
                 yield return null;
-                
+  
                 base.Respawn();
                 var evt = new ObjectRespawnedEvent {
                     respawnedObject = gameObject,

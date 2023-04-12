@@ -18,13 +18,15 @@ public class HealthPickUp : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         Damageable damageable = collision.GetComponent<Damageable>();
 
         if(damageable)
         {
+            MetroidScoring.totalScore += 1000;
             bool wasHealed = damageable.Heal(healhRestore);
 
-            if(wasHealed)
+            if (wasHealed)
                 Destroy(gameObject);
 
         }

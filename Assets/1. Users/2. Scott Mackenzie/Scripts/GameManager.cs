@@ -46,10 +46,18 @@ public class GameManager : MonoBehaviour
         //    lastCheckpointPos = playerStart.transform.position;
         //}
 
+
+        Screen.SetResolution(800, 600, true);
+    }
+
+    //Get a reference to Scene Switcher
+    private void Start()
+    {
+
         playerStart = GameObject.FindWithTag("PlayerStart");
 
         //Set starting position for each level
-        if (SceneManager.GetActiveScene().name == "Temple")
+        if (SceneManager.GetActiveScene().name == "Temple" || SceneManager.GetActiveScene().name == "Jungle")
         {
             Debug.Log("Setting Start Pos");
             lastCheckpointPos = playerStart.transform.position;
@@ -59,30 +67,22 @@ public class GameManager : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         player.GetComponent<ThirdPersonLocomotion>().SetPlayerPos();
 
-        Screen.SetResolution(800, 600, true);
-    }
-
-    //Get a reference to Scene Switcher
-    private void Start()
-    {
-
-
         //player.transform.position = lastCheckpointPos;
         //sceneSwitch = GameObject.FindGameObjectWithTag("SceneFader").GetComponent<SceneSwitch>();
     }
 
 
     //Reload current level when player dies
-    public void OnPlayerDeath()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    //public void OnPlayerDeath()
+    //{
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         //player.GetComponent<ThirdPersonLocomotion>().SetPlayerPos();
         //Debug.Log("PLAYER TRANSFORM");
         //player = GameObject.FindWithTag("Player");
         //player.GetComponent<CharacterController>().enabled = true;
 
         //player.transform.position = lastCheckpointPos;
-    }
+    //}
  
 
     public void EndGame()

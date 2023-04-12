@@ -33,7 +33,7 @@ public class S_ActorController : MonoBehaviour{
         _actorAttack = GetComponentInChildren<S_HitscanActorAttack>();
     }
 
-    private void OnDestroy() {
+    protected virtual void OnDestroy() {
         //_actorAudio.OnDestroy();
         //_actorAttack.OnDestroy();
 

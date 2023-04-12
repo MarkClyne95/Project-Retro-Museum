@@ -70,9 +70,11 @@ namespace ScottEwing.Checkpoints{
         }
 
         public virtual void Respawn() {
+
             var t = transform;
             t.position = _respawnPosition;
             t.rotation = _respawnRotation;
+
             if (_rb == null) return;
 
             if (_useVelocity) {

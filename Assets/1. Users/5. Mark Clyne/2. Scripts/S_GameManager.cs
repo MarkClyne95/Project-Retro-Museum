@@ -1,39 +1,44 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class S_GameManager : MonoBehaviour
 {
     [SerializeField]private int _coinAmount;
-    [SerializeField]private string[] _badges;
+    [SerializeField] private GameObject affordanceBadge;
+    [SerializeField] private TMP_Text coinText;
 
     public static S_GameManager instance;
+
+    private void Start()
+    {
+        instance = this;
+        QualitySettings.SetQualityLevel(6);
+        Screen.SetResolution(800,600,true);
+    }
 
     public S_GameManager()
     {
         _coinAmount = 0;
-        _badges = null;
     }
 
     public void SetCoinAmount(int value)
     {
         _coinAmount = value;
+        coinText.text = _coinAmount.ToString();
+        
+        if (GetCoinAmount() >= 90)
+        {
+            affordanceBadge.SetActive(true);
+        }
     }
 
     public int GetCoinAmount()
     {
         return _coinAmount;
-    }
-
-    public void SetBadges(string[] value)
-    {
-        _badges = value;
-    }
-
-    public string[] GetBadges()
-    {
-        return _badges;
     }
 }
 

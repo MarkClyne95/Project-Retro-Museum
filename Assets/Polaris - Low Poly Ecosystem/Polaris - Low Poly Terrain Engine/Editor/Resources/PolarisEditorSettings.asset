@@ -59,7 +59,7 @@ MonoBehaviour:
     rotationStep: 3.6
     opacityStep: 0.025
     densityStep: 1
-    useMultiSplatsSelector: 0
+    useMultiSplatsSelector: 1
     showTerrainMask: 1
   splineTools:
     anchorColor: {r: 1, g: 0, b: 0, a: 1}

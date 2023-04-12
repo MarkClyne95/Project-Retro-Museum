@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
+using TMPro;
 
 public class Damageable : MonoBehaviour
 {
+
     public UnityEvent<int, Vector2> damageableHit;
     public UnityEvent<int, int> healthChanged;
 
     Animator animator;
+    public GameObject gameOverText;
+    public GameObject restartButton;
+    public GameObject exitButton;
+    public GameObject door;
 
     [SerializeField]
     private int _maxHealth = 100;
@@ -39,10 +46,27 @@ public class Damageable : MonoBehaviour
             _health = value;
             healthChanged?.Invoke(_health, MaxHealth);
 
-            if(_health <= 0)
+            if (_health <= 0)
             {
                 IsAlive = false;
+                if (gameObject.CompareTag("Player"))
+                {
+                    if (!IsAlive)
+                    {
+                        gameOverText.SetActive(true);
+                        restartButton.SetActive(true);
+                        exitButton.SetActive(true);
+                    }
+                }
+                if (gameObject.CompareTag("Boss"))
+                {
+                    if (!IsAlive)
+                    {
+                        door.SetActive(true);
+                    }
+                }
             }
+
         }
     }
 
@@ -102,6 +126,7 @@ public class Damageable : MonoBehaviour
 
     }
 
+
     public bool Hit(int damage, Vector2 knockback)
     {
         if(IsAlive && !isInvinvible)
@@ -134,5 +159,7 @@ public class Damageable : MonoBehaviour
 
         return false;
     }
+
+    
  
 }

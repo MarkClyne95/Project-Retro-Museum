@@ -20,6 +20,9 @@ public class PitBarrier : MonoBehaviour
         gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
         player = GameObject.FindWithTag("Player");
         impulseSource = GetComponent<CinemachineImpulseSource>();
+
+        randySquawk.volume = PlayerPrefs.GetFloat("SFXVolume");
+        waterSplash.volume = PlayerPrefs.GetFloat("SFXVolume");
     }
 
     // Update is called once per frame
@@ -48,7 +51,7 @@ public class PitBarrier : MonoBehaviour
             Invoke("ActivateCameraShake", 0.6f);
 
             //Load scene from last checkpoint
-            Invoke("LoadCheckpoint", 1.5f);
+            //Invoke("LoadCheckpoint", 1.5f);
         }
     }
 
@@ -57,8 +60,8 @@ public class PitBarrier : MonoBehaviour
         CameraShakeManager.instance.CameraShake(impulseSource);
     }
 
-    private void LoadCheckpoint()
-    {
-        gm.OnPlayerDeath();
-    }
+    //private void LoadCheckpoint()
+    //{
+    //    gm.OnPlayerDeath();
+    //}
 }

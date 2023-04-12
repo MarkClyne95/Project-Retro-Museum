@@ -5,17 +5,20 @@ using UnityEngine.Events;
 
 public class MetroidInteractable : MonoBehaviour
 {
+    public static MetroidInteractable currentInteractable;
     public static bool isInRange;
+
     public KeyCode interactKey;
     public UnityEvent interactAction;
 
     // Update is called once per frame
     void Update()
     {
-        if(isInRange)
+        if (isInRange)
         {
-            if(Input.GetKeyDown(interactKey))
+            if (Input.GetKeyDown(interactKey))
             {
+                currentInteractable = this;
                 interactAction.Invoke();
             }
         }
@@ -34,6 +37,10 @@ public class MetroidInteractable : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            if (currentInteractable == this)
+            {
+                currentInteractable = null;
+            }
             isInRange = false;
             collision.gameObject.GetComponent<MetroidPlayerController>().DeNotifyPlayer();
         }

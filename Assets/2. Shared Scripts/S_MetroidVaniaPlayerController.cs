@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -23,7 +24,7 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     public bool isGrounded;
     public bool canShoot;
     public bool _isLookingLeft;
-    private bool _invincible;
+    public bool _invincible;
 
     [Header("Bullet Properies")] 
     [SerializeField] private Transform bulletStart;
@@ -54,6 +55,8 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
     [SerializeField]private S_GameManager _gm;
     [SerializeField] private GameObject _bullet;
     public float bulletSpeed;
+    public Image healthBar;
+    [SerializeField] private GameObject pauseUI;
 
     #region Singleton
 
@@ -109,6 +112,7 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         canMove = true;
         _isLookingLeft = false;
         jump = Animator.StringToHash("Jump");
+        healthBar.fillAmount = 1;
     }
 
     public void OnMovement(InputAction.CallbackContext input)
@@ -129,27 +133,50 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         _anim.SetBool("Run", _moveInput.x != 0);
     }
 
+    public void OnPause(InputAction.CallbackContext input)
+    {
+        if (Time.timeScale < 1)
+        {
+            Time.timeScale = 1;
+            pauseUI.SetActive(false);
+        }
+        else
+        {
+            Time.timeScale = 0;
+            pauseUI.SetActive(true);
+        }
+        
+    }
+
     private void Flip()
     {
         transform.localScale = _isLookingLeft ? new Vector2(-11, 11) : new Vector2(11, 11);
     }
 
-    public void SetInvincible(bool status)
+    public void SetHitpoints(float amount)
     {
-        _invincible = status;
+        healthPoints -= amount;
     }
 
-    public void TakeDamage(int amount)
+    public float GetHitpoints()
+    {
+        return healthPoints;
+    }
+
+    public void TakeDamage(float amount)
     {
         if (!_invincible)
         {
+            _invincible = true;
             healthPoints -= amount;
+            healthBar.fillAmount = healthPoints / maxHealthPoints;
             Mathf.Clamp(healthPoints, 0, maxHealthPoints);
 
             if (healthPoints <= 0)
             {
-                //death
+                Respawn();
             }
+            _invincible = false;
         }
     }
 
@@ -195,6 +222,13 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         Gizmos.color = Color.red;
         //Use the same vars you use to draw your Overlap SPhere to draw your Wire Sphere.
         Gizmos.DrawWireSphere (collisionGround.position , checkRadius);
+    }
+
+    public void Respawn()
+    {
+        transform.position = new Vector2(501, 309);
+        healthPoints = maxHealthPoints;
+        healthBar.fillAmount = 1.0f;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

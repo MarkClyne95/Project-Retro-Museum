@@ -18,22 +18,18 @@ public class S_BadgePickup : MonoBehaviour
             {
                 case BadgeType.Affordance:
                     _playerUI.GetComponent<S_PlayerUI>().SetAffordanceBadge(gameObject.GetComponent<S_BadgePickup>());
-                    Destroy(gameObject);
                     break;
             
                 case BadgeType.Hardware:
                     _playerUI.GetComponent<S_PlayerUI>().SetHardwareBadge(gameObject.GetComponent<S_BadgePickup>());
-                    Destroy(gameObject);
                     break;
             
                 case BadgeType.History:
                     _playerUI.GetComponent<S_PlayerUI>().SetHistoryBadge(gameObject.GetComponent<S_BadgePickup>());
-                    Destroy(gameObject);
                     break;
             
                 case BadgeType.Software:
                     _playerUI.GetComponent<S_PlayerUI>().SetSoftwareBadge(gameObject.GetComponent<S_BadgePickup>());
-                    Destroy(gameObject);
                     break;
             
                 case BadgeType.None:

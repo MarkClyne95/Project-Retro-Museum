@@ -4,8 +4,11 @@ using System.Collections.Specialized;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Threading;
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
+using System.Globalization;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections), typeof(Damageable))]
 public class MetroidPlayerController : MonoBehaviour
@@ -20,6 +23,12 @@ public class MetroidPlayerController : MonoBehaviour
     private float dashingPower = 6f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
+
+    private Vector3 respawnPoint;
+    public GameObject fallDetector;
+    public GameObject fallDetector2;
+    public TextMeshProUGUI scoreText;
+
 
     public GameObject interactNotification;
 
@@ -48,6 +57,9 @@ public class MetroidPlayerController : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
+
+        fallDetector.transform.position = new Vector2(transform.position.x, fallDetector.transform.position.y);
+        fallDetector2.transform.position = new Vector2(transform.position.x, fallDetector2.transform.position.y);
     }
     public float CurrentMoveSpeed { get
         {
@@ -151,8 +163,9 @@ public class MetroidPlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         touchingDirections = GetComponent<TouchingDirections>();
         damageable = GetComponent<Damageable>();
+        respawnPoint = transform.position;
+        scoreText.text = "Score : 00" + MetroidScoring.totalScore;
 
-        
     }
 
     private void FixedUpdate()
@@ -254,6 +267,24 @@ public class MetroidPlayerController : MonoBehaviour
     public void DeNotifyPlayer()
     {
         interactNotification.SetActive(false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "FallDectector")
+        {
+            transform.position = respawnPoint;
+        }
+        else if (collision.tag == "CheckPoint")
+        {
+            respawnPoint = transform.position;
+        }
+        else if(collision.tag == "Dia")
+        {
+            MetroidScoring.totalScore += 1000;
+            scoreText.text = "Score : 00" + MetroidScoring.totalScore;
+            collision.gameObject.SetActive(false);
+        }
     }
 
 }

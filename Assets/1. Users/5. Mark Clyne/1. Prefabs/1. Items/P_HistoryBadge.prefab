@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5600790345441800135}
   - component: {fileID: 2084715616307193533}
   - component: {fileID: -3490716359748072948}
-  - component: {fileID: 3624220781181640772}
+  - component: {fileID: 3013600503292366139}
   m_Layer: 0
   m_Name: P_HistoryBadge
   m_TagString: HistoryBadge
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: c927b3edba3ca7c41b4a575997201b58, type: 3}
+  m_Sprite: {fileID: 655239888, guid: a3de0e27eb715cc47801d49d430bbfce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 181573724404279074}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2661f8859b1d29a4f9aa385d7893653c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8b5f9baeed2dacf468b14ed624efbced, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -124,7 +124,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 0.9375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -133,7 +133,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3624220781181640772
+--- !u!114 &3013600503292366139
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,6 +142,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 181573724404279074}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e13dc159ad10fc24a9f9a40ea83b48ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 4596bea98f907f640960e01ad2c6d3b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _badgeType: 1
+  _playerUI: {fileID: 0}

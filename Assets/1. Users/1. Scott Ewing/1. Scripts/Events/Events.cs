@@ -57,5 +57,9 @@ namespace ScottEwing.EventSystem{
     
     public class TryAttackEvent : GameEvent{
     }
+
+    public class IncorrectAnswerEvent : GameEvent{
+        public int WrongAnswers;
+    }
     
 }
