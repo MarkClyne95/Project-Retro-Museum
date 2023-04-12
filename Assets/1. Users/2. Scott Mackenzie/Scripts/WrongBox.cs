@@ -17,7 +17,7 @@ public class WrongBox : MonoBehaviour
 
     private void Start()
     {
-        crateDestruction.volume = PlayerPrefs.GetFloat("SFXVolume");
+        crateDestruction.volume = PlayerPrefs.GetFloat("SFXVol");
     }
 
     private void OnTriggerEnter(Collider other)

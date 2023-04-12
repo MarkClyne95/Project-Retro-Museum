@@ -29,7 +29,8 @@ public class DoomInputHandler : MonoBehaviour{
     }
     
     private void OnDeath(ActorDeathEvent obj) {
-        GetComponent<FirstPersonController>().enabled = false;
+        var fpc = GetComponent<StarterAssets.FirstPersonController>();
+        fpc.enabled = false;
         _playerInput.actions.FindActionMap("Doom").Disable();
     }
 

@@ -21,8 +21,8 @@ public class PitBarrier : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         impulseSource = GetComponent<CinemachineImpulseSource>();
 
-        randySquawk.volume = PlayerPrefs.GetFloat("SFXVolume");
-        waterSplash.volume = PlayerPrefs.GetFloat("SFXVolume");
+        randySquawk.volume = PlayerPrefs.GetFloat("SFXVol");
+        waterSplash.volume = PlayerPrefs.GetFloat("SFXVol");
     }
 
     // Update is called once per frame

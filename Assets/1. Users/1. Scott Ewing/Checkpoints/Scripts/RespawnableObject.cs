@@ -61,7 +61,6 @@ namespace ScottEwing.Checkpoints
         }
 
         [Button]
-
         public override void Respawn() {
             StartCoroutine(Routine());
             //--Need to wait a frame because obi can't deactivate ropes during physics update. This was being called during on trigger enter 

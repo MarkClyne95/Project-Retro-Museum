@@ -10,6 +10,6 @@ public class S_BarrelAnimator : S_ActorAnimator
     }
 
     public void AttackOnDeath() {
-        _sActorController.BroadcastTryAttack();
+        _actorController.BroadcastTryAttack();
     }   
 }

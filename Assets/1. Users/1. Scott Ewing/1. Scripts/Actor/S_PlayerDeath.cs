@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 
 public class S_PlayerDeath : MonoBehaviour{
-    protected S_ActorController _sActorController;
+    protected S_ActorController _actorController;
     private UiFadeMonoBehaviour _uiFade;
     [SerializeField] private float _reloadWaitTime = 2;
     [SerializeField] private float _dropTime = 0.25f;
@@ -17,12 +17,12 @@ public class S_PlayerDeath : MonoBehaviour{
     [SerializeField] private GameObject playerObject;
 
     void Start() {
-        _sActorController = GetComponentInParent<S_ActorController>();
-        _sActorController.ActorEventManager.AddListener<ActorDeathEvent>(OnDeath);
+        _actorController = GetComponentInParent<S_ActorController>();
+        _actorController.ActorEventManager.AddListener<ActorDeathEvent>(OnDeath);
     }
 
     protected virtual void OnDestroy() {
-        _sActorController.ActorEventManager.RemoveListener<ActorDeathEvent>(OnDeath);
+        _actorController.ActorEventManager.RemoveListener<ActorDeathEvent>(OnDeath);
     }
 
     private void OnDeath(ActorDeathEvent obj) {
