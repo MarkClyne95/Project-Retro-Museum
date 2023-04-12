@@ -3118,7 +3118,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 32
+    m_Bits: 1048608
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -8868,7 +8868,7 @@ MonoBehaviour:
   m_Pan: 2
   m_Dutch: 0
   m_ZoomScale: 1
-  m_FollowAttachment: 0.7
+  m_FollowAttachment: 1
   m_LookAtAttachment: 1
 --- !u!114 &896628752
 MonoBehaviour:
@@ -8915,7 +8915,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896628749}
-  m_LocalRotation: {x: 0.1902033, y: 0.65050304, z: -0.17313613, w: 0.71462744}
+  m_LocalRotation: {x: 0.19020328, y: 0.65050304, z: -0.1731361, w: 0.71462756}
   m_LocalPosition: {x: -47.472366, y: 12.658081, z: -17.097841}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9174,19 +9174,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8763367534917446997, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9635885
+      value: 0.9635884
       objectReference: {fileID: 0}
     - target: {fileID: 8763367534917446997, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.24748215
+      value: 0.24748208
       objectReference: {fileID: 0}
     - target: {fileID: 8763367534917446997, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.098059356
+      value: 0.09805929
       objectReference: {fileID: 0}
     - target: {fileID: 8763367534917446997, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.025184982
+      value: -0.025184965
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb42184b8ee887c4ebb84d2ad8b8ca27, type: 3}
@@ -14917,8 +14917,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0010757, y: -0.0010338}
-  m_SizeDelta: {x: 302.6, y: 226.95}
+  m_AnchoredPosition: {x: 0.00084496, y: 0.0024576}
+  m_SizeDelta: {x: 324.44, y: 243.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1349432388
 MonoBehaviour:
