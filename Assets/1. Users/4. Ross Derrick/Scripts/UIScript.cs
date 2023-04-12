@@ -17,7 +17,7 @@ public class UIScript : MonoBehaviour {
 		txt_high = GetComponentsInChildren<Text>()[0];
         txt_level = GetComponentsInChildren<Text>()[2];
 
-	    for (int i = 0; i < 3 - GameManager.lives; i++)
+	    for (int i = 0; i < 3 - Firewall.GameManager.lives; i++)
 	    {
 	        Destroy(lives[lives.Count-1]);
             lives.RemoveAt(lives.Count-1);
@@ -31,10 +31,10 @@ public class UIScript : MonoBehaviour {
         high = GameObject.Find("Game Manager").GetComponent<ScoreManager>().High();
 
         // update score text
-        score = GameManager.score;
+        score = Firewall.GameManager.score;
 		txt_score.text = "Score\n" + score;
 		txt_high.text = "High Score\n" + high;
-	    txt_level.text = "Level\n" + (GameManager.Level + 1);
+	    txt_level.text = "Level\n" + (Firewall.GameManager.Level + 1);
 
 	}
 

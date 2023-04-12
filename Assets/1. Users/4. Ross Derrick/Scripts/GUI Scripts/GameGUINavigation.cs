@@ -42,7 +42,7 @@ public class GameGUINavigation : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.Escape))
 		{
 			// if scores are show, go back to main menu
-			if(GameManager.gameState == GameManager.GameState.Scores)
+			if(Firewall.GameManager.gameState == Firewall.GameManager.GameState.Scores)
 				Menu();
 
 			// if in game, toggle pause or quit dialogue
@@ -70,11 +70,11 @@ public class GameGUINavigation : MonoBehaviour {
 	IEnumerator ShowReadyScreen(float seconds)
 	{
 		//initialWaitOver = false;
-		GameManager.gameState = GameManager.GameState.Init;
+		Firewall.GameManager.gameState = Firewall.GameManager.GameState.Init;
 		ReadyCanvas.enabled = true;
 		yield return new WaitForSeconds(seconds);
 		ReadyCanvas.enabled = false;
-		GameManager.gameState = GameManager.GameState.Game;
+		Firewall.GameManager.gameState = Firewall.GameManager.GameState.Game;
 		//initialWaitOver = true;
 	}
 
@@ -89,7 +89,7 @@ public class GameGUINavigation : MonoBehaviour {
 	public void getScoresMenu()
 	{
 		Time.timeScale = 0f;		// stop the animations
-		GameManager.gameState = GameManager.GameState.Scores;
+		Firewall.GameManager.gameState = Firewall.GameManager.GameState.Scores;
 		MenuButton.enabled = false;
 		ScoreCanvas.enabled = true;
 	}
@@ -144,7 +144,7 @@ public class GameGUINavigation : MonoBehaviour {
 		Time.timeScale = 1.0f;
 
         // take care of game manager
-	    GameManager.DestroySelf();
+        Firewall.GameManager.DestroySelf();
 	}
 
     IEnumerator AddScore(string name, int score)
@@ -164,8 +164,8 @@ public class GameGUINavigation : MonoBehaviour {
 
             // take care of game manager
             Destroy(GameObject.Find("Game Manager"));
-            GameManager.score = 0;
-            GameManager.Level = 0;
+            Firewall.GameManager.score = 0;
+            Firewall.GameManager.Level = 0;
 
             Application.LoadLevel("scores");
             Time.timeScale = 1.0f;
@@ -201,7 +201,7 @@ public class GameGUINavigation : MonoBehaviour {
 	public void SubmitScores()
 	{
 		// Check username, post to database if its good to go
-	    int highscore = GameManager.score;
+	    int highscore = Firewall.GameManager.score;
         string username = ScoreCanvas.GetComponentInChildren<InputField>().GetComponentsInChildren<Text>()[1].text;
         Regex regex = new Regex("^[a-zA-Z0-9]*$");
 
@@ -214,7 +214,7 @@ public class GameGUINavigation : MonoBehaviour {
 
     public void LoadLevel()
     {
-        GameManager.Level++;
+	    Firewall.GameManager.Level++;
         Application.LoadLevel("game");
     }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using Firewall;
 
 public class GhostMove : MonoBehaviour {
 
@@ -51,13 +52,13 @@ public class GhostMove : MonoBehaviour {
 	// handles
 	public GameGUINavigation GUINav;
     public PlayerController pacman;
-    private GameManager _gm;
+    private Firewall.GameManager _gm;
 
 	//-----------------------------------------------------------------------------------------
 	// variables end, functions begin
 	void Start()
 	{
-	    _gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
+	    _gm = GameObject.Find("Game Manager").GetComponent<Firewall.GameManager>();
         _toggleInterval = _gm.scareLength * 0.33f * 0.20f;  
 		InitializeGhost();
 	}
@@ -68,7 +69,7 @@ public class GhostMove : MonoBehaviour {
 	{
 	    DISTANCE = Vector3.Distance(transform.position, waypoint);
 
-		if(GameManager.gameState == GameManager.GameState.Game){
+		if(Firewall.GameManager.gameState == Firewall.GameManager.GameState.Game){
 			animate ();
 
 			switch(state)

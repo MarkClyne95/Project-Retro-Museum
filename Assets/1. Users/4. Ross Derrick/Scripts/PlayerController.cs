@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     // script handles
     private GameGUINavigation GUINav;
-    private GameManager GM;
+    private Firewall.GameManager GM;
     private ScoreManager SM;
 
     private bool _deadPlaying = false;
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        GM = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        GM = GameObject.Find("Game Manager").GetComponent<Firewall.GameManager>();
         SM = GameObject.Find("Game Manager").GetComponent<ScoreManager>();
         GUINav = GameObject.Find("UI Manager").GetComponent<GameGUINavigation>();
         _dest = transform.position;
@@ -39,14 +39,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        switch (GameManager.gameState)
+        switch (Firewall.GameManager.gameState)
         {
-            case GameManager.GameState.Game:
+            case Firewall.GameManager.GameState.Game:
                 ReadInputAndMove();
                 Animate();
                 break;
 
-            case GameManager.GameState.Dead:
+            case Firewall.GameManager.GameState.Dead:
                 if (!_deadPlaying)
                     StartCoroutine("PlayDeadAnimation");
                 break;
@@ -63,10 +63,10 @@ public class PlayerController : MonoBehaviour
         GetComponent<Animator>().SetBool("Die", false);
         _deadPlaying = false;
 
-        if (GameManager.lives <= 0)
+        if (Firewall.GameManager.lives <= 0)
         {
             Debug.Log("Treshold for High Score: " + SM.LowestHigh());
-            if (GameManager.score >= SM.LowestHigh())
+            if (Firewall.GameManager.score >= SM.LowestHigh())
                 GUINav.getScoresMenu();
             else
                 GUINav.H_ShowGameOverScreen();
@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour
         if (killstreak > 4) killstreak = 4;
 
         Instantiate(points.pointSprites[killstreak - 1], transform.position, Quaternion.identity);
-        GameManager.score += (int)Mathf.Pow(2, killstreak) * 100;
+        Firewall.GameManager.score += (int)Mathf.Pow(2, killstreak) * 100;
 
     }
 }
