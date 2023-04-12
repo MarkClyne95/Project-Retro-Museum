@@ -15,6 +15,7 @@ public class PlayOneShotBehaviour : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        volume = PlayerPrefs.GetFloat("SFXVol");
         if (playOnEnter)
         {
             AudioSource.PlayClipAtPoint(soundToPlay, animator.gameObject.transform.position, volume);

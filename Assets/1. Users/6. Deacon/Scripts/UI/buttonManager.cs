@@ -13,6 +13,10 @@ public class buttonManager : MonoBehaviour
     public GameObject controls;
     public GameObject exitButton;
 
+    public Color color;
+    public string level;
+    public int speed;
+
 
     public void PlayGame()
     {
@@ -40,6 +44,7 @@ public class buttonManager : MonoBehaviour
     public void ExitButton()
     {
         //Go Back To Hub
+        Initiate.Fade(level, color, speed);
     }
 
     public void Restart()
