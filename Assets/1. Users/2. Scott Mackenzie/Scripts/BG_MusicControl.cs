@@ -11,7 +11,7 @@ public class BG_MusicControl : MonoBehaviour
     {
         backgroundMusic = GetComponent<AudioSource>();
 
-        backgroundMusic.volume = PlayerPrefs.GetFloat("MusicVol");
+        //backgroundMusic.volume = PlayerPrefs.GetFloat("MusicVol");
     }
 
 }
