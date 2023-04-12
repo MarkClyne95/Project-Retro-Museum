@@ -22,6 +22,7 @@ public class S_InfoSign : MonoBehaviour
         {
             Time.timeScale = 0;
             S_MetroidVaniaPlayerController.instance.canMove = false;
+            Cursor.visible = true;
             _infoUI.SetActive(true);
             _infoUI.gameObject.GetComponentInChildren<TMP_Text>().text = infoText;
             gameObject.GetComponent<Collider2D>().enabled = false;
@@ -32,6 +33,7 @@ public class S_InfoSign : MonoBehaviour
     {
         Invoke(nameof(ResetCollider), 2.0f);
         _infoUI.SetActive(false);
+        Cursor.visible = false;
         Time.timeScale = 1;
         S_MetroidVaniaPlayerController.instance.canMove = true;
     }

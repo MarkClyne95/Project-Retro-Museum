@@ -14,6 +14,8 @@ public class S_FirstPersonInteraction : MonoBehaviour
 
     private void Start()
     {
+        QualitySettings.SetQualityLevel(5);
+        Screen.SetResolution(1920, 1080, true);
         interactText.text = $"Press {interactKey} to interact";
     }
 
@@ -36,11 +38,11 @@ public class S_FirstPersonInteraction : MonoBehaviour
                         break;
                 
                     case ObjectType.History:
-                        HandleHistory();
+                        HandleHistory(interactableObject);
                         break;
                 
                     case ObjectType.Door:
-                        HandleDoor();
+                        HandleDoor(interactableObject);
                         break;
                 }
             }
@@ -59,7 +61,7 @@ public class S_FirstPersonInteraction : MonoBehaviour
         }
     }
 
-    private void HandleHistory()
+    private void HandleHistory(S_InteractableObject obj)
     {
         if (Input.GetKey(interactKey) && canInteract)
         {
@@ -67,11 +69,11 @@ public class S_FirstPersonInteraction : MonoBehaviour
         }
     }
 
-    private void HandleDoor()
+    private void HandleDoor(S_InteractableObject obj)
     {
         if (Input.GetKey(interactKey) && canInteract)
         {
-            //TODO: Open door if its 
+            SceneManager.LoadScene(obj.levelName);
         }
     }
 }
