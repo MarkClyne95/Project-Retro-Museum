@@ -20,7 +20,7 @@ public class SceneSwitch : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Jungle")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("L_90sFloor");
         }
     }
 }

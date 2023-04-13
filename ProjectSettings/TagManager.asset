@@ -31,6 +31,7 @@ TagManager:
   - CheckPoint
   - Dia
   - Boss
+  - VirtualCam
   layers:
   - Default
   - TransparentFX
@@ -52,7 +53,7 @@ TagManager:
   - GroundDetection
   - MPickUp
   - Boss
-  - 
+  - 3D Text
   - 
   - 
   - 

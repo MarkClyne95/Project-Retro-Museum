@@ -30,6 +30,10 @@ public class ThirdPersonLocomotion : MonoBehaviour
 
     [SerializeField] private AudioSource jumpBounce;
 
+    [SerializeField] private bool isZoomed = false;
+
+    [SerializeField] private Cinemachine.CinemachineVirtualCamera virtualCamera;
+ 
     private void Awake()
     {
         gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
@@ -111,6 +115,18 @@ public class ThirdPersonLocomotion : MonoBehaviour
             //Debug.Log(animator.GetBool("IsMoving"));
         }
 
+        if (Input.GetKeyDown(KeyCode.Z) && isZoomed == false)
+        {
+            zoomIn();
+            Debug.Log("Zooming In");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Z) && isZoomed == true)
+        {
+            zoomOut();
+            Debug.Log("Zooming Out");
+        }
+
     }
 
     public void Jump()
@@ -142,5 +158,20 @@ public class ThirdPersonLocomotion : MonoBehaviour
     {
         gravity = -20f;
         groundMask = LayerMask.GetMask("Ground");
+    }
+
+
+    //--------------------------//m_ZoomScale NOT AFFECTING VIRTUAL CAMERA ZOOM?//--------------------------//
+    public void zoomIn()
+    {
+        isZoomed = true;
+        virtualCamera.GetComponent<CinemachineRecomposer>().m_ZoomScale = 0.8f;
+        Debug.Log("Zoomed");
+    }
+
+    public void zoomOut()
+    {
+        isZoomed = false;
+        virtualCamera.GetComponent<CinemachineRecomposer>().m_ZoomScale = 1f;
     }
 }
