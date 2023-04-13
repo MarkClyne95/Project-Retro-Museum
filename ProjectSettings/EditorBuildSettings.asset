@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/6. Shared Scenes/Museum/L_80sFloor.unity
     guid: a50a96683b8170e4aacb950911fc5731
   - enabled: 1
+    path: Assets/1. Users/4. Ross Derrick/Scenes/menu.unity
+    guid: 40dd9ee221b736047a07a07ee0dc3e5c
+  - enabled: 1
+    path: Assets/1. Users/4. Ross Derrick/Scenes/game.unity
+    guid: 9e9224b41a251ad4aa4213392f1b76cc
+  - enabled: 1
     path: Assets/1. Users/5. Mark Clyne/4. Scenes/L_Level1.unity
     guid: e60951f32146a364f9ba99e44cc8dcd2
   - enabled: 1
