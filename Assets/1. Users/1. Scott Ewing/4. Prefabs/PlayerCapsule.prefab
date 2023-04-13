@@ -130,6 +130,7 @@ MonoBehaviour:
   _attackClip: {fileID: 8300000, guid: b61dd3802f84ded43ac7d2227ee28b2c, type: 3}
   _hasGibbedAudio: 1
   _gibbedDeathClip: {fileID: 8300000, guid: 3e600b04f3a75dd4aadf52bd99db7628, type: 3}
+  VolumeMultiplier: 0.5
   _itemPickupClip: {fileID: 8300000, guid: 00dd8b8b80221e240bc0247d693acbc9, type: 3}
 --- !u!82 &1032250381
 AudioSource:
@@ -816,54 +817,6 @@ Transform:
   m_Father: {fileID: 5620247362732396170}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1086510695880773504
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 570974959754786807}
-  - component: {fileID: 9073647572768235745}
-  m_Layer: 0
-  m_Name: Respawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &570974959754786807
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086510695880773504}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8933139728030842917}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9073647572768235745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086510695880773504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8de3b2f47d089024d897452e217f25a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _reloadWaitTime: 2
-  _dropTime: 0.25
-  deathDropHeight: -1
-  playerObject: {fileID: 5094962741245760560}
 --- !u!1 &2192780869951813730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,9 +1303,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4683004227425805168}
-  - component: {fileID: 4683004227425805169}
   - component: {fileID: 4683004227425805170}
   - component: {fileID: 955560772}
+  - component: {fileID: 7559291287392589626}
   m_Layer: 10
   m_Name: Health (1)
   m_TagString: Untagged
@@ -1379,22 +1332,6 @@ Transform:
   m_Father: {fileID: 8933139728030842917}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4683004227425805169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4683004227425805171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465ae3534d2066448b03829848202127, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxHealth: 200
-  _currentHealth: 1000
-  _canBeGibbed: 1
-  _gibDamageThreshold: 15
 --- !u!136 &4683004227425805170
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1426,6 +1363,26 @@ MonoBehaviour:
   - {fileID: 1947552302}
   - {fileID: 1199666861}
   - {fileID: 1843135683}
+--- !u!114 &7559291287392589626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4683004227425805171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08e6a8750b6781a4a8987e6f45ec7cc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 200
+  _currentHealth: 100
+  _canBeGibbed: 1
+  _gibDamageThreshold: 15
+  _reloadWaitTime: 2
+  _dropTime: 0.25
+  deathDropHeight: -1
+  playerObject: {fileID: 5094962741245760560}
 --- !u!1 &4683004227566506678
 GameObject:
   m_ObjectHideFlags: 0
@@ -3551,7 +3508,6 @@ Transform:
   - {fileID: 4683004227566506677}
   - {fileID: 4683004227844374253}
   - {fileID: 1032250380}
-  - {fileID: 570974959754786807}
   m_Father: {fileID: 5620247362732396170}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

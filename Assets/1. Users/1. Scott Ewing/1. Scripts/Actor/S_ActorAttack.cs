@@ -9,7 +9,6 @@ using Random = UnityEngine.Random;
 [Serializable]
 public class S_ActorAttack : MonoBehaviour
 {
-    
     protected S_ActorController _actorController;
     [SerializeField] protected float _minAttackCooldown = 1f;
     [SerializeField] protected float _maxAttackCooldown = 3f;
@@ -22,8 +21,6 @@ public class S_ActorAttack : MonoBehaviour
     [SerializeField] protected bool _requireTarget = true;
     [field: SerializeField] public bool IsAttacking { get; protected set; }
     
-
-
     protected Coroutine _attackRoutine;
     protected Coroutine _attackTimerRoutine;
     
@@ -34,17 +31,10 @@ public class S_ActorAttack : MonoBehaviour
         _actorController.ActorEventManager.AddListener<ActorDeathEvent>(OnActorDeath);
     }
     
-    protected virtual void OnDestroy() {
-        _actorController.ActorEventManager.RemoveListener<ActorDeathEvent>(OnActorDeath);
+    protected virtual void OnDestroy() => _actorController.ActorEventManager.RemoveListener<ActorDeathEvent>(OnActorDeath);
 
-    }
-    
-    
-    public virtual bool TryAttack() {
-        return false;
-    }
-    
-    
+    public virtual bool TryAttack() => false;
+
     public virtual bool CanAttack(out ITakesDamage damageTaker, out RaycastHit hit) {
         damageTaker = null;
         hit = default;
@@ -52,9 +42,7 @@ public class S_ActorAttack : MonoBehaviour
     }
     
     protected virtual void Attack(ITakesDamage damageTaker, RaycastHit hit) {
-        
-
-    }
+        }
 
     protected void SetAttackCooldownTime() => _attackCooldown = Random.Range(_minAttackCooldown, _maxAttackCooldown);
 
@@ -66,11 +54,6 @@ public class S_ActorAttack : MonoBehaviour
                 attacked = TryAttack();
                 yield return null;
             }
-            //yield return _actorController.StartCoroutine(AttackTimerRoutine());
-            /*yield return new WaitForSeconds(_attackDuration);
-            IsAttacking = false;
-            yield return new WaitForSeconds(_attackCooldown);
-            _attackCooldownOver = true;*/
         }
     }
     
@@ -79,19 +62,12 @@ public class S_ActorAttack : MonoBehaviour
         IsAttacking = false;
         yield return new WaitForSeconds(_attackCooldown);
         _attackCooldownOver = true;
-        //_attackRoutine = null;
     }
     
     protected virtual void OnActorDeath(ActorDeathEvent obj) {
-        if (_attackRoutine != null) {
+        if (_attackRoutine != null) 
             _actorController.StopCoroutine(_attackRoutine);
-        }
-        if (_attackTimerRoutine != null) {
+        if (_attackTimerRoutine != null) 
             _actorController.StopCoroutine(_attackTimerRoutine);
-        }
     }
-
-    
-    
-    
 }

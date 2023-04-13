@@ -10,68 +10,13 @@ using UnityEngine.AI;
 
 public class S_ActorController : MonoBehaviour{
     public ActorEventManager ActorEventManager = new ActorEventManager();
-    //[SerializeField] private s_ActorAudio _actorAudio;
     [HideInInspector] public S_ActorAttack _actorAttack;
-    //private S_ActorAnimator _actorAnimator;
-
     public Transform Target { get; set; }
-    //[SerializeField] private S_Health _health;
-    //--Movement
-    //private NavMeshAgent _agent;
-    //private Transform _target;
     private bool _canMove;
-
-    /*enum ActorStates{
-        Idle, Walking, Attacking, Dead
-    }
-
-    private ActorStates _actorState = ActorStates.Idle;*/
     
-    protected virtual void Start() {
-        //_actorAudio.Initialise(this);
-        //_actorAnimator = GetComponentInChildren<S_ActorAnimator>();
-        _actorAttack = GetComponentInChildren<S_HitscanActorAttack>();
-    }
+    protected virtual void Start() => _actorAttack = GetComponentInChildren<S_HitscanActorAttack>();
 
-    protected virtual void OnDestroy() {
-        //_actorAudio.OnDestroy();
-        //_actorAttack.OnDestroy();
-
-    }
-
-    /*private void Update() {
-        //if can see player
-        var attacked =_actorAttack.TryAttack(_target.position); 
-        if (attacked) {
-            //stop moving
-            _agent.ResetPath();
-            _agent.isStopped = true;
-        }
-        else if (!_actorAttack.IsAttacking) {
-            //Move towards player
-            _agent.isStopped = false;
-            _agent.SetDestination(_target.position);
-            _actorAnimator.Move();
-        }
-    }
-
-    public void UpdateState() {
-        if (_actorState == ActorStates.Dead) {
-            return;
-        }else if (_target == null) {
-            _actorState = ActorStates.Idle;
-        }
-        
-        if (_actorAttack.CanAttack(out _, out _)) {
-            _actorState = ActorStates.Attacking;
-        }else if (!_actorAttack.IsAttacking) {
-            _actorState = ActorStates.Walking;
-        }
-        
-    }*/
-
-    
-    
+    protected virtual void OnDestroy() { }
 
     public void BroadcastTakeDamageEvent(int damage, int currentHealth, RaycastHit raycastHit) {
         var evt = new DamageTakenEvent() {
@@ -91,24 +36,17 @@ public class S_ActorController : MonoBehaviour{
         ActorEventManager.Broadcast(evt);
     }
     
-    public void BroadcastAttackedEvent() {
-        //var evt = new ActorAttackEvent();
-        ActorEventManager.Broadcast(Events.ActorAttackEvent);
-    }
+    public void BroadcastAttackedEvent() => ActorEventManager.Broadcast(Events.ActorAttackEvent);
 
     public void BroadCastStartWalkingEvent(Transform target) {
         Events.StartWalkingEvent.Target = target;
         ActorEventManager.Broadcast(Events.StartWalkingEvent);
     }
 
-    public void BroadcastTryAttack() {
-        ActorEventManager.Broadcast(Events.TryAttackEvent);
-        
-    }
+    public void BroadcastTryAttack() => ActorEventManager.Broadcast(Events.TryAttackEvent);
 
     public void BroadcastReceiveHealth(int health) {
         Events.ReceiveHealthEvent.Health = health;
         ActorEventManager.Broadcast(Events.ReceiveHealthEvent);
-
     }
 }
