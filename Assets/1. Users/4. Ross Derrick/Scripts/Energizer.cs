@@ -17,7 +17,7 @@ public class Energizer : MonoBehaviour {
         if(col.name == "pacman")
         {
             gm.ScareGhosts();
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 }
