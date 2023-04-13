@@ -20,6 +20,7 @@ public class buttonManager : MonoBehaviour
 
     public void PlayGame()
     {
+        Cursor.visible = false;
         tiles.SetActive(false);
         playButton.SetActive(false);
         controlButton.SetActive(false);
