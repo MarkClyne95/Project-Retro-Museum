@@ -7,7 +7,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 [Serializable]
-public class s_ActorAudio : MonoBehaviour{
+public class S_ActorAudio : MonoBehaviour{
     protected S_ActorController _actorController;
 
     [SerializeField] protected AudioSource _audioSource;

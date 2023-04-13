@@ -13,27 +13,16 @@ public class S_PlayerActorController : S_ActorController
     private PlayerInput _playerInput;
     private DoomInputHandler _doomInputHandler; 
 
-
     protected override void Start() {
         base.Start();
         _playerInput = GetComponentInParent<PlayerInput>();
         _playerInput.actions.FindActionMap("Doom").Enable();
         _doomInputHandler = GetComponentInParent<DoomInputHandler>();
         _doomInputHandler.Fire += Fire;
-
-        
     }
 
-    protected override void OnDestroy() {
-        _doomInputHandler.Fire -= Fire;
-    }
-    
-    
-
-    private void Fire() {
-        _actorAttack.TryAttack();
-    }
-
+    protected override void OnDestroy() => _doomInputHandler.Fire -= Fire;
+    private void Fire() => _actorAttack.TryAttack();
 
     public void BroadcastIncorrectAnswerEvent(int answers) {
         var evt = new IncorrectAnswerEvent {
@@ -41,5 +30,4 @@ public class S_PlayerActorController : S_ActorController
         };
         ActorEventManager.Broadcast(evt);
     }
-    
 }
