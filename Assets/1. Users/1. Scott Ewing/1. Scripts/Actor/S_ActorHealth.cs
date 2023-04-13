@@ -3,35 +3,10 @@ using ProjectRetroMuseum.ScottEwing;
 using UnityEngine;
 
 namespace ScottEwing{
-    /*[Serializable]
-    public class S_ActorHealth : IActorComponent ,ITakesDamage{
-        private S_ActorController _sActorController;
-        [SerializeField] private int _maxHealth = 100;
-        [SerializeField] private int _currentHealth = 100;
-        [SerializeField] private Collider _damageCollider;
-        
-        public void Initialise(S_ActorController sActorController) {
-            _sActorController = sActorController;
-        }
-
-        public void OnDestroy() {
-        }
-
-        public void TakeDamage(int damage) {
-            _currentHealth -= damage;
-            _sActorController.BroadcastTakeDamageEvent(damage, _currentHealth);
-            if (_currentHealth <= 0) {
-                _currentHealth = 0;
-                _damageCollider.gameObject.layer = Layers.DeadValue();
-                _sActorController.BroadcastDeathEvent(damage, _currentHealth);
-            }
-        }
-    }*/
-    
     public class S_ActorHealth : MonoBehaviour, ITakesDamage{
         [SerializeField] private int _maxHealth = 100;
         [SerializeField] private int _currentHealth = 100;
-        private S_ActorController _actorController;
+        protected S_ActorController _actorController;
         private GameObject bloodEffectPrefab;
         [SerializeField] private bool _canBeGibbed = true;
         [SerializeField] private int _gibDamageThreshold = 10;
@@ -39,7 +14,7 @@ namespace ScottEwing{
         private Collider healthCollider;
 
         
-        private void Start() {
+        protected virtual void Start() {
             _actorController = GetComponentInParent<S_ActorController>();
             healthCollider = GetComponent<Collider>();
         }
@@ -60,7 +35,6 @@ namespace ScottEwing{
                 }
                 return true;
             }
-
             return false;
         }
         
@@ -72,7 +46,5 @@ namespace ScottEwing{
 
         public bool IsAlive() => _currentHealth > 0;
         public int CurrentHealth() => _currentHealth;
-
     }
-    
 }

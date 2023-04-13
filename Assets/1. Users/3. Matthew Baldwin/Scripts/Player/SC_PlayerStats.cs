@@ -16,6 +16,8 @@ public class SC_PlayerStats : MonoBehaviour
         scoreUI.text = "score: " + playerScore;
         Screen.SetResolution(1920,1080,true);
         QualitySettings.SetQualityLevel(5);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public byte PlayerHealth

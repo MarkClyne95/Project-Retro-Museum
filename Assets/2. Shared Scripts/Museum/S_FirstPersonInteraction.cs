@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -37,10 +38,6 @@ public class S_FirstPersonInteraction : MonoBehaviour
                         HandleConsole(interactableObject.levelName);
                         break;
                 
-                    case ObjectType.History:
-                        HandleHistory(interactableObject);
-                        break;
-                
                     case ObjectType.Door:
                         HandleDoor(interactableObject);
                         break;
@@ -61,19 +58,16 @@ public class S_FirstPersonInteraction : MonoBehaviour
         }
     }
 
-    private void HandleHistory(S_InteractableObject obj)
-    {
-        if (Input.GetKey(interactKey) && canInteract)
-        {
-            //TODO: Show history UI
-        }
-    }
-
     private void HandleDoor(S_InteractableObject obj)
     {
-        if (Input.GetKey(interactKey) && canInteract)
+        if (Input.GetKey(interactKey) && canInteract && !obj.questionAnswered)
         {
             SceneManager.LoadScene(obj.levelName);
         }
+
+        // if (Input.GetKey(interactKey) && obj.questionAnswered)
+        // {
+        //     
+        // }
     }
 }
