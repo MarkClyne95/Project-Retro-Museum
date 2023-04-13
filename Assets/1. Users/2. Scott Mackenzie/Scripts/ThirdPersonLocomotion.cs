@@ -117,13 +117,13 @@ public class ThirdPersonLocomotion : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z) && isZoomed == false)
         {
-            zoomIn();
+            Invoke("zoomIn", 0.1f);
             Debug.Log("Zooming In");
         }
 
         if (Input.GetKeyDown(KeyCode.Z) && isZoomed == true)
         {
-            zoomOut();
+            Invoke("zoomOut", 0.1f);
             Debug.Log("Zooming Out");
         }
 
@@ -165,7 +165,7 @@ public class ThirdPersonLocomotion : MonoBehaviour
     public void zoomIn()
     {
         isZoomed = true;
-        virtualCamera.GetComponent<CinemachineRecomposer>().m_ZoomScale = 0.8f;
+        virtualCamera.GetComponent<CinemachineRecomposer>().m_ZoomScale = 0.7f;
         Debug.Log("Zoomed");
     }
 
