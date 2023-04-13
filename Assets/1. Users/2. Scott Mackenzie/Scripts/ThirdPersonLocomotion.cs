@@ -115,6 +115,8 @@ public class ThirdPersonLocomotion : MonoBehaviour
             //Debug.Log(animator.GetBool("IsMoving"));
         }
 
+        //----------------Zooming Functionality----------------//
+
         if (Input.GetKeyDown(KeyCode.Z) && isZoomed == false)
         {
             Invoke("zoomIn", 0.1f);
@@ -138,11 +140,6 @@ public class ThirdPersonLocomotion : MonoBehaviour
         jumpBounce.Play();
     }
 
-    //public void untranstitionJump()
-    //{
-    //    animator.SetBool("IsJumping", false);
-    //}
-
     private void resetJumpHeight()
     {
         jumpHeight = 3f;
@@ -161,7 +158,7 @@ public class ThirdPersonLocomotion : MonoBehaviour
     }
 
 
-    //--------------------------//m_ZoomScale NOT AFFECTING VIRTUAL CAMERA ZOOM?//--------------------------//
+    //--------------------------//Zoom Methods//--------------------------//
     public void zoomIn()
     {
         isZoomed = true;
@@ -174,4 +171,10 @@ public class ThirdPersonLocomotion : MonoBehaviour
         isZoomed = false;
         virtualCamera.GetComponent<CinemachineRecomposer>().m_ZoomScale = 1f;
     }
+
+
+    //public void untranstitionJump()
+    //{
+    //    animator.SetBool("IsJumping", false);
+    //}
 }
