@@ -3,7 +3,22 @@ guid: 53ce0ac54d34a7144aa2544ba20c8619
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Name_Buttons
+    second: {fileID: 2100000, guid: 956d82eab0f4cff418e0b126d05bbade, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV Screen Base
+    second: {fileID: 2100000, guid: 67d6025760ca7114a9069159a882f67d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TVCase
+    second: {fileID: 2100000, guid: d68c26b1fecff63438cc174a4f7349d0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

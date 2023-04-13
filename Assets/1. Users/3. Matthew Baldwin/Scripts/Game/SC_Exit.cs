@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SC_Exit : MonoBehaviour
 {
+    public Color color;
+    public int speed;
+    public string toLoad;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +23,7 @@ public class SC_Exit : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("AtariExplosion"))
         {
-            Application.Quit();
-            Debug.Log("Have Quit");
+            Initiate.Fade(toLoad, color, speed);
         }
     }
 }
