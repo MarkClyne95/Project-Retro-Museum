@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using ScottEwing.EventSystem;
 using UnityEngine;
 
-public class S_PlayerAudio : s_ActorAudio{
+public class S_PlayerAudio : S_ActorAudio{
     [SerializeField] private AudioClip _itemPickupClip;
 
     protected override void Start() {

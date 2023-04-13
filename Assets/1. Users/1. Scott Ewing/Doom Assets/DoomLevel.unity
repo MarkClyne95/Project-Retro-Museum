@@ -11408,6 +11408,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b50581586a4a9b48aba8aec4ca21fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  qualityLevel: 5
+  width: 1920
+  height: 1440
 --- !u!4 &1433931296
 Transform:
   m_ObjectHideFlags: 0
@@ -19222,10 +19225,6 @@ PrefabInstance:
     - target: {fileID: 4357109321181746322, guid: 9978c07576534d240a3b4ed8145ff4ee, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -35.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4683004227425805169, guid: 9978c07576534d240a3b4ed8145ff4ee, type: 3}
-      propertyPath: _currentHealth
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4683004227844374226, guid: 9978c07576534d240a3b4ed8145ff4ee, type: 3}
       propertyPath: m_Camera
