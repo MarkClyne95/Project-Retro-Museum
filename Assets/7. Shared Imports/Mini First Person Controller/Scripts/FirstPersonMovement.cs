@@ -9,6 +9,7 @@ public class FirstPersonMovement : MonoBehaviour
     public bool canRun = true;
     public bool IsRunning { get; private set; }
     public float runSpeed = 9;
+    public bool canMove;
     public KeyCode runningKey = KeyCode.LeftShift;
 
     Rigidbody rigidbody;
@@ -39,6 +40,9 @@ public class FirstPersonMovement : MonoBehaviour
         Vector2 targetVelocity =new Vector2( Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
 
         // Apply movement.
-        rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
+        if (canMove)
+        {
+            rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
+        }
     }
 }
