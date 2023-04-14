@@ -35,9 +35,7 @@ public class S_BarrelAttack : S_ActorAttack{
         if (!_attackCooldownOver) {
             return false;
         }
-
         var detectedObjects = _rangeSensor.GetDetected();
-
         foreach (var detectedObject in detectedObjects) {
             if (detectedObject.TryGetComponent<ITakesDamage>(out var takesDamage)) {
                 damageTakerList.Add(takesDamage);
@@ -48,7 +46,6 @@ public class S_BarrelAttack : S_ActorAttack{
     }
 
     protected void Attack(List<ITakesDamage> damageTakerList, List<RaycastHit> hits) {
-        //_actorController.BroadcastAttackedEvent();
         _attackCooldownOver = false;
         IsAttacking = true;
         foreach (var takesDamage in damageTakerList) {
