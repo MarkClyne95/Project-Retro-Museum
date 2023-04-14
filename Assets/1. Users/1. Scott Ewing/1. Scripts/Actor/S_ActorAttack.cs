@@ -24,7 +24,6 @@ public class S_ActorAttack : MonoBehaviour
     protected Coroutine _attackRoutine;
     protected Coroutine _attackTimerRoutine;
     
-    // Start is called before the first frame update
     protected virtual void Start()
     {
         _actorController = GetComponentInParent<S_ActorController>();
@@ -41,11 +40,9 @@ public class S_ActorAttack : MonoBehaviour
         return false;
     }
     
-    protected virtual void Attack(ITakesDamage damageTaker, RaycastHit hit) {
-        }
+    protected virtual void Attack(ITakesDamage damageTaker, RaycastHit hit) { }
 
     protected void SetAttackCooldownTime() => _attackCooldown = Random.Range(_minAttackCooldown, _maxAttackCooldown);
-
     
     protected IEnumerator AttackRoutine() {
         while (true) {
@@ -65,9 +62,12 @@ public class S_ActorAttack : MonoBehaviour
     }
     
     protected virtual void OnActorDeath(ActorDeathEvent obj) {
-        if (_attackRoutine != null) 
-            _actorController.StopCoroutine(_attackRoutine);
-        if (_attackTimerRoutine != null) 
-            _actorController.StopCoroutine(_attackTimerRoutine);
+        if (_attackRoutine != null) {
+            StopCoroutine(_attackRoutine);
+        }
+
+        if (_attackTimerRoutine != null) {
+            StopCoroutine(_attackTimerRoutine);
+        }
     }
 }

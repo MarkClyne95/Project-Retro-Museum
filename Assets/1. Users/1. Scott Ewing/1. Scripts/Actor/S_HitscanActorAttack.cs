@@ -10,7 +10,6 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class S_HitscanActorAttack : S_ActorAttack{
-    //[SerializeField] private bool _requireTarget = true;
     [SerializeField] private RaySensor _raySensor;
 
     protected override void Start() {
@@ -53,18 +52,16 @@ public class S_HitscanActorAttack : S_ActorAttack{
 
     protected override void Attack(ITakesDamage damageTaker, RaycastHit hit) {
         _actorController.BroadcastAttackedEvent();
-
         _attackCooldownOver = false;
         IsAttacking = true;
         if (damageTaker != null && damageTaker.TakeDamage(_damage, hit)) {
             _actorController.Target = null;
             if (_attackRoutine != null) {
-                _actorController.StopCoroutine(_attackRoutine);
+                StopCoroutine(_attackRoutine);
             }
         }
         SetAttackCooldownTime();
-        _attackTimerRoutine = _actorController.StartCoroutine(AttackTimerRoutine());
-
+        _attackTimerRoutine = StartCoroutine(AttackTimerRoutine());
     }
 
     private void OnStartWalking(StartWalkingEvent obj) {
@@ -72,7 +69,6 @@ public class S_HitscanActorAttack : S_ActorAttack{
         if (_attackRoutine != null) {
             return;
         }
-
-        _attackRoutine = _actorController.StartCoroutine(AttackRoutine());
+        _attackRoutine = StartCoroutine(AttackRoutine());
     }
 }
