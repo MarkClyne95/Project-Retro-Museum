@@ -85,12 +85,12 @@ public class GameGUINavigation : MonoBehaviour {
         yield return new WaitForSeconds(2);
         Menu();
     }
-
+	/*heeeeeeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrreeeeeeee*/
 	public void getScoresMenu()
 	{
 		Time.timeScale = 0f;		// stop the animations
 		Firewall.GameManager.gameState = Firewall.GameManager.GameState.Scores;
-		MenuButton.enabled = false;
+		MenuButton.enabled = true;
 		ScoreCanvas.enabled = true;
 	}
 

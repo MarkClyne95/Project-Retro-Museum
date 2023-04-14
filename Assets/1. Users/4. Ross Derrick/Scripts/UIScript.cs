@@ -33,7 +33,7 @@ public class UIScript : MonoBehaviour {
         // update score text
         score = Firewall.GameManager.score;
 		txt_score.text = "Score\n" + score;
-		txt_high.text = "High Score\n" + high;
+	//	txt_high.text = "High Score\n" + high;
 	    txt_level.text = "Level\n" + (Firewall.GameManager.Level + 1);
 
 	}

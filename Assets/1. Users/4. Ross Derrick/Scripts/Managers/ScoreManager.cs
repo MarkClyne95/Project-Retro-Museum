@@ -41,7 +41,7 @@ public class ScoreManager : MonoBehaviour {
         if (level == 1) _lowestHigh = _highscore = 99999;
         //if (level == 1) StartCoroutine("GetHighestScore");  // if game is loaded
     }
-
+    
     IEnumerator GetHighestScore()
     {
         Debug.Log("GETTING HIGHEST SCORE");
@@ -62,10 +62,10 @@ public class ScoreManager : MonoBehaviour {
         _highscore = scoreList[0].score;
         _lowestHigh = scoreList[scoreList.Count - 1].score;
     }
-
+    
     IEnumerator UpdateGUIText()
     {
-        /*
+        
         // wait until scores are pulled from database
         float timeOut = Time.time + 4;
         while (!_scoresRead)
@@ -79,7 +79,7 @@ public class ScoreManager : MonoBehaviour {
                 break;
             }
         }
-        */
+        
         scoreList.Clear();
         scoreList.Add(new Score("DATABASE TEMPORARILY UNAVAILABLE", 999999));
 
