@@ -12,6 +12,7 @@ public class buttonManager : MonoBehaviour
     public GameObject health;
     public GameObject controls;
     public GameObject exitButton;
+    public GameObject panel;
 
     public Color color;
     public string level;
@@ -21,6 +22,7 @@ public class buttonManager : MonoBehaviour
     public void PlayGame()
     {
         Cursor.visible = false;
+        panel.SetActive(false);
         tiles.SetActive(false);
         playButton.SetActive(false);
         controlButton.SetActive(false);
