@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using _2._Shared_Scripts;
+using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -55,18 +56,33 @@ public class S_QuestionHandler : MonoBehaviour
         var eq1 = new S_Question("What CPU did the NES use?", "2A03", "3B04", "1H02", "4E02");
         var eq2 = new S_Question("What was the best selling game for the NES?", "Super Mario Bros.", "Final Fantasy", "Kung Fu", "Duck Hunt");
         var eq3 = new S_Question("How much did the NES cost in North America at launch?", "$99.99", "$88.99", "$98.99", "$89.99");
+        var eq4 = new S_Question("When was the Sega master system released?", "1985", "1986", "1987", "1988");
+        var eq5 = new S_Question("The Master System was sega’s … console.", "First", "Second", "Third", "Fourth");
+        var eq6 = new S_Question("What was the Sega Master System's biggest competitor in the 8-bit console market?", "Amiga 500", "Commodore 64", "NES", "Atari 2600");
         
         eightyQuestions.Add(eq1);
         eightyQuestions.Add(eq2);
         eightyQuestions.Add(eq3);
+        eightyQuestions.Add(eq4);
+        eightyQuestions.Add(eq5);
+        eightyQuestions.Add(eq6);
         
         var nq1 = new S_Question("Which Enhancement Chip acted as graphics accelerator chip which drew polygons and advanced 2D effects?", "Super FX", "Cx4", "DSP", "OBC-1");
-        var nq2 = new S_Question("Which Enhancement Chip was used to perform general trigonometric calculations for wireframe effects, sprite positioning, and rotation?", "Super FX", "Cx4", "DSP", "OBC-1");
+        var nq2 = new S_Question("Which Enhancement Chip was used to perform general trigonometric calculations for wireframe effects, sprite positioning, and rotation?",
+            "Super FX", "Cx4", "DSP", "OBC-1");
         var nq3 = new S_Question("What was the standard space for a SNES cartridge?", "2MB", "4MB", "6MB", "8MB");
         var nq4 = new S_Question("The Sega Saturn was released in Japan in 1994, when was it released for the rest of the world?", "1992", "1995", "2000", "1998");
         var nq5 = new S_Question("How  many years did the Sega Saturn last before it was discontinued", "8", "3", "1", "4");
         var nq6 = new S_Question("What Texture Sizes was the PlayStation 1 limited to?", "256x256", "512x512", "768x768", "1024x1024");
         var nq7 = new S_Question("What Year was the PlayStation 1 first released in Europe and the US?", "1992", "1993", "1994", "1995");
+        
+        nintyQuestions.Add(nq1);
+        nintyQuestions.Add(nq2);
+        nintyQuestions.Add(nq3);
+        nintyQuestions.Add(nq4);
+        nintyQuestions.Add(nq5);
+        nintyQuestions.Add(nq6);
+        nintyQuestions.Add(nq7);
 
         switch (levelName)
         {
@@ -121,7 +137,7 @@ public class S_QuestionHandler : MonoBehaviour
                 }
                 if (currentIndex == seventyQuestions.Count)
                 {
-                    PassTest();
+                    PassTest(levelName);
                 }
                 break;
             
@@ -137,7 +153,7 @@ public class S_QuestionHandler : MonoBehaviour
                 }
                 if (currentIndex == eightyQuestions.Count)
                 {
-                    PassTest();
+                    PassTest(levelName);
                 }
                 break;
             
@@ -153,14 +169,17 @@ public class S_QuestionHandler : MonoBehaviour
                 }
                 if (currentIndex == nintyQuestions.Count)
                 {
-                    PassTest();
+                    PassTest(levelName);
                 }
                 break;
         }
     }
     
-    public void PassTest()
+    public void PassTest([CanBeNull] string levelName)
     {
+        if(levelName == "L_90sFloor")
+            Application.Quit();
+        
         fpm.canMove = true;
         fpl.enabled = true;
         door.questionAnswered = true;

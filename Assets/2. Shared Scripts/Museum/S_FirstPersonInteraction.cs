@@ -61,11 +61,7 @@ public class S_FirstPersonInteraction : MonoBehaviour
 
     private void HandleDoor(S_InteractableObject obj)
     {
-        if (obj.levelName == "Exit")
-        {
-            Application.Quit();
-        }
-        if (Input.GetKey(interactKey) && canInteract && !obj.questionAnswered && obj.levelName != "Exit")
+        if (Input.GetKey(interactKey) && canInteract && !obj.questionAnswered)
         {
             questionUI.gameObject.SetActive(true);
         }
