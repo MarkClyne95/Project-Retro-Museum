@@ -9577,26 +9577,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8257a3debb02ec34783d698758a376cc, type: 3}
   m_PrefabInstance: {fileID: 166009043}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1520295653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1520295652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aaf77252d2e77c4f8ec0e554d145c46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectType: 2
-  levelName: L_AtariWing
-  interactable: 1
-  questionAnswered: 0
-  historyInformation: 
-  consoleValue: 0
-  historyValue: 0
-  doorValue: 0
 --- !u!95 &1520295654
 Animator:
   serializedVersion: 5
@@ -12000,7 +11980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectType: 2
-  levelName: L_90sFloor
+  levelName: Exit
   interactable: 1
   questionAnswered: 0
   historyInformation: 

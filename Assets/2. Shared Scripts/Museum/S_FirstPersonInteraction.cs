@@ -12,6 +12,7 @@ public class S_FirstPersonInteraction : MonoBehaviour
     private Vector3 _forward;
     [SerializeField]private float _rayLength = 50f;
     [SerializeField] private TMP_Text interactText;
+    [SerializeField] private S_QuestionHandler questionUI;
 
     private void Start()
     {
@@ -60,14 +61,13 @@ public class S_FirstPersonInteraction : MonoBehaviour
 
     private void HandleDoor(S_InteractableObject obj)
     {
-        if (Input.GetKey(interactKey) && canInteract && !obj.questionAnswered)
+        if (obj.levelName == "Exit")
         {
-            SceneManager.LoadScene(obj.levelName);
+            Application.Quit();
         }
-
-        // if (Input.GetKey(interactKey) && obj.questionAnswered)
-        // {
-        //     
-        // }
+        if (Input.GetKey(interactKey) && canInteract && !obj.questionAnswered && obj.levelName != "Exit")
+        {
+            questionUI.gameObject.SetActive(true);
+        }
     }
 }
