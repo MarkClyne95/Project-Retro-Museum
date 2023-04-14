@@ -25,11 +25,6 @@ public class PitBarrier : MonoBehaviour
         waterSplash.volume = PlayerPrefs.GetFloat("SFXVol");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -45,13 +40,8 @@ public class PitBarrier : MonoBehaviour
             //Play Squawk SFX
             randySquawk.Play();
 
-            //Fade screen to black
-
             //Add camera shake after a delay to imitate player hitting the ground
             Invoke("ActivateCameraShake", 0.6f);
-
-            //Load scene from last checkpoint
-            //Invoke("LoadCheckpoint", 1.5f);
         }
     }
 
@@ -60,8 +50,4 @@ public class PitBarrier : MonoBehaviour
         CameraShakeManager.instance.CameraShake(impulseSource);
     }
 
-    //private void LoadCheckpoint()
-    //{
-    //    gm.OnPlayerDeath();
-    //}
 }
