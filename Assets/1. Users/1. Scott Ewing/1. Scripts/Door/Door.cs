@@ -1,7 +1,7 @@
-using System;
+//using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
+//using System.Collections.Generic;
+//using System.Security.Cryptography.X509Certificates;
 //using Palmmedia.ReportGenerator.Core.Parser.Analysis;
 using UnityEngine;
 
@@ -25,7 +25,6 @@ namespace ProjectRetroMuseum.ScottEwing.Door{
             _openPos = _openTransform.position;
             _closedPos = _closedTransform.position;
             transform.position = _openWhenTriggered ? _closedPos : _openPos;
-
             _volume = PlayerPrefs.GetFloat("SFXVol");
         }
 

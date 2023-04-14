@@ -8248,7 +8248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7967719815379438384, guid: 7ae0e0fb494756448b4aac1a6b1057e7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7967719815379438395, guid: 7ae0e0fb494756448b4aac1a6b1057e7, type: 3}
       propertyPath: m_RootOrder
@@ -17926,7 +17926,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 155376764, guid: f864dbe81bf85d545b380eb11821feae, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 155376767, guid: f864dbe81bf85d545b380eb11821feae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17942,7 +17942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2378037975777054563, guid: f864dbe81bf85d545b380eb11821feae, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2378037976211817745, guid: f864dbe81bf85d545b380eb11821feae, type: 3}
       propertyPath: m_Pivot.x
@@ -20079,10 +20079,6 @@ PrefabInstance:
     - target: {fileID: 6883238362519452791, guid: 56c332c04d6d2ea49b24ba2f9412f2a0, type: 3}
       propertyPath: m_Name
       value: Actor_ShotgunGuy
-      objectReference: {fileID: 0}
-    - target: {fileID: 6883238362519452791, guid: 56c332c04d6d2ea49b24ba2f9412f2a0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6883238362519452793, guid: 56c332c04d6d2ea49b24ba2f9412f2a0, type: 3}
       propertyPath: m_RootOrder
