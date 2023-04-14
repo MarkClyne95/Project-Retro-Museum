@@ -9892,10 +9892,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4148825758460645814, guid: 3045609768cc93542b1cb24da6d8326d, type: 3}
       propertyPath: m_Name
-      value: TempleDollyTrack
+      value: DollyTrack
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3045609768cc93542b1cb24da6d8326d, type: 3}
+--- !u!114 &1402499438 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4148825758460645809, guid: 3045609768cc93542b1cb24da6d8326d, type: 3}
+  m_PrefabInstance: {fileID: 1402499437}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a200b19ca1a9685429ed7e043c28e904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1405930439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14538,8 +14549,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 418e42c7d0405cc48a7b83f63ea53bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 0}
-  m_PathPosition: 1.317077
+  m_Path: {fileID: 1402499438}
+  m_PathPosition: 0.35244948
   m_PositionUnits: 0
   m_PathOffset: {x: 0.05848952, y: 4.950002, z: -5.870366}
   m_XDamping: 2
