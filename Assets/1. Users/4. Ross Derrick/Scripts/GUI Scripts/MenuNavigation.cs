@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class MenuNavigation : MonoBehaviour {
@@ -10,7 +11,7 @@ public class MenuNavigation : MonoBehaviour {
 
 	public void Quit()
 	{
-		Application.Quit();
+		SceneManager.LoadScene(2);
 	}
 	
 	public void Play()
@@ -29,8 +30,5 @@ public class MenuNavigation : MonoBehaviour {
         Application.LoadLevel("credits");
     }
 
-	public void SourceCode()
-	{
-		Application.OpenURL("https://github.com/vilbeyli/Pacman-Clone/");
-	}
+	
 }
