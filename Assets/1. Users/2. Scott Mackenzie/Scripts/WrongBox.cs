@@ -22,8 +22,6 @@ public class WrongBox : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //GetComponent<Animator>().SetBool("SquashStretch", true);
-
         if (other.CompareTag("Player"))
         {
             Debug.Log("Disable Box");
