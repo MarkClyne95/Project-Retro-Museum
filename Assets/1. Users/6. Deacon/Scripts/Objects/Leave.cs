@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Leave : MonoBehaviour
 {
     public GameObject door;
     public buttonManager ButtonManager;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (col.CompareTag("Player"))
         {
-            ButtonManager.ExitButton();
+            SceneManager.LoadScene("L_90sFloor");
         }
     }
 

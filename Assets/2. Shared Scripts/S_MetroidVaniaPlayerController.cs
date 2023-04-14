@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
@@ -131,6 +132,14 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         }
         
         _anim.SetBool("Run", _moveInput.x != 0);
+    }
+
+    public void OnExitGame(InputAction.CallbackContext context)
+    {
+        if (context.ReadValueAsButton())
+        {
+            SceneManager.LoadScene("L_80sFloor");
+        }
     }
 
     public void OnPause(InputAction.CallbackContext input)

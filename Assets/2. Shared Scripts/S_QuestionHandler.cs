@@ -160,7 +160,7 @@ public class S_QuestionHandler : MonoBehaviour
             case "L_90sFloor":
                 if (currentIndex < nintyQuestions.Count)
                 {
-                    q = seventyQuestions[currentIndex];
+                    q = nintyQuestions[currentIndex];
                     fieldText.text = q.Question;
                     a1.text = q.Answer1;
                     a2.text = q.Answer2;
@@ -177,8 +177,8 @@ public class S_QuestionHandler : MonoBehaviour
     
     public void PassTest([CanBeNull] string levelName)
     {
-        if(levelName == "L_90sFloor")
-            Application.Quit();
+        if (levelName == "L_90sFloor")
+            SceneManager.LoadScene("L_MainMenu");
         
         fpm.canMove = true;
         fpl.enabled = true;

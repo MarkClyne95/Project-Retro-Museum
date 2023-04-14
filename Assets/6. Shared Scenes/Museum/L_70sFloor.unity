@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 406736611}
-  m_IndirectSpecularColor: {r: 0.029087335, g: 0.0298977, b: 0.029896766, a: 1}
+  m_IndirectSpecularColor: {r: 0.029087335, g: 0.0298977, b: 0.029896773, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2074,6 +2074,90 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393972792}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &398598149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 398598151}
+  - component: {fileID: 398598150}
+  m_Layer: 0
+  m_Name: Turret 1_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &398598150
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398598149}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -1205265518, guid: 69b55a4184815624b93660296a1ea792, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.28, y: 1.28}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &398598151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398598149}
+  m_LocalRotation: {x: -0.03088874, y: -0.7064318, z: -0.030888755, w: 0.7064318}
+  m_LocalPosition: {x: 7.02, y: 0.481, z: 7.939}
+  m_LocalScale: {x: 0.58457, y: 0.58457, z: 0.58457}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: -5.007, y: -90, z: 0}
 --- !u!1 &406736610
 GameObject:
   m_ObjectHideFlags: 0
@@ -9896,6 +9980,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2847774826269488020, guid: ad7460f0360f81b408b5fc9319efbfc7, type: 3}
   m_PrefabInstance: {fileID: 1494955935}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1498277208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6167416800959496170, guid: ca76e126559de1d4fbfe4c8ed4c21b18, type: 3}
+  m_PrefabInstance: {fileID: 6437465994056022375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1503015906
 GameObject:
   m_ObjectHideFlags: 0
@@ -14908,6 +14997,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6835549766693627216, guid: ca76e126559de1d4fbfe4c8ed4c21b18, type: 3}
   m_PrefabInstance: {fileID: 6437465994056022375}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &543450651793464376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498277208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aaf77252d2e77c4f8ec0e554d145c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectType: 0
+  levelName: AtariGame
+  interactable: 1
+  questionAnswered: 0
+  historyInformation: 
+  consoleValue: 0
+  historyValue: 0
+  doorValue: 0
+--- !u!65 &543450651793464377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498277208}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020000001, y: 0.029086825, z: 0.022106947}
+  m_Center: {x: 0, y: 0.003075391, z: -0.0010534689}
 --- !u!4 &543450652475277642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2847774826269488020, guid: ad7460f0360f81b408b5fc9319efbfc7, type: 3}

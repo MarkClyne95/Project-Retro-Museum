@@ -40,6 +40,7 @@ public class S_GameManager : MonoBehaviour
     {
         return _coinAmount;
     }
+    
 }
 
 [Flags]
