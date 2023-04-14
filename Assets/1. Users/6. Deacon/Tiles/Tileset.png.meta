@@ -20,7 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -49,7 +49,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -999,7 +999,7 @@ TextureImporter:
     nameFileIdTable:
       Tileset_3: -2096511456
       Tileset_12: -2064391642
-      Tileset_41: 1003143613
+      Tileset_7: 858908044
       Tileset_4: 678568672
       Tileset_17: -969557418
       Tileset_18: -1101968257
@@ -1034,11 +1034,11 @@ TextureImporter:
       Tileset_22: 292386576
       Tileset_21: 847854186
       Tileset_9: -1083650396
-      Tileset_0: 2054195121
-      Tileset_30: 812555767
-      Tileset_39: 1525732812
       Tileset_34: -715656571
-      Tileset_7: 858908044
+      Tileset_0: 2054195121
+      Tileset_39: 1525732812
+      Tileset_41: 1003143613
+      Tileset_30: 812555767
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

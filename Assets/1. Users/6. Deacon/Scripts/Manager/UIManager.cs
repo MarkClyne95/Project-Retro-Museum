@@ -15,6 +15,7 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         gameCanvas = FindObjectOfType<Canvas>();
     }
 

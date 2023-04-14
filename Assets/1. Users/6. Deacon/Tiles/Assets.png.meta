@@ -20,7 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -49,7 +49,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -4357,10 +4357,10 @@ TextureImporter:
       Assets_100: 58231224
       Assets_153: -1808507311
       Assets_49: 1768384528
-      Assets_21: 276411674
       Assets_55: -1203816620
-      Assets_12: -514441136
+      Assets_21: 276411674
       Assets_71: 1461402208
+      Assets_12: -514441136
       Assets_11: -1072688457
       Assets_155: -676474798
       Assets_105: 1635506629

@@ -4,6 +4,13 @@ using System.Collections;
 
 public class MenuNavigation : MonoBehaviour {
 
+	private void Start()
+	{
+		// Enable the mouse cursor and unlock it from the center of the screen
+		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.None;
+	}
+
 	public void MainMenu()
 	{
 		Application.LoadLevel("menu");
@@ -11,7 +18,8 @@ public class MenuNavigation : MonoBehaviour {
 
 	public void Quit()
 	{
-		SceneManager.LoadScene(2);
+		SceneManager.LoadScene("L_80sFloor");
+		Destroy(GameObject.Find("Music Manager"));
 	}
 	
 	public void Play()

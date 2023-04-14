@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ThirdPersonLocomotion : MonoBehaviour
 {
@@ -129,6 +130,11 @@ public class ThirdPersonLocomotion : MonoBehaviour
             Debug.Log("Zooming Out");
         }
 
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            SceneManager.LoadScene("L_90sFloor");
+        }
+
     }
 
     public void Jump()
@@ -171,6 +177,7 @@ public class ThirdPersonLocomotion : MonoBehaviour
         isZoomed = false;
         virtualCamera.GetComponent<CinemachineRecomposer>().m_ZoomScale = 1f;
     }
+
 
 
     //public void untranstitionJump()
