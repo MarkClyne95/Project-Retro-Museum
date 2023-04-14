@@ -44,11 +44,7 @@ namespace ProjectRetroMuseum.ScottEwing{
             }
             
             UpdateState();
-            if (Input.GetKeyDown(KeyCode.P)) {
-                _actorController._actorAttack.TryAttack();
-            }
 
-            
             switch (_actorState) {
                 case ActorStates.Idle:
                     _agent.isStopped = true;

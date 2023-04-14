@@ -53,6 +53,7 @@ public class Damageable : MonoBehaviour
                 {
                     if (!IsAlive)
                     {
+                        Cursor.visible = true;
                         gameOverText.SetActive(true);
                         restartButton.SetActive(true);
                         exitButton.SetActive(true);

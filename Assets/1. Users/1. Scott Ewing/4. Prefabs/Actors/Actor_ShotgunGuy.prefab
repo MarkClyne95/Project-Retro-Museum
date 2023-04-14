@@ -149,6 +149,7 @@ MonoBehaviour:
   _attackClip: {fileID: 8300000, guid: b61dd3802f84ded43ac7d2227ee28b2c, type: 3}
   _hasGibbedAudio: 1
   _gibbedDeathClip: {fileID: 8300000, guid: 416831b5f34c1544f92bfb304475afba, type: 3}
+  VolumeMultiplier: 0.5
 --- !u!82 &8485462093743041435
 AudioSource:
   m_ObjectHideFlags: 0
@@ -435,7 +436,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6883238360940442155}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f33a56a2abbe3f49817c7092b456b18, type: 3}
   m_Name: 
@@ -533,6 +534,7 @@ GameObject:
   - component: {fileID: 6883238362519452793}
   - component: {fileID: 6883238362519452792}
   - component: {fileID: 1523627686696768988}
+  - component: {fileID: 3825397849353957860}
   m_Layer: 0
   m_Name: Actor_ShotgunGuy
   m_TagString: Untagged
@@ -595,6 +597,18 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &3825397849353957860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6883238362519452791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f33a56a2abbe3f49817c7092b456b18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6883238362737297649
 GameObject:
   m_ObjectHideFlags: 0
