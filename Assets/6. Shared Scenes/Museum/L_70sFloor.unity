@@ -7064,6 +7064,10 @@ PrefabInstance:
       propertyPath: canMove
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5273061343101857912, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: rigidbody
+      value: 
+      objectReference: {fileID: 1414516860}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
 --- !u!1 &1089685154
@@ -9558,6 +9562,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97fca36bd81de7c4cafce7bbf02ca611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1414516860 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 5222740939418225544, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+  m_PrefabInstance: {fileID: 1087222120}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1427787810
 PrefabInstance:
   m_ObjectHideFlags: 0
