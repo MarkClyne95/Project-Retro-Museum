@@ -16289,7 +16289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectType: 2
-  levelName: Exit
+  levelName: L_Credits
   interactable: 1
   questionAnswered: 0
   historyInformation: 
