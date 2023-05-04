@@ -3387,6 +3387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Music
       objectReference: {fileID: 0}
+    - target: {fileID: 3600046498693330085, guid: 3c3ad395e4ee3344e8028ba2b6d224f4, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b83a2401778112748afc8af6eb8ee7dc, type: 3}
     - target: {fileID: 3600046498693330086, guid: 3c3ad395e4ee3344e8028ba2b6d224f4, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7002,7 +7006,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1299782331
 PrefabInstance:
@@ -9647,7 +9651,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1620211621
 PrefabInstance:
