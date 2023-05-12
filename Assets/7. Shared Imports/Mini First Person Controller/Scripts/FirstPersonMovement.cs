@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FirstPersonMovement : MonoBehaviour
@@ -11,6 +12,11 @@ public class FirstPersonMovement : MonoBehaviour
     public float runSpeed = 9;
     public bool canMove;
     public KeyCode runningKey = KeyCode.LeftShift;
+    public KeyCode pauseKey = KeyCode.Escape;
+
+    [Header("Pause Menu")] 
+    [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private FirstPersonLook camera;
 
     Rigidbody rigidbody;
     /// <summary> Functions to override movement speed. Will use the last added override. </summary>
@@ -43,6 +49,18 @@ public class FirstPersonMovement : MonoBehaviour
         if (canMove)
         {
             rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(pauseKey))
+        {
+            Time.timeScale = 0;
+            pauseMenu.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            camera.sensitivity = 0;
         }
     }
 }

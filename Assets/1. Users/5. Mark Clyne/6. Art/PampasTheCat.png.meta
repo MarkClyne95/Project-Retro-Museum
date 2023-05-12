@@ -1,0 +1,2741 @@
+fileFormatVersion: 2
+guid: be7b7d7de554a3a4499158d44a53a8b9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PampasTheCat_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 704
+        width: 35
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c0598c1836eac4bbedaf698c42167e
+      internalID: 216174912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 664
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e248d67c151d8f64cbe3fa6d6a65beb5
+      internalID: 1712774941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 664
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b429bc05988e15b459e8ee3d3e2cf252
+      internalID: 1366827452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_3
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 664
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645fe18601bd59f44803db55fb9c0c01
+      internalID: 1590126885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_4
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 664
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ccc538f47a3a746adac1a68d2a1b7a
+      internalID: 1106273000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_5
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 671
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d137c444aee06054aa01a75f62634ae9
+      internalID: 453051039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_6
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 664
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b840a52ffd2ee434fa1b59bad0ecf995
+      internalID: -637745602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_7
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 664
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f673f895106c2c478548a7ec9e9fa79
+      internalID: 2054695768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_8
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 671
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12107ec8880244c40a99ab255773344b
+      internalID: 1944733112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_9
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 664
+        width: 7
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb05dd05deb0fe4b9e89ad10cf48811
+      internalID: 1931153270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_10
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 688
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee0c6ddba705bd459f0cf9ad2077cfb
+      internalID: 2114323442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_11
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 664
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0fb9f55f9114d4c9a6368dd79bbb79
+      internalID: 965228815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_12
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 664
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6066c79fe4b32834a949a3238e80a04a
+      internalID: -1981325766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_13
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 662
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37a02cda5c0768439e506cd9aa33092
+      internalID: -1542827456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_14
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 680
+        width: 22
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f849e272cc755954daaab6226e9f75f9
+      internalID: 473603568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_15
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 664
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3c1f8d2b081b74b85dcd637dd3f5b7
+      internalID: 121251140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_16
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 664
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a35107b8de255448eddaa62b119590
+      internalID: -8332098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_17
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 624
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc86421b2c2adc94dbfa42b67bc9007b
+      internalID: 1759803783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_18
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 624
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d67ace6c9f33442b3283c3033b04ac
+      internalID: 172144206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 624
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5f035c63907f647baa18280de1384f
+      internalID: 76137072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_20
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 624
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4de3df5fc89d9646877c6be3087e5ea
+      internalID: -613602671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_21
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 624
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a67e792ecd9a8b409723507084a7f87
+      internalID: 1298798298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_22
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 624
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790e1e97544638a449684c85533b6048
+      internalID: -1279040977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_23
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 584
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ede2bced47670749bdc2548d8d9ddb9
+      internalID: 1169864854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_24
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 584
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4ff0f8e4d636647abc7d8322023c6e
+      internalID: -985580232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_25
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 584
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6e2111b40bc6c4fadfe63523618025
+      internalID: 1787791532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_26
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 584
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389b974eb29b42d45bdc9b2827d5ec4d
+      internalID: -127214361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_27
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 584
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a4cded10f311a46968724474314023
+      internalID: -1812083253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_28
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 584
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb279db9969721b4fa72b964e2406db2
+      internalID: 444700696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_29
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 584
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3044a2fb4a2a5764eb16c51ba3ba32aa
+      internalID: 1173297919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_30
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 568
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc6684e08dc885409c66db7148cb4de
+      internalID: 578883021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_31
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 527
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc4b5494ee03b841954b98713c4c0cd
+      internalID: 809186759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_32
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 528
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6cb21058fb6eb74bb4078488e91e427
+      internalID: -527397832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_33
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 528
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100c0cf5005abe443aa37f9944d45f58
+      internalID: -1588093242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_34
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 528
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880ad9ea097fc834cafc46471da80e15
+      internalID: 741978613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_35
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 528
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679bb33834f25b7448551028039ac270
+      internalID: -485034423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_36
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 528
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b6492e2713d484cb75915bda3cc646
+      internalID: -247668033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_37
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 528
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e76eddf9428e3848a2f8fec2047e701
+      internalID: 208890614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_38
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 528
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684af11fa48bba44db9d04313de8dae8
+      internalID: 448321830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_39
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 524
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec61e83964e7ac46963c2cd8d48c2a1
+      internalID: 1912486787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_40
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 528
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a723fe0ab7c5fe4cb27d9247268b453
+      internalID: 1501744524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_41
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 528
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50f6da488e878b44a3ea2627a619d4c
+      internalID: -763123422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_42
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 528
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b9123bfd99c4b4ab0632f51d83210e
+      internalID: -1142759054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_43
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 528
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff67b0573805d849914547aa4cf42c4
+      internalID: -1630176503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_44
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 512
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1969490b3f1a04ba1c2ebba13cb043
+      internalID: 1537026656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_45
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 472
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a401c15ba711a0e439e616ee35aab819
+      internalID: 956892828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_46
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 472
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9725d7ecf879f694585c3e642efca5f7
+      internalID: -1979074791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_47
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 472
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1607fcf33e52f274b90554bbe91fcceb
+      internalID: 280875735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_48
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 472
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbd879f177e8c141aa01c58358d6d26
+      internalID: 452742869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_49
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 472
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be2505d337718c428ecaeffda33ccef
+      internalID: 906844044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_50
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 472
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424dc8bea88a55640869a1a4ee6dba15
+      internalID: 1288135776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_51
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 472
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b8f2e4cec6af34da3fb1159856b8ec
+      internalID: 620797772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_52
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 472
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f2e94e04a6c664da48c62d126db6de
+      internalID: 61482351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_53
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 472
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac2c84f6be7db7408c548ea50424e47
+      internalID: -654555983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_54
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 456
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f938d9ce1ea444a927faf94b1b5351
+      internalID: 51494124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_55
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 416
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1baa52d82ba3b5409968d75a517271c
+      internalID: 428265989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_56
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 416
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7aba88e2d8b1c449055eb6d4a71acd
+      internalID: 414871325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_57
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 415
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d29b49ac6c1414c84f3f7c0cd04498
+      internalID: 242868485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_58
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 400
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a37e9ed16f7c241acba900b81a6212
+      internalID: -1970053210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_59
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 360
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3b444aa08c90d4e8e820e37fd5e7a4
+      internalID: 1274758278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_60
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 360
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5b0dbe6557dd649889a98b39ba97ca
+      internalID: 1628570906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_61
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 360
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ab379a1c4b8844883faf9b443ba207
+      internalID: -1472519052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_62
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 360
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c318722e34c9d045b96d9d9a9567e84
+      internalID: -1236041427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_63
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 344
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849609b144cdcc549ab63bd761cf66a1
+      internalID: 1402373575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_64
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 302
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d4bab6736293a4bbd8da3f81b05e75
+      internalID: -199059422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_65
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 299
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea12775dd767033479fef0652df7bf01
+      internalID: -1053433718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_66
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 299
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681a9abca11f8c8488e129697992edf0
+      internalID: -1546047157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_67
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 304
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ab7900bbb4d8f459ca52fc3ca3295f
+      internalID: 477521287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_68
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 304
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97067f1db201db043b9321c84d912271
+      internalID: 1757733269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_69
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 304
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73eee252484b51b408118477895eebd4
+      internalID: -120624705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_70
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 304
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f3ccab43a355843893490004de1676
+      internalID: -1636402983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_71
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 304
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026cfe8c9987682449845b95a22a8bbc
+      internalID: 2022921879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_72
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 304
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b12a0819a8ded24f9b51abb3e9f4df9
+      internalID: 2106008475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_73
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 304
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5f2600abebbac4ca4ae1cf0cac63a2
+      internalID: 1000188693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_74
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 304
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450af313dfaaf9142beef97abd6ad01e
+      internalID: 1710909488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_75
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 302
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16e73c6ce9f75b45b3f6c0d2403f0d7
+      internalID: -645115021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_76
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 288
+        width: 32
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd7c0f5266061c4d86bb80ebd1c305c
+      internalID: 1859440599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_77
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 287
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742fd0345a2f2634a91ac7122ae3e944
+      internalID: 1576053934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_78
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 236
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e431c5cbcb6e824aa6334439605cf87
+      internalID: 867758694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_79
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 236
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21b396664ef3f34c8e960a6303fd7f8
+      internalID: 2092562954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_80
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 236
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5bf4f451fb43a4ab1c82305e8f30c9
+      internalID: 922447964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_81
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 236
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06377bf9786395a44bedf147a8197a24
+      internalID: -439061303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_82
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 236
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f63c99af94378f40a173ecf5fd6224b
+      internalID: 1090227784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_83
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 236
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d71f8a3eb92ed4f84fe498128d06f8
+      internalID: 357948675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_84
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 236
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794234156fa56b94f8cd5dc5e1a96699
+      internalID: -1209496672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_85
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 234
+        width: 99
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538dc499bcc0f1f4bac9e1b21c4739d1
+      internalID: -1478116604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_86
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 220
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7eb63e3c03b0e44ae9241f34a3ed7a
+      internalID: 831512945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_87
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 180
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f18776b95f97da4c8960faffd79a8f2
+      internalID: 1350697440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_88
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 166
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ce3c4cf705f744db26b1780b6c484e
+      internalID: 664805588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_89
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 160
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93ec7789f07fa24ba5cc0da03e35641
+      internalID: 527376773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_90
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 165
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d3994f713997d42af06a11f707f95b
+      internalID: 149993634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_91
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 180
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0066f41ae1b1a834bae7f2a889b12e8f
+      internalID: 552298833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_92
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 140
+        width: 32
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515e6ddea0b21d44d9d47c330fc0607a
+      internalID: -658689238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_93
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 100
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae9c0979201f474d86f853889444b23
+      internalID: 380200337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_94
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 100
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a9bb380047dba438fac2547aa9e0e3
+      internalID: -2031308630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_95
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 100
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89cbc1f3a22ff7488cbe44a37cbce3f
+      internalID: 1694377356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_96
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 100
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2762285a460841e40ad6465bb3a50e56
+      internalID: -853358907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_97
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 100
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d7ab1130791c44ab0ebc244332c02f
+      internalID: 1379206746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_98
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 100
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7faa86425871f864a8172bf75a8b6208
+      internalID: -1974261207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_99
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 100
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40152c69597a1eb489518798c44ab5c3
+      internalID: -374632835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_100
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 100
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca13a630c26f7664fbb8bf3ebd1188bf
+      internalID: 944639096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_101
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 100
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf60ff66da52a848878e8c3ae2c9fcb
+      internalID: -957201212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_102
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 100
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279fc2c27e4d67143ba537c32622c67b
+      internalID: 2030667600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_103
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 56
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1100cf14891689d4a951f75b231818a1
+      internalID: 1462684653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_104
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 56
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399cc97055dd36448aa6b290acef285d
+      internalID: 1739620000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_105
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 56
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b127004fdfb60934799277c01a09c667
+      internalID: 1116821096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_106
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 56
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be873b820ba0954cb5897740d2ef7d7
+      internalID: -1380347309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_107
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 56
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60cdf5902b6d6694591c5599e3dc14ad
+      internalID: -716068037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_108
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 56
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb872200bd8d4d45b780ef3ad804456
+      internalID: 402049575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_109
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 58
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d99a70af1b691d449039087c6c2893a
+      internalID: -1764488576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_110
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 55
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357d2cf68707ee247aa5d38f21278c71
+      internalID: -886324666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_111
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 33
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e5428caf758b34ea0cf420ffd7df0c
+      internalID: 1147636554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_112
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 33
+        width: 66
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288a703551618124d96431b154a6d096
+      internalID: 448093571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_113
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 22
+        width: 42
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784da5f5c50e5fb40a828a8508b09973
+      internalID: -1227784641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_114
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 22
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03007dc5e8a2ebb40975177821f8ddcf
+      internalID: -484224020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_115
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 22
+        width: 32
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aba3be4a1019f040b83ca05a91cbd7d
+      internalID: -326855744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_116
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 22
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608caa8854a400646a78e6d4189d43b6
+      internalID: 1682647188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_117
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 22
+        width: 19
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acec3b4c844d3204288780c67f9b9589
+      internalID: 1197836279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PampasTheCat_118
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 22
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74cbfd28c6e76954496b01bda8acb3e6
+      internalID: -1253013351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PampasTheCat_15: 121251140
+      PampasTheCat_3: 1590126885
+      PampasTheCat_54: 51494124
+      PampasTheCat_40: 1501744524
+      PampasTheCat_16: -8332098
+      PampasTheCat_75: -645115021
+      PampasTheCat_73: 1000188693
+      PampasTheCat_84: -1209496672
+      PampasTheCat_105: 1116821096
+      PampasTheCat_4: 1106273000
+      PampasTheCat_10: 2114323442
+      PampasTheCat_21: 1298798298
+      PampasTheCat_17: 1759803783
+      PampasTheCat_61: -1472519052
+      PampasTheCat_45: 956892828
+      PampasTheCat_65: -1053433718
+      PampasTheCat_26: -127214361
+      PampasTheCat_103: 1462684653
+      PampasTheCat_20: -613602671
+      PampasTheCat_100: 944639096
+      PampasTheCat_115: -326855744
+      PampasTheCat_39: 1912486787
+      PampasTheCat_83: 357948675
+      PampasTheCat_96: -853358907
+      PampasTheCat_95: 1694377356
+      PampasTheCat_12: -1981325766
+      PampasTheCat_72: 2106008475
+      PampasTheCat_111: 1147636554
+      PampasTheCat_71: 2022921879
+      PampasTheCat_64: -199059422
+      PampasTheCat_63: 1402373575
+      PampasTheCat_38: 448321830
+      PampasTheCat_78: 867758694
+      PampasTheCat_22: -1279040977
+      PampasTheCat_18: 172144206
+      PampasTheCat_79: 2092562954
+      PampasTheCat_66: -1546047157
+      PampasTheCat_41: -763123422
+      PampasTheCat_13: -1542827456
+      PampasTheCat_116: 1682647188
+      PampasTheCat_32: -527397832
+      PampasTheCat_70: -1636402983
+      PampasTheCat_51: 620797772
+      PampasTheCat_59: 1274758278
+      PampasTheCat_109: -1764488576
+      PampasTheCat_107: -716068037
+      PampasTheCat_34: 741978613
+      PampasTheCat_68: 1757733269
+      PampasTheCat_94: -2031308630
+      PampasTheCat_23: 1169864854
+      PampasTheCat_97: 1379206746
+      PampasTheCat_113: -1227784641
+      PampasTheCat_2: 1366827452
+      PampasTheCat_42: -1142759054
+      PampasTheCat_92: -658689238
+      PampasTheCat_98: -1974261207
+      PampasTheCat_24: -985580232
+      PampasTheCat_99: -374632835
+      PampasTheCat_31: 809186759
+      PampasTheCat_55: 428265989
+      PampasTheCat_82: 1090227784
+      PampasTheCat_76: 1859440599
+      PampasTheCat_88: 664805588
+      PampasTheCat_58: -1970053210
+      PampasTheCat_27: -1812083253
+      PampasTheCat_93: 380200337
+      PampasTheCat_89: 527376773
+      PampasTheCat_74: 1710909488
+      PampasTheCat_9: 1931153270
+      PampasTheCat_30: 578883021
+      PampasTheCat_52: 61482351
+      PampasTheCat_77: 1576053934
+      PampasTheCat_53: -654555983
+      PampasTheCat_87: 1350697440
+      PampasTheCat_101: -957201212
+      PampasTheCat_47: 280875735
+      PampasTheCat_85: -1478116604
+      PampasTheCat_86: 831512945
+      PampasTheCat_117: 1197836279
+      PampasTheCat_37: 208890614
+      PampasTheCat_33: -1588093242
+      PampasTheCat_43: -1630176503
+      PampasTheCat_80: 922447964
+      PampasTheCat_36: -247668033
+      PampasTheCat_90: 149993634
+      PampasTheCat_91: 552298833
+      PampasTheCat_5: 453051039
+      PampasTheCat_60: 1628570906
+      PampasTheCat_14: 473603568
+      PampasTheCat_50: 1288135776
+      PampasTheCat_114: -484224020
+      PampasTheCat_81: -439061303
+      PampasTheCat_46: -1979074791
+      PampasTheCat_57: 242868485
+      PampasTheCat_56: 414871325
+      PampasTheCat_48: 452742869
+      PampasTheCat_49: 906844044
+      PampasTheCat_108: 402049575
+      PampasTheCat_8: 1944733112
+      PampasTheCat_69: -120624705
+      PampasTheCat_1: 1712774941
+      PampasTheCat_35: -485034423
+      PampasTheCat_19: 76137072
+      PampasTheCat_0: 216174912
+      PampasTheCat_28: 444700696
+      PampasTheCat_7: 2054695768
+      PampasTheCat_29: 1173297919
+      PampasTheCat_25: 1787791532
+      PampasTheCat_62: -1236041427
+      PampasTheCat_11: 965228815
+      PampasTheCat_44: 1537026656
+      PampasTheCat_6: -637745602
+      PampasTheCat_110: -886324666
+      PampasTheCat_104: 1739620000
+      PampasTheCat_106: -1380347309
+      PampasTheCat_118: -1253013351
+      PampasTheCat_102: 2030667600
+      PampasTheCat_67: 477521287
+      PampasTheCat_112: 448093571
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
