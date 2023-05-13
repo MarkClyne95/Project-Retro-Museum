@@ -59,7 +59,7 @@ public class S_GameScreen : MonoBehaviour
                 break;
             
             case 3:
-                SceneManager.LoadScene("DoomLevel");
+                SceneManager.LoadScene("DoomMenu");
                 break;
             
             case 4:
