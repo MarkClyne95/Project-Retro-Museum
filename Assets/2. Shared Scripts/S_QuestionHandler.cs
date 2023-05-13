@@ -21,7 +21,8 @@ public class S_QuestionHandler : MonoBehaviour
     private void Start()
     {
         fpm.canMove = false;
-        fpl.enabled = false;
+        //fpl.enabled = false;
+        fpl.KillMovement();
         seventyQuestions = new List<S_Question>();
         eightyQuestions = new List<S_Question>();
         nintyQuestions = new List<S_Question>();

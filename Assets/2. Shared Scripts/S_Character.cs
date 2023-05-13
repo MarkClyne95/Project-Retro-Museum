@@ -13,4 +13,6 @@ public class S_Character : MonoBehaviour
     {
         characterName = gameObject.name;
     }
+
+    public virtual void Death(){}
 }

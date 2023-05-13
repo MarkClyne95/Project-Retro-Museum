@@ -14,6 +14,9 @@ public class SC_VolSettings : MonoBehaviour
 
     [Header("Menu Variables")]
     [SerializeField] private GameObject menu;
+
+    [Header("Audio Variables")]
+    [SerializeField] private AudioSource source;
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +64,7 @@ public class SC_VolSettings : MonoBehaviour
             musicVol = 1;
 
         musicText.text = "" + (musicVol * 10f);
+        source.volume = musicVol * .1f;
     }
 
     public void MusicDown()
@@ -72,6 +76,7 @@ public class SC_VolSettings : MonoBehaviour
             musicVol = 0;
 
         musicText.text = "" + (musicVol * 10f);
+        source.volume = musicVol * .1f;
     }
 
     public void MainMenu()

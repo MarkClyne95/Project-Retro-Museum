@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/1. Users/6. Deacon/Scenes/L_Saturn.unity
     guid: 50e0168d508e88a4d90486eab61843bb
   - enabled: 1
+    path: Assets/1. Users/1. Scott Ewing/Doom Assets/DoomMenu.unity
+    guid: 43a01d4efed70364a9bf90d7fbf7c7c2
+  - enabled: 1
     path: Assets/1. Users/1. Scott Ewing/Doom Assets/DoomLevel.unity
     guid: 4be7af8ac5d685e418353eac3442c5a9
   - enabled: 1
@@ -44,5 +47,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1. Users/2. Scott Mackenzie/Jungle.unity
     guid: 34564a948518d2e4db9d4bb87857d588
+  - enabled: 1
+    path: Assets/6. Shared Scenes/Menus/L_Credits.unity
+    guid: ae97ef034b2284b479bac0d10f167857
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

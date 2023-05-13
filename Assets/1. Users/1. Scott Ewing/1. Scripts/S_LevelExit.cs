@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class S_LevelExit : MonoBehaviour{
     [SerializeField] private float exitWaitTime = 1;
+    [SerializeField] private string _nextLevelName = "L_90sFloor";
     public void ExitLevel() {
         Invoke("Exit", exitWaitTime);
     }
@@ -18,6 +19,6 @@ public class S_LevelExit : MonoBehaviour{
     }
 
     public void Exit() {
-        SceneManager.LoadScene("L_90sFloor");
+        SceneManager.LoadScene(_nextLevelName);
     }
 }
