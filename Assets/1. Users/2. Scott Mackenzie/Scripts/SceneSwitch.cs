@@ -8,7 +8,7 @@ public class SceneSwitch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -22,5 +22,16 @@ public class SceneSwitch : MonoBehaviour
         {
             SceneManager.LoadScene("L_90sFloor");
         }
+    }
+
+    //Scene Switch Events for Main Menu
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Temple");
+    }
+
+    public void ExitGame()
+    {
+        SceneManager.LoadScene("L_90sFloor");
     }
 }
