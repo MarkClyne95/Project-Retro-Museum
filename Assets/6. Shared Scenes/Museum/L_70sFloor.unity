@@ -5490,6 +5490,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &957332221
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1148874387983039995, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: m_Name
+      value: First Person Controller Minimal 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150987120878577235, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150987120878577235, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.376
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150987120878577235, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150987120878577235, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150987120878577235, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150987120878577235, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150987120878577235, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150987120878577235, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150987120878577235, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150987120878577235, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150987120878577235, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137806551592842845, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: questionUI
+      value: 
+      objectReference: {fileID: 1814074070}
+    - target: {fileID: 8882657208841752208, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
 --- !u!1 &958122119
 GameObject:
   m_ObjectHideFlags: 0
@@ -6563,6 +6628,10 @@ PrefabInstance:
     - target: {fileID: 5241267463746980526, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_Name
       value: First Person Controller Minimal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241267463746980526, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5269945355364510514, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: canMove
