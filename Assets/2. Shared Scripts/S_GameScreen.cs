@@ -63,7 +63,7 @@ public class S_GameScreen : MonoBehaviour
                 break;
             
             case 4:
-                SceneManager.LoadScene("Temple");
+                SceneManager.LoadScene("MainMenu");
                 break;
             
             case 5:
