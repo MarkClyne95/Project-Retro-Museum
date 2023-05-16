@@ -5998,7 +5998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectType: 0
-  levelName: Temple
+  levelName: MainMenu
   interactable: 1
   questionAnswered: 0
   historyInformation: 
@@ -14034,7 +14034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectType: 0
-  levelName: DoomLevel
+  levelName: DoomMenu
   interactable: 1
   questionAnswered: 0
   historyInformation: 
@@ -14804,7 +14804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883005144}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.12, y: -0.10000038, z: -2.1699998}
+  m_LocalPosition: {x: -3.095, y: -0.10000038, z: -2.1699998}
   m_LocalScale: {x: 0.3274081, y: 10.803017, z: 3.3797364}
   m_ConstrainProportionsScale: 0
   m_Children: []

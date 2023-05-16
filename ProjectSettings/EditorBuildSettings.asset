@@ -36,8 +36,14 @@ EditorBuildSettings:
     path: Assets/1. Users/6. Deacon/Scenes/L_Saturn.unity
     guid: 50e0168d508e88a4d90486eab61843bb
   - enabled: 1
+    path: Assets/1. Users/1. Scott Ewing/Doom Assets/DoomMenu.unity
+    guid: 43a01d4efed70364a9bf90d7fbf7c7c2
+  - enabled: 1
     path: Assets/1. Users/1. Scott Ewing/Doom Assets/DoomLevel.unity
     guid: 4be7af8ac5d685e418353eac3442c5a9
+  - enabled: 1
+    path: Assets/1. Users/2. Scott Mackenzie/MainMenu.unity
+    guid: f14f9ee55b414d448bf88223ccc91e2c
   - enabled: 1
     path: Assets/1. Users/2. Scott Mackenzie/Temple.unity
     guid: bda8123da4191144483bcc777d456ae8
