@@ -15,10 +15,4 @@ public class SC_Music : MonoBehaviour
 
         source.volume = volume * .1f;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

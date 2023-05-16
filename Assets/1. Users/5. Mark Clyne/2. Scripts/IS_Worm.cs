@@ -6,5 +6,4 @@ using Random = UnityEngine.Random;
 
 public class IS_Worm : S_Enemy
 {
-    
 }

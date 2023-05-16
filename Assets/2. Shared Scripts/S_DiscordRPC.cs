@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class S_DiscordRPC : MonoBehaviour
 {
     public Discord.Discord discord;
-    private float playTime = 0.0f;
     private Discord.Activity activity;
     private Discord.ActivityManager activityManager;
     private int currentEpochTime;
@@ -16,11 +15,8 @@ public class S_DiscordRPC : MonoBehaviour
     {
         DontDestroyOnLoad(this);
         SceneManager.sceneLoaded += OnSceneLoaded;
-        playTime = 0.0f;
         discord = new Discord.Discord(1107751061067927582, (System.UInt64)Discord.CreateFlags.NoRequireDiscord);
         activityManager = discord.GetActivityManager();
-        
-        playTime += Time.deltaTime;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -91,6 +87,7 @@ public class S_DiscordRPC : MonoBehaviour
                 SmallImage = "randy",
                 SmallText = "Randy!"
             }
+            
         };
         activityManager.UpdateActivity(activity, (res) =>
         {

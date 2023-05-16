@@ -372,6 +372,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -1006,6 +1010,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -3460,6 +3468,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -3843,6 +3855,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -4206,6 +4222,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -5049,6 +5069,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1780828035}
     - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
+      propertyPath: m_Lens.FarClipPlane
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
       propertyPath: m_Lens.OrthographicSize
       value: 12
       objectReference: {fileID: 0}
@@ -5677,7 +5701,7 @@ MonoBehaviour:
     FieldOfView: 40
     OrthographicSize: 12
     NearClipPlane: 0.1
-    FarClipPlane: 5000
+    FarClipPlane: 20
     Dutch: 0
     ModeOverride: 1
     LensShift: {x: 0, y: 0}
@@ -5769,6 +5793,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1780828035}
+    - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
+      propertyPath: m_Lens.FarClipPlane
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
       propertyPath: m_Lens.OrthographicSize
       value: 12
@@ -6285,6 +6313,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -6835,6 +6867,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: hitPoints
       value: 5
@@ -6978,6 +7014,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1780828035}
+    - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
+      propertyPath: m_Lens.FarClipPlane
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
       propertyPath: m_Lens.OrthographicSize
       value: 12
@@ -7661,6 +7701,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -7765,6 +7809,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1780828035}
+    - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
+      propertyPath: m_Lens.FarClipPlane
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
       propertyPath: m_Lens.OrthographicSize
       value: 12
@@ -7908,6 +7956,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: hitPoints
       value: 5
@@ -8126,6 +8178,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -9232,6 +9288,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1780828035}
     - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
+      propertyPath: m_Lens.FarClipPlane
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
       propertyPath: m_Lens.OrthographicSize
       value: 12
       objectReference: {fileID: 0}
@@ -9617,6 +9677,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -10848,6 +10912,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -11347,6 +11415,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1780828035}
     - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
+      propertyPath: m_Lens.FarClipPlane
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
       propertyPath: m_Lens.OrthographicSize
       value: 12
       objectReference: {fileID: 0}
@@ -11765,6 +11837,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -13114,7 +13190,7 @@ MonoBehaviour:
     FieldOfView: 40
     OrthographicSize: 12
     NearClipPlane: 0.1
-    FarClipPlane: 5000
+    FarClipPlane: 20
     Dutch: 0
     ModeOverride: 1
     LensShift: {x: 0, y: 0}
@@ -14307,6 +14383,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1780828035}
     - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
+      propertyPath: m_Lens.FarClipPlane
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
       propertyPath: m_Lens.OrthographicSize
       value: 12
       objectReference: {fileID: 0}
@@ -15224,6 +15304,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: hitPoints
       value: 5
@@ -15573,6 +15657,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -15877,6 +15965,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -17516,7 +17608,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 5000
+  far clip plane: 20
   field of view: 40
   orthographic: 1
   orthographic size: 12
@@ -17543,7 +17635,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868543748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 512.5295, y: 317.12, z: -10}
+  m_LocalPosition: {x: 507.18558, y: 317.12, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17634,6 +17726,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: hitPoints
       value: 5
@@ -17790,6 +17886,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -18925,6 +19025,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1780828035}
     - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
+      propertyPath: m_Lens.FarClipPlane
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424526379076063190, guid: 684c1652cbf12314088828c20fbc05d7, type: 3}
       propertyPath: m_Lens.OrthographicSize
       value: 12
       objectReference: {fileID: 0}
@@ -19787,6 +19891,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 
@@ -19969,6 +20077,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 758704080}
     m_Modifications:
+    - target: {fileID: 5091798696263992089, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5373865291917887666, guid: 75965e17343588c49b9d4a7ba5073c0d, type: 3}
       propertyPath: coin
       value: 

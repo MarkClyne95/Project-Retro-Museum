@@ -8,6 +8,7 @@ public class S_Bullet : MonoBehaviour
 {
     [SerializeField] private float speed;
     private Rigidbody2D _rb;
+    private S_Enemy enemy;
 
     private void Start()
     {
@@ -24,7 +25,7 @@ public class S_Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        S_Enemy enemy = col.GetComponent<S_Enemy>();
+        enemy = col.GetComponent<S_Enemy>();
 
         if (enemy != null && !col.CompareTag("Player"))
         {

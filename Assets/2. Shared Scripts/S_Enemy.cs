@@ -13,6 +13,7 @@ public class S_Enemy : MonoBehaviour
     public float scaleFactor;
     public float spriteScaling;
     [SerializeField]private GameObject coin;
+    private Transform goalPoint;
 
 
     private void Start()
@@ -44,7 +45,7 @@ public class S_Enemy : MonoBehaviour
 
     void MoveToNextPoint()
     {
-        Transform goalPoint = points[nextID];
+        goalPoint = points[nextID];
         if (goalPoint.transform.position.x > transform.position.x)
             transform.localScale = new Vector3(spriteScaling, spriteScaling, spriteScaling);
         else
