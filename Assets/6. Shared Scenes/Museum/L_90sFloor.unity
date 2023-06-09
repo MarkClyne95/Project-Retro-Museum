@@ -643,6 +643,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02133757, y: 0.42675218, z: 0.020962976}
   m_Center: {x: -0.0000000037252903, y: 0, z: -0.0000000027939677}
+--- !u!114 &79480185 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1035980250684081965, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+  m_PrefabInstance: {fileID: 1223124094}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec72980442fddac4d86e75ab24b4d027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &103529109
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5048,6 +5059,17 @@ Transform:
   m_Father: {fileID: 617840283}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &643606847 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1040257533145439335, guid: c8ff75bc1ab346c4b862b793ba60f954, type: 3}
+  m_PrefabInstance: {fileID: 1223124094}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97fca36bd81de7c4cafce7bbf02ca611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &646391166 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 45cfe699666c51840907216e9a7587cd, type: 3}
@@ -5998,7 +6020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectType: 0
-  levelName: Temple
+  levelName: MainMenu
   interactable: 1
   questionAnswered: 0
   historyInformation: 
@@ -15563,11 +15585,11 @@ PrefabInstance:
     - target: {fileID: 8452635102741359870, guid: 73a70795149da6a4a97c3fee82849313, type: 3}
       propertyPath: fpl
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 79480185}
     - target: {fileID: 8452635102741359870, guid: 73a70795149da6a4a97c3fee82849313, type: 3}
       propertyPath: fpm
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 643606847}
     - target: {fileID: 8452635102741359870, guid: 73a70795149da6a4a97c3fee82849313, type: 3}
       propertyPath: door
       value: 

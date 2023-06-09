@@ -8,7 +8,8 @@ public class SceneSwitch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,10 +29,14 @@ public class SceneSwitch : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("Temple");
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void ExitGame()
     {
         SceneManager.LoadScene("L_90sFloor");
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

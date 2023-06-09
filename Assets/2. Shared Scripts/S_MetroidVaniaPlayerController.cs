@@ -102,11 +102,6 @@ public class S_MetroidVaniaPlayerController : S_Character, PlayerInputs.IPlayerA
         _rb.velocity = new Vector2(_moveInput.x * movementSpeed, _rb.velocity.y);
     }
 
-    private void Update()
-    {
-        
-    }
-
     private void Start()
     {
         _anim = GetComponent<Animator>();

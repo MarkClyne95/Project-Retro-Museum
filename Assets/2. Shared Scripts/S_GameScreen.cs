@@ -28,7 +28,7 @@ public class S_GameScreen : MonoBehaviour
                 break;
             
             case 3:
-                gameInfo.text = "This game is a Sega Saturn inspired Metroidvania in which the player must guide themselves though a dangerous castle";
+                gameInfo.text = "\"FROOM\" is inspired by the SNES port DOOM.";
                 break;
             
             case 4:
@@ -36,7 +36,7 @@ public class S_GameScreen : MonoBehaviour
                 break;
             
             case 5:
-                gameInfo.text = "\"FROOM\" is inspired by the SNES port DOOM.";
+                gameInfo.text = "This game is a Sega Saturn inspired Metroidvania in which the player must guide themselves though a dangerous castle";
                 break;
         }
     }
@@ -63,7 +63,7 @@ public class S_GameScreen : MonoBehaviour
                 break;
             
             case 4:
-                SceneManager.LoadScene("Temple");
+                SceneManager.LoadScene("MainMenu");
                 break;
             
             case 5:
