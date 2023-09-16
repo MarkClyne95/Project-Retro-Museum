@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEditor.Rendering;
 using UnityEngine;
@@ -23,6 +24,28 @@ public class S_InteractableObject : MonoBehaviour
         if (questionAnswered)
         {
             SceneManager.LoadScene(levelName);
+        }
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.GetComponent<S_FirstPersonInteraction>())
+        {
+            var interactableObject = collision.gameObject.GetComponent<S_FirstPersonInteraction>();
+            interactableObject.obj = this;
+
+            interactableObject.interactText.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit(Collider collision)
+    {
+        if (collision.gameObject.GetComponent<S_FirstPersonInteraction>())
+        {
+            var interactableObject = collision.gameObject.GetComponent<S_FirstPersonInteraction>();
+            interactableObject.obj = null;
+
+            interactableObject.interactText.gameObject.SetActive(false);
         }
     }
 }

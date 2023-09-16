@@ -10,6 +10,8 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
   missingFiles: []
   errors:
+  - Errors detected in tileset '../TSX/tileset2.tsx'. Check the tileset inspector
+    for more details. Your map may be broken until these are fixed.
   - Errors detected in tileset '../TSX/background.tsx'. Check the tileset inspector
     for more details. Your map may be broken until these are fixed.
   - Could not find tile 73. Make sure the tilesets were successfully imported.

@@ -1353,8 +1353,8 @@ GameObject:
   m_Component:
   - component: {fileID: 169901566}
   - component: {fileID: 169901567}
-  - component: {fileID: 169901569}
   - component: {fileID: 169901568}
+  - component: {fileID: 169901569}
   m_Layer: 0
   m_Name: Sega-Saturn-Console-Set-Mk1
   m_TagString: Untagged
@@ -1449,19 +1449,19 @@ MonoBehaviour:
   consoleValue: 0
   historyValue: 0
   doorValue: 0
---- !u!65 &169901569
-BoxCollider:
+--- !u!135 &169901569
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169901565}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 41.213062, y: 22.800001, z: 18.204365}
-  m_Center: {x: 0, y: 0, z: 2.3846843}
+  m_Radius: 59.85
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &183319337
 GameObject:
   m_ObjectHideFlags: 0
@@ -6027,19 +6027,19 @@ MonoBehaviour:
   consoleValue: 0
   historyValue: 0
   doorValue: 0
---- !u!65 &725880082
-BoxCollider:
+--- !u!135 &725880082
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725880080}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 68.18812, y: 96.87293, z: 30.519094}
-  m_Center: {x: -8.823336, y: 26.54217, z: 13.507577}
+  m_Radius: 93.79
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &746952299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14030,19 +14030,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 225652445660843300, guid: eb29dc88155183a458eebd942380d1a2, type: 3}
   m_PrefabInstance: {fileID: 1754572021}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1754572023
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754572022}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.229742, y: 1, z: 2.153665}
-  m_Center: {x: 0.6148751, y: 0, z: 0.5768316}
 --- !u!114 &1754572024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14063,6 +14050,19 @@ MonoBehaviour:
   consoleValue: 0
   historyValue: 0
   doorValue: 0
+--- !u!135 &1754572025
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754572022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.73
+  m_Center: {x: 1.45, y: 0, z: 0.99}
 --- !u!1 &1787791074 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 45cfe699666c51840907216e9a7587cd, type: 3}
@@ -16373,6 +16373,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04222222, y: 0.001108556, z: 0.020499995}
   m_Center: {x: -0.02111111, y: 0.00045619952, z: 0.0102499975}
+--- !u!135 &2065655531
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065655524}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.02
+  m_Center: {x: -0.02, y: -0.01, z: 0}
 --- !u!1 &2080564256
 GameObject:
   m_ObjectHideFlags: 0

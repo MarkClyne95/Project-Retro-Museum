@@ -8,11 +8,10 @@ public class S_FirstPersonInteraction : MonoBehaviour
 {
     public bool canInteract;
     public KeyCode interactKey = KeyCode.E;
-    private RaycastHit _hit;
-    private Vector3 _forward;
     [SerializeField]private float _rayLength = 50f;
-    [SerializeField] private TMP_Text interactText;
+    public TMP_Text interactText;
     [SerializeField] private S_QuestionHandler questionUI;
+    public S_InteractableObject obj;
 
     private void Start()
     {
@@ -23,35 +22,29 @@ public class S_FirstPersonInteraction : MonoBehaviour
 
     private void Update()
     {
-        _forward = new Vector3(transform.position.x, transform.position.y +1, transform.position.z);
-        Debug.DrawRay(_forward, Camera.main.transform.forward * _rayLength, Color.blue);
-        if (Physics.Raycast(_forward, Camera.main.transform.forward, out _hit, _rayLength))
-        {
-            var interactableObject = _hit.collider.gameObject.GetComponent<S_InteractableObject>();
-
-            if (interactableObject != null)
+            if (obj != null)
             {
                 interactText.gameObject.SetActive(true);
-                switch (interactableObject.objectType)
+                switch (obj.objectType)
                 {
                     case ObjectType.Console:
                         Debug.Log("Console");
-                        HandleConsole(interactableObject.levelName);
+                        HandleConsole(obj.levelName);
                         break;
-                
+
                     case ObjectType.Door:
-                        HandleDoor(interactableObject);
+                        HandleDoor(obj);
                         break;
                 }
             }
-        }
+        
         else
         {
             interactText.gameObject.SetActive(false);
         }
     }
 
-    private void HandleConsole(string levelName)
+    public void HandleConsole(string levelName)
     {
         if (Input.GetKey(interactKey) && canInteract)
         {
@@ -59,7 +52,7 @@ public class S_FirstPersonInteraction : MonoBehaviour
         }
     }
 
-    private void HandleDoor(S_InteractableObject obj)
+    public void HandleDoor(S_InteractableObject obj)
     {
         if (Input.GetKey(interactKey) && canInteract && !obj.questionAnswered)
         {
